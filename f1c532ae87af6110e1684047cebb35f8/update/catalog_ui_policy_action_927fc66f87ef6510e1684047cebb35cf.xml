@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Business Analysis Request  (SIMM 19A.3)">ec884fa28723a110e1684047cebb3539</catalog_item>
+        <catalog_variable>IO:3323f0df872b2510e1684047cebb3513</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-26 19:11:11</sys_created_on>
+        <sys_id>927fc66f87ef6510e1684047cebb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>withdraw_other</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_927fc66f87ef6510e1684047cebb35cf</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-26 19:11:11</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Withdraw Other">bc3f826f87ef6510e1684047cebb35dd</ui_policy>
+        <variable>withdraw_other</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

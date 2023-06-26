@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Business Analysis Request  (SIMM 19A.3)">ec884fa28723a110e1684047cebb3539</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Toggle variable sections</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+
+	var $ = this.jQuery;
+
+	var fields = ["department", "requested_by", "submission_type", "title", "business_owner_title", "product_owner_title", "state_entity", "business_program_name", "enterprise_architect_title", "financial_benefit", "better_services", "executive_summary_of_the_business_problem_or_opportunity", "project_management_risk_score", "business_complexity_score", "anticipate_additional_resources_through_a_budget_action_to_complete_planning"];
+
+
+	setTimeout(function() {
+
+		for (var i=0; i < fields.length; i++) {
+
+			var $button = $("<button id='la_" + fields[i] + "'" + "style='margin-bottom:10px;margin-top:5px;color:#4f52bd;' class='btn btn-icon' >" +
+							"<i class='fa fa-plus fa-lg'></i></button>");
+
+			var field = "#" + fields[i];
+			var fieldElement = $(field);
+			var fieldtitle = fieldElement.closest('div.row').prev();
+			fieldtitle.append($button);
+
+			var $row = fieldElement.closest('div.row').attr('id', 'la_' + fields[i]);
+			
+			$button.click(function(event) {
+				var elementID = event.currentTarget.id;
+				$('div#' + elementID).toggle();
+				$('button#' + elementID).find('i').toggleClass("fa-plus fa-minus");
+			});
+
+			if (i == 0) {
+				$('button#la_' + fields[i]).find('i').toggleClass("fa-plus fa-minus");
+				continue;
+			}
+
+			$row.hide();
+
+		}
+
+	}, 0);
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-26 19:17:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02c016ef87ef6510e1684047cebb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Toggle variable sections</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>catalog_script_client_02c016ef87ef6510e1684047cebb3561</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-26 19:17:54</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>1</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>
