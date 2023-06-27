@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_citin_s2p_spoke_document_builder_constants</description>
+        <name>x_citin_s2p_spoke_document_builder_constants</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-27 21:45:54</sys_created_on>
+        <sys_id>959cb3f3872be510e1684047cebb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_document_builder_constants</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_security_acl_959cb3f3872be510e1684047cebb35cf</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-27 21:45:54</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
