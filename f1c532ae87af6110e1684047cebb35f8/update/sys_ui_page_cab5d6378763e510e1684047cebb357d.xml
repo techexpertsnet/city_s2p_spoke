@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_citin_s2p_spoke_create_ci_project.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate var="jvar_sr_sys_id" jelly="true" expression="RP.getWindowProperties().sr_sys_id" />
+<g:evaluate>
+      var sr = new GlideRecordSecure('sn_shop_sourcing_activity');
+      sr.get('${jvar_sr_sys_id}');	  
+</g:evaluate>
+<g:ui_form>
+	<div class="row" style="margin:1px">
+		<div class="col-sm-12">
+			<div id="sourcingrequest_readonly_group" class="form-group">
+				<div data-type="label" type="string" id="label.sr.readonly" nowrap="true">
+					<label class="control-label" for="sourcing_request">Sourcing Request</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="sourcing_request" name="sourcing_request" value="${sr.number}" readonly="true"/>
+				</div>								
+			</div>		
+			<div id="name_group" class="form-group">
+				<div data-type="label" type="string" id="label.name" nowrap="true">
+					<label class="control-label" for="name">Name</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="name" name="name" />
+				</div>								
+			</div>
+			<div id="initialworkflow_group" class="form-group">
+				<div data-type="label" type="string" id="label.initialworkflow" nowrap="true">
+					<label class="control-label" for="initialworkflow">Initial Workflow</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="initialworkflow" name="initialworkflow" />
+				</div>								
+			</div>
+			<div id="owner_group" class="form-group">
+				<div data-type="label" type="string" id="label.owner" nowrap="true">
+					<label class="control-label" for="owner">Owner</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="owner" name="owner" />
+				</div>								
+			</div>
+			<div id="purchaseclass_group" class="form-group">
+				<div data-type="label" type="string" id="label.purchaseclass" nowrap="true">
+					<label class="control-label" for="purchaseclass">Purchase Class</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="purchaseclass" name="purchaseclass" />
+				</div>								
+			</div>
+			<div id="solicitationtype_group" class="form-group">
+				<div data-type="label" type="string" id="label.solicitationtype" nowrap="true">
+					<label class="control-label" for="solicitationtype">Solicitation Type</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="solicitationtype" name="solicitationtype" />
+				</div>								
+			</div>
+			<div id="solicitationcategories_group" class="form-group">
+				<div data-type="label" type="string" id="label.solicitationcategories" nowrap="true">
+					<label class="control-label" for="solicitationcategories">Solicitation Categories</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="solicitationcategories" name="solicitationcategories" />
+				</div>								
+			</div>
+			<div id="leveragedprocurementagreement_group" class="form-group">
+				<div data-type="label" type="string" id="label.leveragedprocurementagreement" nowrap="true">
+					<label class="control-label" for="leveragedprocurementagreement">Leveraged Procurement Agreement</label>
+				</div>				
+				<div class="input-group-addon input-group-select" style="min-width:20px;">
+					<input class="form-control" type="text" id="leveragedprocurementagreement" name="leveragedprocurementagreement" />
+				</div>								
+			</div>			
+		</div>
+	</div>
+	<div class="form-group pull-right" id="dialog-btns">
+		<button onClick = "return submitChanges()" type="button" class="btn btn-primary btn-md" style="margin-right:5px">Submit</button>
+		<button onClick = "return cancel()" type="button" class="btn btn-default btn-md">Cancel</button>
+	</div>
+</g:ui_form>
+</j:jelly>]]></html>
+        <name>create_ci_project</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-27 14:17:54</sys_created_on>
+        <sys_id>cab5d6378763e510e1684047cebb357d</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>create_ci_project</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_page_cab5d6378763e510e1684047cebb357d</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-27 21:31:13</sys_updated_on>
+    </sys_ui_page>
+</record_update>
