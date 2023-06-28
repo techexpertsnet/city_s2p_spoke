@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>_new_4</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-06-28 17:23:23</sys_created_on>
+        <sys_id>251a8810873fe5104bbb21f8dabb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>_new_4</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_view_251a8810873fe5104bbb21f8dabb359b</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 17:23:23</sys_updated_on>
+        <title>_new_4</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
