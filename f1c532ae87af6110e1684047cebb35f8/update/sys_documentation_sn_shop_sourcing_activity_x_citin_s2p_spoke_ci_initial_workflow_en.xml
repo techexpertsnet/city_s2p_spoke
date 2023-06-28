@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_citin_s2p_spoke_ci_initial_workflow" label="CI Initial Workflow" language="en" table="sn_shop_sourcing_activity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_citin_s2p_spoke_ci_initial_workflow</element>
+            <help/>
+            <hint/>
+            <label>CI Initial Workflow</label>
+            <language>en</language>
+            <name>sn_shop_sourcing_activity</name>
+            <plural>CI Initial Workflows</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:07:13</sys_created_on>
+            <sys_id>4a91a9c88773e5104bbb21f8dabb357a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CI Initial Workflow</sys_name>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_documentation_sn_shop_sourcing_activity_x_citin_s2p_spoke_ci_initial_workflow_en</sys_update_name>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:07:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

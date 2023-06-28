@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_citin_s2p_spoke_leveraged_procurement_agreement" table="sn_shop_sourcing_activity" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_citin_s2p_spoke_leveraged_procurement_agreement</element>
+            <name>sn_shop_sourcing_activity</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:23:21</sys_created_on>
+            <sys_id>9e45e1cc8773e5104bbb21f8dabb3505</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_citin_s2p_spoke_leveraged_procurement_agreement</sys_name>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_choice_sn_shop_sourcing_activity_x_citin_s2p_spoke_leveraged_procurement_agreement</sys_update_name>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:23:21</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_citin_s2p_spoke_leveraged_procurement_agreement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Temp LPA 1</label>
+            <language>en</language>
+            <name>sn_shop_sourcing_activity</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:23:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1635edcc8773e5104bbb21f8dabb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:23:21</sys_updated_on>
+            <value>lpa1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_citin_s2p_spoke_leveraged_procurement_agreement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Temp LPA 2</label>
+            <language>en</language>
+            <name>sn_shop_sourcing_activity</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:23:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2345a5cc8773e5104bbb21f8dabb35b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:23:26</sys_updated_on>
+            <value>lpa2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_citin_s2p_spoke_leveraged_procurement_agreement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Temp LPA 3</label>
+            <language>en</language>
+            <name>sn_shop_sourcing_activity</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:23:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0555adcc8773e5104bbb21f8dabb35ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:23:32</sys_updated_on>
+            <value>lpa3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
