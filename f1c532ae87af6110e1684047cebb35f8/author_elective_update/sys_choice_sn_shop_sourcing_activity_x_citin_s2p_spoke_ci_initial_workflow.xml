@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 05:07:36</sys_created_on>
-            <sys_id>b3a1e9c88773e5104bbb21f8dabb3557</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_citin_s2p_spoke_ci_initial_workflow</sys_name>
             <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -30,7 +29,6 @@
             <sys_created_on>2023-06-28 05:07:36</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5391e9c88773e5104bbb21f8dabb3592</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
             <sys_updated_on>2023-06-28 05:07:36</sys_updated_on>
@@ -50,7 +48,6 @@
             <sys_created_on>2023-06-28 05:07:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4db1a5888773e5104bbb21f8dabb3504</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
             <sys_updated_on>2023-06-28 05:07:42</sys_updated_on>
@@ -70,7 +67,6 @@
             <sys_created_on>2023-06-28 05:07:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fab169488773e5104bbb21f8dabb35bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
             <sys_updated_on>2023-06-28 05:07:48</sys_updated_on>

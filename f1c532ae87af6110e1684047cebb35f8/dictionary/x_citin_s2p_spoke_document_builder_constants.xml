@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ec7c3fb3872be510e1684047cebb35bf" label="Document Builder Constants" max_length="40" name="x_citin_s2p_spoke_document_builder_constants" type="collection">
+        <element label="Abbreviation" max_length="40" name="abbreviation" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_citin_s2p_spoke_document_builder_constants" type="reference"/>
+        <element label="Show LPA Options" max_length="40" name="show_lpa_options" type="boolean"/>
+        <element label="Source" max_length="100" name="source" type="string"/>
+        <element label="Team ID" max_length="40" name="team_id" type="integer"/>
+        <element label="Type" max_length="100" name="type" type="string"/>
+        <element label="Value" max_length="40" name="value" type="integer"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+        <index name="index2">
+            <element name="value"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Source-to-Pay Common Architecture" source="sn_shop">45f917bd533323007388ddeeff7b12b6</dependency>
+        <min_version>11.0.5</min_version>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-06-26 21:34:45</sys_created_on>
+        <sys_id>90703623872b65104bbb21f8dabb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-06-26 21:34:45</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

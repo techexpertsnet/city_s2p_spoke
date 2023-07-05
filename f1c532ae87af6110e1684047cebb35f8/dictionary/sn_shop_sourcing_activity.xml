@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true" audit="true" db_object_id="bc1383f787cfa1104bbb21f8dabb3514" extends="task" label="Sourcing Request" max_length="40" name="sn_shop_sourcing_activity" type="collection">
+        <element choice="1" label="CI Initial Workflow" max_length="40" name="x_citin_s2p_spoke_ci_initial_workflow" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Temp Workflow 1" sequence="100" value="temworkflow1"/>
+                <element inactive_on_update="false" label="Temp Workflow 2" sequence="200" value="temworkflow2"/>
+                <element inactive_on_update="false" label="Temp Workflow 3" sequence="300" value="temworkflow3"/>
+            </choice>
+        </element>
+        <element label="CI Portal Link" max_length="1024" name="x_citin_s2p_spoke_ci_portal_link" read_only="true" type="url"/>
+        <element label="CI Project ID" max_length="40" name="x_citin_s2p_spoke_ci_project_id" read_only="true" type="integer"/>
+        <element label="Editors" max_length="4000" name="x_citin_s2p_spoke_editors" reference="sys_user" type="glide_list"/>
+        <element label="Guest Contributors" max_length="4000" name="x_citin_s2p_spoke_guest_contributors" reference="sys_user" type="glide_list"/>
+        <element choice="1" label="Leveraged Procurement Agreement" max_length="40" name="x_citin_s2p_spoke_leveraged_procurement_agreement" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Temp LPA 1" sequence="100" value="lpa1"/>
+                <element inactive_on_update="false" label="Temp LPA 2" sequence="200" value="lpa2"/>
+                <element inactive_on_update="false" label="Temp LPA 3" sequence="300" value="lpa3"/>
+            </choice>
+        </element>
+        <element label="Owners" max_length="4000" name="x_citin_s2p_spoke_owners" reference="sys_user" type="glide_list"/>
+        <element label="Percent Complete" max_length="15" name="x_citin_s2p_spoke_percent_complete" type="percent_complete"/>
+        <element choice="1" label="Phase" max_length="40" name="x_citin_s2p_spoke_phase" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Builder: Processing" sequence="100" value="processing"/>
+                <element inactive_on_update="false" label="Builder: In Progress" sequence="200" value="in progress"/>
+                <element inactive_on_update="false" label="Under Review" sequence="300" value="under review"/>
+                <element inactive_on_update="false" label="Published" sequence="400" value="published"/>
+                <element inactive_on_update="false" label="Publication: Received Apps" sequence="500" value="received apps"/>
+                <element inactive_on_update="false" label="Evaluation" sequence="600" value="evaluation"/>
+            </choice>
+        </element>
+        <element label="Publish Date" max_length="40" name="x_citin_s2p_spoke_publish_date" type="glide_date"/>
+        <element choice="1" label="Purchase Class" max_length="40" name="x_citin_s2p_spoke_purchase_class" type="choice">
+            <choice/>
+        </element>
+        <element label="Reviewers" max_length="4000" name="x_citin_s2p_spoke_reviewers" reference="sys_user" type="glide_list"/>
+        <element label="Show LPA Options" max_length="40" name="x_citin_s2p_spoke_show_lpa_options" type="boolean"/>
+        <element attributes="start_locked=false" label="Solicitation Categories" max_length="4000" name="x_citin_s2p_spoke_solicitation_categories" type="glide_list"/>
+        <element label="Solicitation Sub-Categories" max_length="4000" name="x_citin_s2p_spoke_solicitation_sub_categories" type="glide_list"/>
+        <element choice="1" label="Solicitation Type" max_length="40" name="x_citin_s2p_spoke_solicitation_type" type="choice">
+            <choice/>
+        </element>
+        <element label="Submission End Date" max_length="40" name="x_citin_s2p_spoke_submission_end_date" type="glide_date"/>
+        <element label="Submission Start Date" max_length="40" name="x_citin_s2p_spoke_submission_start_date" type="glide_date"/>
+        <element label="Viewers" max_length="4000" name="x_citin_s2p_spoke_viewers" reference="sys_user" type="glide_list"/>
+    </element>
+</database>

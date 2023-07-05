@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fb35deb88777e910e1684047cebb35cb" extends="sys_import_set_row" label="DB Constants - Solicitation Vehicles" max_length="40" name="x_citin_s2p_spoke_db_constants_solicitation_vehi_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=abbreviation" label="abbreviation" max_length="40" name="u_abbreviation" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=copied_from_id" label="copied_from_id" max_length="40" name="u_copied_from_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=copied_reason" label="copied_reason" max_length="40" name="u_copied_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=created_at" label="created_at" max_length="40" name="u_created_at" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sort_order" label="sort_order" max_length="40" name="u_sort_order" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=team_id" label="team_id" max_length="40" name="u_team_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=updated_at" label="updated_at" max_length="40" name="u_updated_at" type="string"/>
+    </element>
+</database>

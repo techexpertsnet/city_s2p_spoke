@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a3dd77d887bb6910e1684047cebb35b6" extends="sys_import_set_row" label="Document Builder Constants Data Source" max_length="40" name="x_citin_s2p_spoke_db_constants_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes" label="attributes" max_length="145" name="u_attributes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes/created-at" label="attributes/created-at" max_length="40" name="u_attributes_created_at" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes/name" label="attributes/name" max_length="40" name="u_attributes_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes/object-type" label="attributes/object-type" max_length="40" name="u_attributes_object_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes/updated-at" label="attributes/updated-at" max_length="40" name="u_attributes_updated_at" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=type" label="type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

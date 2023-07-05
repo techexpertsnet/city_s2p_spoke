@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62da055c87bf2910e1684047cebb3597" extends="sys_import_set_row" label="DB Constants - Solicitation Types" max_length="40" name="x_citin_s2p_spoke_db_constants_solicitation_types_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=abbreviation" label="abbreviation" max_length="40" name="u_abbreviation" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=created-at" label="created-at" max_length="40" name="u_created_at" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=object-type" label="object-type" max_length="40" name="u_object_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=show-lpa-options" label="show-lpa-options" max_length="40" name="u_show_lpa_options" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=team-id" label="team-id" max_length="40" name="u_team_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=updated-at" label="updated-at" max_length="40" name="u_updated_at" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-28 20:56:33</sys_created_on>
+        <sys_id>04ea7c58877f2910e1684047cebb35c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_security_acl display_value="x_citin_s2p_spoke_db_constants_staging">c8ea7c58877f2910e1684047cebb35c1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_04ea7c58877f2910e1684047cebb35c5</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 21:09:25</sys_updated_on>
+        <sys_user_role display_value="x_citin_s2p_spoke.user" name="x_citin_s2p_spoke.user">a53672ae87af6110e1684047cebb35f5</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_security_acl_role_04ea7c58877f2910e1684047cebb35c5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-06-28 20:56:33</sys_created_on><sys_id>04ea7c58877f2910e1684047cebb35c5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_security_acl display_value="x_citin_s2p_spoke_db_constants_staging">c8ea7c58877f2910e1684047cebb35c1</sys_security_acl><sys_update_name>sys_security_acl_role_04ea7c58877f2910e1684047cebb35c5</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-06-28 21:09:25</sys_updated_on><sys_user_role display_value="x_citin_s2p_spoke.user" name="x_citin_s2p_spoke.user">a53672ae87af6110e1684047cebb35f5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>217935348</payload_hash>
+        <record_name>x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user</record_name>
+        <reverted_from/>
+        <source>c15c3fb3872be510e1684047cebb351d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-28 21:09:25</sys_created_on>
+        <sys_id>38dd385c877f2910e1684047cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18903d6f26e0000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 21:09:25</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>30dd385c067f2910d6d7c5f45611509c</update_guid>
+        <update_guid_history>30dd385c067f2910d6d7c5f45611509c:217935348,80ea7c58937f2910d6456f9a2e0c03c8:-1296197131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user">73a909d887bf2910e1684047cebb3515</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-28 22:01:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>5006fe180e6245929c9698a7fa9fbbe9</sys_id>
+        <sys_metadata>04ea7c58877f2910e1684047cebb35c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="">c8ea7c58877f2910e1684047cebb35c1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_04ea7c58877f2910e1684047cebb35c5</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_04ea7c58877f2910e1684047cebb35c5">38dd385c877f2910e1684047cebb359c</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 22:01:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

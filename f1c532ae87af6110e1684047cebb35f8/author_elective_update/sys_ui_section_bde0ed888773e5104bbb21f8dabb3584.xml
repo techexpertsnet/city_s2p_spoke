@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="bde0ed888773e5104bbb21f8dabb3584" sys_domain="global" table="sn_shop_sourcing_activity" version="3" view="city_innovate_sourcing_request">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>40a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>1</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>c0a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_owner</element>
+            <position>2</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>44a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>submitted_by</element>
+            <position>3</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>c4a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>48a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>5</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>c8a22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purchase</element>
+            <position>6</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>4ca22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>negotiation_event</element>
+            <position>7</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>cca22d0c8773e5104bbb21f8dabb353b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>40a22d0c8773e5104bbb21f8dabb353c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>9</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>c0a22d0c8773e5104bbb21f8dabb353c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cancellation_reason</element>
+            <position>10</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>44a22d0c8773e5104bbb21f8dabb353c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cancelled_by</element>
+            <position>11</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+            <sys_id>c4a22d0c8773e5104bbb21f8dabb353c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>sn_shop_sourcing_activity</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:04:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bde0ed888773e5104bbb21f8dabb3584</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_shop_sourcing_activity</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_section_bde0ed888773e5104bbb21f8dabb3584</sys_update_name>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:04:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="City Innovate Sourcing Request" name="city_innovate_sourcing_request">25e02d488773e5104bbb21f8dabb35a3</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_ui_section_bde0ed888773e5104bbb21f8dabb3584</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="bde0ed888773e5104bbb21f8dabb3584" sys_domain="global" table="sn_shop_sourcing_activity" version="3" view="city_innovate_sourcing_request"><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>40a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>1</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>c0a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_owner</element><position>2</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>44a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>submitted_by</element><position>3</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>c4a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>48a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>status</element><position>5</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>c8a22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>purchase</element><position>6</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>4ca22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>negotiation_event</element><position>7</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>cca22d0c8773e5104bbb21f8dabb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>40a22d0c8773e5104bbb21f8dabb353c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>9</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>c0a22d0c8773e5104bbb21f8dabb353c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cancellation_reason</element><position>10</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>44a22d0c8773e5104bbb21f8dabb353c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cancelled_by</element><position>11</position><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:11:44</sys_created_on><sys_id>c4a22d0c8773e5104bbb21f8dabb353c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="25e02d488773e5104bbb21f8dabb35a3">bde0ed888773e5104bbb21f8dabb3584</sys_ui_section><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:11:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>sn_shop_sourcing_activity</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-06-28 05:04:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bde0ed888773e5104bbb21f8dabb3584</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_shop_sourcing_activity</sys_name><sys_overrides/><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sys_ui_section_bde0ed888773e5104bbb21f8dabb3584</sys_update_name><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-06-28 05:04:11</sys_updated_on><sys_user/><title>false</title><view display_value="City Innovate Sourcing Request" name="city_innovate_sourcing_request">25e02d488773e5104bbb21f8dabb35a3</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1539373302</payload_hash>
+        <record_name>Sourcing Request</record_name>
+        <reverted_from/>
+        <source>56b0f623872b65104bbb21f8dabb3512</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-06-28 05:11:44</sys_created_on>
+        <sys_id>4ca22d0c8773e5104bbb21f8dabb353e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189006a27bc0000001</sys_recorded_at>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 05:11:44</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>04a22d0c5573e510fab17f7704b3e53e</update_guid>
+        <update_guid_history>04a22d0c5573e510fab17f7704b3e53e:1539373302,e162290c1c73e510062975bde3fb5c06:622612135,f1e0ed885b73e510decb07019e9d1a8a:1539373302</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-06-28 06:02:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>6e92600ad28347bcb921c82caad22329</sys_id>
+        <sys_metadata>bde0ed888773e5104bbb21f8dabb3584</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_shop_sourcing_activity</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="Sn Shop Sourcing Activity">bc1383f787cfa1104bbb21f8dabb3514</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_ui_section_bde0ed888773e5104bbb21f8dabb3584</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_bde0ed888773e5104bbb21f8dabb3584">4ca22d0c8773e5104bbb21f8dabb353e</sys_update_version>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-06-28 06:02:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

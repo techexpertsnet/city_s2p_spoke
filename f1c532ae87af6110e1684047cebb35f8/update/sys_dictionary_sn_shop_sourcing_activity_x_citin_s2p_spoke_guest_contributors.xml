@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>enea@cityinnovate.com</sys_created_by>
         <sys_created_on>2023-06-26 21:43:50</sys_created_on>
-        <sys_id>fd81f663872b65104bbb21f8dabb3518</sys_id>
         <sys_name>Guest Contributors</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>

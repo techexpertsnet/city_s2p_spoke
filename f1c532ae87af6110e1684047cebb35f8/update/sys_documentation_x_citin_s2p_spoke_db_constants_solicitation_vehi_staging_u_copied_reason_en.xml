@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_copied_reason" label="copied_reason" language="en" table="x_citin_s2p_spoke_db_constants_solicitation_vehi_staging">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_copied_reason</element>
+            <help/>
+            <hint/>
+            <label>copied_reason</label>
+            <language>en</language>
+            <name>x_citin_s2p_spoke_db_constants_solicitation_vehi_staging</name>
+            <plural>copied_reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-06-30 16:48:21</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>copied_reason</sys_name>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_documentation_x_citin_s2p_spoke_db_constants_solicitation_vehi_staging_u_copied_reason_en</sys_update_name>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-06-30 16:48:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
