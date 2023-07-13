@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-07 16:48:57</sys_created_on>
+        <sys_id>8188920f87b36110e1684047cebb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>ua_table_licensing_config_8188920f87b36110e1684047cebb353f</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-07 16:48:57</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>ua_table_licensing_config_8188920f87b36110e1684047cebb353f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-07-07 16:48:57</sys_created_on><sys_id>8188920f87b36110e1684047cebb353f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>ua_table_licensing_config_8188920f87b36110e1684047cebb353f</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-07-07 16:48:57</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>1110327713</payload_hash>
+        <record_name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</record_name>
+        <reverted_from/>
+        <source>a0794503873321104bbb21f8dabb353f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-07-07 11:03:30</sys_created_on>
+        <sys_id>b7b89a4f87b36110e1684047cebb358e</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18930056fd00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Table Subscription Configuration</type>
+        <update_guid>77b89a4f59b361107073fa46ed46478e</update_guid>
+        <update_guid_history>77b89a4f59b361107073fa46ed46478e:1110327713</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-08 13:25:16</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>11c5717a3e6b479f84f66205da73b741</sys_id>
+        <sys_metadata>8188920f87b36110e1684047cebb353f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_db_constants_purchasing_agencies_staging</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_8188920f87b36110e1684047cebb353f</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_8188920f87b36110e1684047cebb353f">b7b89a4f87b36110e1684047cebb358e</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-08 13:25:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

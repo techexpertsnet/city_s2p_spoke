@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Document Builder Constants Data Source</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_citin_s2p_spoke_db_constants_staging</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-29 11:08:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bfddb7d887bb6910e1684047cebb3515</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Document Builder Constants Data Source</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_app_module_bfddb7d887bb6910e1684047cebb3515</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-29 11:08:30</sys_updated_on>
+        <timeline_page/>
+        <title>Document Builder Constants Data Source</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_app_module_bfddb7d887bb6910e1684047cebb3515</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Document Builder Constants Data Source</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_citin_s2p_spoke_db_constants_staging</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-06-29 11:08:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bfddb7d887bb6910e1684047cebb3515</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Document Builder Constants Data Source</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_app_module_bfddb7d887bb6910e1684047cebb3515</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-06-29 11:08:30</sys_updated_on>
+        <timeline_page/>
+        <title>Document Builder Constants Data Source</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>]]></payload>
+        <payload_hash>676863634</payload_hash>
+        <record_name>Document Builder Constants Data Source</record_name>
+        <reverted_from/>
+        <source>5788960f87b36110e1684047cebb35a0</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-07 16:49:46</sys_created_on>
+        <sys_id>70b8964f87b36110e1684047cebb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189314275810000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-07 16:49:46</sys_updated_on>
+        <type>Module</type>
+        <update_guid>30b8964f3fb36110ffa92f66d60f8a1b</update_guid>
+        <update_guid_history>30b8964f3fb36110ffa92f66d60f8a1b:676863634</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Document Builder Constants Data Source">5bc07a5f87f361104bbb21f8dabb35b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-08 13:13:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>545e97d2bdd64260a9026b8484ea2400</sys_id>
+        <sys_metadata>bfddb7d887bb6910e1684047cebb3515</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Document Builder Constants Data Source</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_app_module_bfddb7d887bb6910e1684047cebb3515</sys_update_name>
+        <sys_update_version display_value="sys_app_module_bfddb7d887bb6910e1684047cebb3515">70b8964f87b36110e1684047cebb351b</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-08 13:13:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

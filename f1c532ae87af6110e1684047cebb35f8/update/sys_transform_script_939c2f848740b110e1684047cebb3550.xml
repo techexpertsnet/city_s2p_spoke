@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Procurement Official ID">444ef208878c7110e1684047cebb355a</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+	var attributes = source.getValue("u_attributes");
+	var sol_details = JSON.parse(attributes);
+	var src_email = sol_details['email'];	
+	if(src_email != '') {
+		//Ignore the import if the User with that email doesn't exist
+		var usr = new GlideRecordSecure('sys_user');
+		usr.addQuery('email',src_email);
+		usr.query();
+		if(!usr.next()){			
+			ignore = true;			
+		}
+	}
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-11 01:36:37</sys_created_on>
+        <sys_id>939c2f848740b110e1684047cebb3550</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_transform_script_939c2f848740b110e1684047cebb3550</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-11 02:01:48</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

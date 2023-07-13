@@ -19,7 +19,7 @@
 				<div data-type="label" type="string" id="label.sr.readonly" nowrap="true">
 					<label class="control-label" for="sourcing_request">Sourcing Request</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
+				<div class="input-group-addon input-group-select" style="min-width:400px;">
 					<input class="form-control" type="text" id="sourcing_request" name="sourcing_request" value="${sr.number}" readonly="true"/>
 				</div>								
 			</div>		
@@ -27,56 +27,100 @@
 				<div data-type="label" type="string" id="label.name" nowrap="true">
 					<label class="control-label" for="name">Name</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="name" name="name" />
+				<div class="input-group-addon input-group-select" style="min-width:400px;">
+					<input class="form-control" type="text" id="name" name="name" value="${sr.short_description}" readonly="true"/>					
 				</div>								
 			</div>
 			<div id="initialworkflow_group" class="form-group">
 				<div data-type="label" type="string" id="label.initialworkflow" nowrap="true">
 					<label class="control-label" for="initialworkflow">Initial Workflow</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="initialworkflow" name="initialworkflow" />
+				<div class="input-group-addon input-group-select" style="min-width:400px;">
+					<input class="form-control" type="text" id="initialworkflow" name="initialworkflow" value="Solicitation" readonly="true"/>
 				</div>								
 			</div>
 			<div id="owner_group" class="form-group">
 				<div data-type="label" type="string" id="label.owner" nowrap="true">
 					<label class="control-label" for="owner">Owner</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="owner" name="owner" />
+				<div class="input-group-addon input-group-select" style="min-width:400px;">
+					<input class="form-control" type="text" id="owner" name="owner" value="${sr.assigned_to.name}" readonly="true"/>					
 				</div>								
 			</div>
+			
+			
 			<div id="purchaseclass_group" class="form-group">
 				<div data-type="label" type="string" id="label.purchaseclass" nowrap="true">
 					<label class="control-label" for="purchaseclass">Purchase Class</label>
-				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="purchaseclass" name="purchaseclass" />
-				</div>								
+				</div>
+				<div class="form-field input_controls">					
+					<g:evaluate jelly = "true">
+						 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+						 sta.addEncodedQuery('type=purchase class');
+						 sta.query();
+					</g:evaluate>
+					<select id="purchaseclass" name="purchaseclass" class="form-control" style="min-width:400px;">
+						<j:while test="${sta.next()}">		
+						  <option value="${sta.value}">${sta.name}</option>
+						</j:while>						
+					</select>					
+				</div>											
 			</div>
+			
+			
 			<div id="solicitationtype_group" class="form-group">
 				<div data-type="label" type="string" id="label.solicitationtype" nowrap="true">
 					<label class="control-label" for="solicitationtype">Solicitation Type</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="solicitationtype" name="solicitationtype" />
+				<div class="form-field input_controls">					
+					<g:evaluate jelly = "true">
+						 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+						 sta.addEncodedQuery('type=solicitation type');
+						 sta.query();
+					</g:evaluate>
+					<select id="solicitationtype" name="solicitationtype" class="form-control" style="min-width:400px;">
+						<j:while test="${sta.next()}">		
+						  <option value="${sta.value}">${sta.name}</option>
+						</j:while>						
+					</select>					
 				</div>								
 			</div>
+			
+			
 			<div id="solicitationcategories_group" class="form-group">
 				<div data-type="label" type="string" id="label.solicitationcategories" nowrap="true">
 					<label class="control-label" for="solicitationcategories">Solicitation Categories</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="solicitationcategories" name="solicitationcategories" />
+				<div class="form-field input_controls">					
+					<g:evaluate jelly = "true">
+						 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+						 sta.addEncodedQuery('type=category');
+						 sta.query();
+					</g:evaluate>
+					<select id="solicitationcategories" name="solicitationcategories" class="form-control" style="min-width:400px;">
+						<j:while test="${sta.next()}">		
+						  <option value="${sta.value}">${sta.name}</option>
+						</j:while>						
+					</select>					
 				</div>								
 			</div>
+			
+			
 			<div id="leveragedprocurementagreement_group" class="form-group">
 				<div data-type="label" type="string" id="label.leveragedprocurementagreement" nowrap="true">
 					<label class="control-label" for="leveragedprocurementagreement">Leveraged Procurement Agreement</label>
 				</div>				
-				<div class="input-group-addon input-group-select" style="min-width:20px;">
-					<input class="form-control" type="text" id="leveragedprocurementagreement" name="leveragedprocurementagreement" />
+				<div class="form-field input_controls">					
+					<g:evaluate jelly = "true">
+						 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+						 sta.addEncodedQuery('type=solicitations vehicles');
+						 sta.query();
+					</g:evaluate>
+					<select id="leveragedprocurementagreement" name="leveragedprocurementagreement" class="form-control" style="min-width:400px;">
+						<j:while test="${sta.next()}">		
+						  <option value="${sta.value}">${sta.name}</option>
+						</j:while>						
+					</select>					
 				</div>								
 			</div>			
 		</div>
@@ -93,13 +137,13 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-06-27 14:17:54</sys_created_on>
         <sys_id>cab5d6378763e510e1684047cebb357d</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>create_ci_project</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_ui_page_cab5d6378763e510e1684047cebb357d</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-06-27 21:31:13</sys_updated_on>
+        <sys_updated_on>2023-07-10 20:44:41</sys_updated_on>
     </sys_ui_page>
 </record_update>

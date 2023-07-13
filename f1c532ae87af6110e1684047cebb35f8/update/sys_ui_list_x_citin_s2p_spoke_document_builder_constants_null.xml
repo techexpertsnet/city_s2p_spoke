@@ -3,92 +3,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2445482487fb6910e1684047cebb350b</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>9b597e57873761104bbb21f8dabb359a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>type</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2c45482487fb6910e1684047cebb350b</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>1f597e57873761104bbb21f8dabb359a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>value</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2045482487fb6910e1684047cebb350c</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>9f597e57873761104bbb21f8dabb359a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>source</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <element>abbreviation</element>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2445482487fb6910e1684047cebb350c</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>13597e57873761104bbb21f8dabb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>team_id</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <element>parent</element>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2845482487fb6910e1684047cebb350c</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>93597e57873761104bbb21f8dabb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>parent</element>
-            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e045482487fb6910e1684047cebb350a</list_id>
+            <element>show_lpa_options</element>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
-            <sys_id>2c45482487fb6910e1684047cebb350c</sys_id>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>17597e57873761104bbb21f8dabb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>team_id</element>
+            <list_id display_value="x_citin_s2p_spoke_document_builder_constants" element="NULL" name="x_citin_s2p_spoke_document_builder_constants" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df597e57873761104bbb21f8dabb3599</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
+            <sys_id>97597e57873761104bbb21f8dabb359b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,10 +117,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:40:46</sys_created_on>
+            <sys_created_on>2023-07-08 13:50:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e045482487fb6910e1684047cebb350a</sys_id>
+            <sys_id>df597e57873761104bbb21f8dabb3599</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_citin_s2p_spoke_document_builder_constants</sys_name>
             <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -113,7 +128,7 @@
             <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
             <sys_update_name>sys_ui_list_x_citin_s2p_spoke_document_builder_constants_null</sys_update_name>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:40:46</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:50:58</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

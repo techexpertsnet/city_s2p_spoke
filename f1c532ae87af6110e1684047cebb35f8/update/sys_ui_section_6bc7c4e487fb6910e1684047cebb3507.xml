@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="6bc7c4e487fb6910e1684047cebb3507" sys_domain="global" table="x_citin_s2p_spoke_document_builder_constants" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>type</element>
+            <element>name</element>
             <position>0</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>2bc7c4e487fb6910e1684047cebb350c</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>590a7a97873761104bbb21f8dabb35ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>name</element>
+            <element>type</element>
             <position>1</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>23c7c4e487fb6910e1684047cebb350d</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>d90a7a97873761104bbb21f8dabb35ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,125 +32,83 @@
             <element>value</element>
             <position>2</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>27c7c4e487fb6910e1684047cebb350d</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>5d0a7a97873761104bbb21f8dabb35ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>source</element>
+            <element>parent</element>
             <position>3</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>2bc7c4e487fb6910e1684047cebb350d</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>dd0a7a97873761104bbb21f8dabb35ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>4</position>
-            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>2fc7c4e487fb6910e1684047cebb350d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
-            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>team_id</element>
-            <position>5</position>
-            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>23c7c4e487fb6910e1684047cebb350e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
-            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>4</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>27c7c4e487fb6910e1684047cebb350e</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>510a7a97873761104bbb21f8dabb35bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>parent</element>
-            <position>7</position>
+            <element>abbreviation</element>
+            <position>5</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>2bc7c4e487fb6910e1684047cebb350e</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>d10a7a97873761104bbb21f8dabb35bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>8</position>
+            <element>team_id</element>
+            <position>6</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 11:51:54</sys_created_on>
-            <sys_id>2fc7c4e487fb6910e1684047cebb350e</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>550a7a97873761104bbb21f8dabb35bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 11:51:54</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>abbreviation</element>
-            <position>9</position>
-            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 18:11:56</sys_created_on>
-            <sys_id>2ace51e08773a910e1684047cebb3593</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
-            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 18:11:56</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>show_lpa_options</element>
-            <position>10</position>
+            <position>7</position>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-06-29 18:12:56</sys_created_on>
-            <sys_id>9d0f59e08773a910e1684047cebb35ab</sys_id>
+            <sys_created_on>2023-07-08 13:53:50</sys_created_on>
+            <sys_id>d50a7a97873761104bbb21f8dabb35bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_document_builder_constants" sys_domain="global" view="Default view">6bc7c4e487fb6910e1684047cebb3507</sys_ui_section>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-06-29 18:12:56</sys_updated_on>
+            <sys_updated_on>2023-07-08 13:53:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
