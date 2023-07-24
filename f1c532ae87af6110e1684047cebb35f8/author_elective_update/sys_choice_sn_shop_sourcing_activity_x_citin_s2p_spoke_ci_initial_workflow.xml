@@ -20,57 +20,20 @@
             <element>x_citin_s2p_spoke_ci_initial_workflow</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Temp Workflow 1</label>
+            <label>Solicitation</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
             <sequence>100</sequence>
             <synonyms/>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
-            <sys_created_on>2023-06-28 05:07:36</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 05:07:36</sys_updated_on>
-            <value>temworkflow1</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>x_citin_s2p_spoke_ci_initial_workflow</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Temp Workflow 2</label>
-            <language>en</language>
-            <name>sn_shop_sourcing_activity</name>
-            <sequence>200</sequence>
-            <synonyms/>
-            <sys_created_by>enea@cityinnovate.com</sys_created_by>
-            <sys_created_on>2023-06-28 05:07:42</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 05:07:42</sys_updated_on>
-            <value>temworkflow2</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>x_citin_s2p_spoke_ci_initial_workflow</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Temp Workflow 3</label>
-            <language>en</language>
-            <name>sn_shop_sourcing_activity</name>
-            <sequence>300</sequence>
-            <synonyms/>
-            <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 05:07:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>3cddde8d87047110e1684047cebb356e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 05:07:48</sys_updated_on>
-            <value>temworkflow3</value>
+            <sys_updated_on>2023-07-18 18:32:06</sys_updated_on>
+            <value>solicitation</value>
         </sys_choice>
     </sys_choice>
 </record_update>

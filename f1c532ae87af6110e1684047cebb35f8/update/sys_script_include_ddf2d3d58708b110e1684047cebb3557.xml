@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_citin_s2p_spoke.SolicitationUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This Script Includes contains functions used to pull or push data to CI Document Builder from ServiceNow Client</description>
+        <name>SolicitationUtils</name>
+        <script><![CDATA[var SolicitationUtils = Class.create();
+SolicitationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	createSolicitation: function() {
+		var result = this.newItem("result");
+		var jsonPayload = this.getParameter('sysparm_jsonPayload');
+		var json_obj = JSON.parse(jsonPayload);
+		try {
+			var inputs = {};
+			inputs['project_name'] = json_obj.projectname;
+			inputs['procurement_official_id'] = json_obj.official_id;
+			inputs['solicitation_type_id'] = json_obj.solicitationtype;
+			inputs['purchase_class_id'] = json_obj.purchaseclass;
+			//Convert categories array from sys_ids to values
+			var catValues = [];
+			for (let i = 0; i < json_obj.categories.length; i++) {
+				var grCat = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+				if(grCat.get(json_obj.categories[i])) 
+					catValues.push(grCat.value);
+			}
+			inputs['category_ids'] = catValues.toString();
+			//Convert subcategories array from sys_ids to values
+			var subcatValues = [];
+			for (let i = 0; i < json_obj.subcategories.length; i++) {
+				var grSubcat = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+				if(grSubcat.get(json_obj.subcategories[i])) 
+					subcatValues.push(grSubcat.value);
+			}
+			inputs['subcategory_ids'] = subcatValues.toString();
+			inputs['vehicle_id'] = json_obj.leveragedprocurementagreement;
+
+			gs.info("x_citin_s2p_spoke.SolicitationUtils Inputs json:"+JSON.stringify(inputs));
+			// Execute Synchronously: Run in foreground.
+			var out = sn_fd.FlowAPI.getRunner().subflow('x_citin_s2p_spoke.create_solicitation_subflow').inForeground().withInputs(inputs).run();
+			var outputs = out.getOutputs();
+			
+			//Update Sourcing Activity Record
+			this.updateSourcingActivity(json_obj.sourcing_activity_sysid, outputs);
+			
+			result.setAttribute("apiReturnJSON",JSON.stringify(outputs)); 
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+			result.setAttribute("apiReturnJSON","Error"); 
+		}
+	},
+	updateSourcingActivity: function(srcId, outputJson) {
+		gs.info("x_citin_s2p_spoke.SolicitationUtils:_updateSourcingActivity:srcId="+srcId+";outputJson="+JSON.stringify(outputJson));
+		var grSourcingActivity = new GlideRecordSecure("sn_shop_sourcing_activity");
+		if(grSourcingActivity.get(srcId)){
+			//Set the sys_id for Purchase Class Id if output is not empty
+			if(outputJson["purchase_class_id_out"] != null) {
+				var pcGr = new GlideRecordSecure("x_citin_s2p_spoke_document_builder_constants");
+				pcGr.addQuery("value",outputJson["purchase_class_id_out"]);
+				pcGr.addQuery("type","purchase class");
+				pcGr.query();
+				if(pcGr.next()) {
+					grSourcingActivity.x_citin_s2p_spoke_purchase_class=pcGr.sys_id;
+					gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_purchase_class to "+pcGr.sys_id);
+				}
+			}
+			//Set the sys_id for Solicitation Type and LPA Options
+			if(outputJson["type_id_out"] != null) {
+				var stGr = new GlideRecordSecure("x_citin_s2p_spoke_document_builder_constants");
+				stGr.addQuery("value",outputJson["type_id_out"]);
+				stGr.addQuery("type","solicitation type");
+				stGr.query();
+				if(stGr.next()) {
+					grSourcingActivity.x_citin_s2p_spoke_solicitation_type=stGr.sys_id;
+					gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_solicitation_type to "+stGr.sys_id);
+					if(stGr.show_lpa_options)
+						grSourcingActivity.x_citin_s2p_spoke_show_lpa_options="true";
+				}
+			}
+			//Set the Project ID
+			if(outputJson["project_id_out"] != null) {
+				grSourcingActivity.x_citin_s2p_spoke_ci_project_id=outputJson["project_id_out"];
+				gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_ci_project_id to "+outputJson["project_id_out"]);
+			}
+			
+			//Set the Leveraged Procurement Agreement			
+			if(outputJson["solicitation_vehicle_id_out"] !=null) {
+				var lpaGr = new GlideRecordSecure("x_citin_s2p_spoke_document_builder_constants");
+				lpaGr.addQuery("value",outputJson["solicitation_vehicle_id_out"]);
+				lpaGr.addQuery("type","solicitations vehicles");
+				lpaGr.query();
+				if(lpaGr.next()) {
+					grSourcingActivity.x_citin_s2p_spoke_leveraged_procurement_agreement=lpaGr.sys_id;
+					gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_leveraged_procurement_agreement to "+lpaGr.sys_id);
+				}
+			}
+			
+			//Set the Initial Workflow
+			grSourcingActivity.x_citin_s2p_spoke_ci_initial_workflow="solicitation";
+			
+			//Set CI Portal Link
+			grSourcingActivity.x_citin_s2p_spoke_ci_portal_link=outputJson["connection_url"] + "/account/stage_projects/" + outputJson["stage_project_id_out"];
+			
+			//Set the categories
+			if(outputJson["solicitation_category_ids_out"] != null) {
+				var catGr = new GlideRecordSecure("x_citin_s2p_spoke_document_builder_constants");
+				var catArray = outputJson["solicitation_category_ids_out"];
+				var catQuery = 'type=category';
+				for (i=0; i<catArray.length; i++) {
+					if(i==0) 
+						catQuery = catQuery+'^value='+ catArray[i];
+					else 
+						catQuery = catQuery+'^ORvalue='+ catArray[i];
+				}
+				catGr.addEncodedQuery(catQuery);
+				catGr.query();
+				var catSysidArray = [];
+				while(catGr.next()) {
+					catSysidArray.push(catGr.sys_id+'');
+				}
+				grSourcingActivity.x_citin_s2p_spoke_solicitation_categories=catSysidArray.toString();
+				gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_solicitation_categories to "+catSysidArray.toString());
+			}
+			
+			//Set the subcategories
+			if(outputJson["solicitation_subcategory_ids_out"] !=null ) {
+				var subcatGr = new GlideRecordSecure("x_citin_s2p_spoke_document_builder_constants");
+				var subcatArray = outputJson["solicitation_subcategory_ids_out"];
+				var subcatQuery = 'type=subcategory';
+				for (j=0; j<subcatArray.length; j++) {
+					if(j==0) 
+						subcatQuery = subcatQuery+'^value='+ subcatArray[j];
+					else 
+						subcatQuery = subcatQuery+'^ORvalue='+ subcatArray[j];
+				}
+				subcatGr.addEncodedQuery(subcatQuery);
+				subcatGr.query();
+				var subcatSysidArray = [];
+				while(subcatGr.next()) {
+					subcatSysidArray.push(subcatGr.sys_id+'');
+				}
+				grSourcingActivity.x_citin_s2p_spoke_solicitation_sub_categories=subcatSysidArray.toString();
+				gs.info("x_citin_s2p_spoke.SolicitationUtils:updateSourcingActivity:Setting x_citin_s2p_spoke_solicitation_sub_categories to "+subcatSysidArray.toString());
+			}
+			grSourcingActivity.update();
+				/*
+				//Attributes left to map
+				<x_citin_s2p_spoke_owners/>
+				
+				//Atributes not going to be mapped at creation
+				<x_citin_s2p_spoke_percent_complete/>
+				<x_citin_s2p_spoke_phase/>
+				<x_citin_s2p_spoke_publish_date/>				
+				<x_citin_s2p_spoke_reviewers/>				
+				<x_citin_s2p_spoke_submission_end_date/>
+				<x_citin_s2p_spoke_submission_start_date/>
+				<x_citin_s2p_spoke_viewers/>
+				*/
+		}
+	},
+    type: 'SolicitationUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-14 20:52:21</sys_created_on>
+        <sys_id>ddf2d3d58708b110e1684047cebb3557</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>SolicitationUtils</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_script_include_ddf2d3d58708b110e1684047cebb3557</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-21 22:49:44</sys_updated_on>
+    </sys_script_include>
+</record_update>
