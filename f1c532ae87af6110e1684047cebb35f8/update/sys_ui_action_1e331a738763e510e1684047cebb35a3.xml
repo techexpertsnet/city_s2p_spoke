@@ -31,17 +31,49 @@
         <onclick>createCIProject()</onclick>
         <order>100</order>
         <script><![CDATA[//Client-side 'onclick' function
+
 function createCIProject() {
-    popupDispList();
-    return true;
+    var fields = ['number', 'assigned_to', 'short_description', 'x_citin_s2p_spoke_ci_initial_workflow'];
+    var fieldLabels = {
+        'number': 'Number',
+        'assigned_to': 'Assigned To',
+        'short_description': 'Short Description',
+        'x_citin_s2p_spoke_ci_initial_workflow': 'CI Initial Workflow'
+    };
+    var missing_fields = [];
+
+    if (g_form.modified) {
+        g_form.addErrorMessage("Values on the form have changed.\nPlease save the form before continuing.");
+        return;
+    }
+
+    for (var i = 0; i < fields.length; i++) {
+        var fieldName = fields[i];
+        var fieldValue = g_form.getValue(fieldName);
+        var fieldLabel = fieldLabels[fieldName];
+
+        if (fieldValue === "" || fieldValue === null) {
+            missing_fields.push(fieldLabel);
+        }
+    }
+
+    if (missing_fields.length > 0) {
+        var errorMessage = "The following mandatory fields are missing: " + missing_fields.join(", ") + ". Please fill these fields out before moving forward.";
+        g_form.addErrorMessage(errorMessage);
+        return;
+    } else {
+        popupDispList();
+        return true;
+    }
 }
+
 
 function popupDispList() {
     //Initialize the GlideDialogWindow	
-	var gdw = new GlideDialogWindow('x_citin_s2p_spoke_create_ci_project');
+    var gdw = new GlideDialogWindow('x_citin_s2p_spoke_create_ci_project');
     gdw.setTitle('Create CI Project');
-	gdw.setSize(420,700);    
-	gdw.setPreference('sr_sys_id', g_form.getUniqueValue());    	
+    gdw.setSize(420, 700);
+    gdw.setPreference('sr_sys_id', g_form.getUniqueValue());
     //Open the dialog window
     gdw.render();
 }]]></script>
@@ -55,7 +87,7 @@ function popupDispList() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e331a738763e510e1684047cebb35a3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Create CI Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -63,7 +95,7 @@ function popupDispList() {
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_ui_action_1e331a738763e510e1684047cebb35a3</sys_update_name>
         <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-        <sys_updated_on>2023-07-18 21:06:24</sys_updated_on>
+        <sys_updated_on>2023-08-01 18:00:18</sys_updated_on>
         <table>sn_shop_sourcing_activity</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

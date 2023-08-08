@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>x_citin_s2p_spoke_publish_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-25 18:27:47</sys_created_on>
+        <sys_id>a2bb1bfc879cbd104bbb21f8dabb3502</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_publish_date</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a2bb1bfc879cbd104bbb21f8dabb3502</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:27:47</sys_updated_on>
+        <table>sn_shop_sourcing_activity</table>
+        <ui_policy display_value="City - Set all CI fields to read only">17ead3bc879cbd104bbb21f8dabb3541</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_ui_policy_action_a2bb1bfc879cbd104bbb21f8dabb3502</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>x_citin_s2p_spoke_publish_date</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>enea@cityinnovate.com</sys_created_by><sys_created_on>2023-07-25 18:27:47</sys_created_on><sys_id>a2bb1bfc879cbd104bbb21f8dabb3502</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_citin_s2p_spoke_publish_date</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sys_ui_policy_action_a2bb1bfc879cbd104bbb21f8dabb3502</sys_update_name><sys_updated_by>enea@cityinnovate.com</sys_updated_by><sys_updated_on>2023-07-25 18:27:47</sys_updated_on><table>sn_shop_sourcing_activity</table><ui_policy display_value="City - Set all CI fields to read only">17ead3bc879cbd104bbb21f8dabb3541</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1434997560</payload_hash>
+        <record_name>x_citin_s2p_spoke_publish_date</record_name>
+        <reverted_from/>
+        <source>567f26a0879c7d104bbb21f8dabb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-25 18:27:47</sys_created_on>
+        <sys_id>cccbd7fc879cbd104bbb21f8dabb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1898e4eaad70000001</sys_recorded_at>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:27:47</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>08cbd7fc8d9cbd1081fb2584b224f35d</update_guid>
+        <update_guid_history>08cbd7fc8d9cbd1081fb2584b224f35d:-1434997560</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-25 18:28:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>4a41eb46914143f695d93b64bca23529</sys_id>
+        <sys_metadata>a2bb1bfc879cbd104bbb21f8dabb3502</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke_publish_date</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="City - Set all CI fields to read only">17ead3bc879cbd104bbb21f8dabb3541</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_a2bb1bfc879cbd104bbb21f8dabb3502</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_a2bb1bfc879cbd104bbb21f8dabb3502">cccbd7fc879cbd104bbb21f8dabb355d</sys_update_version>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:28:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="sn_shop_sourcing_activity">x_citin_s2p_spoke_solicitation_categoriesISEMPTY^EQ<item endquery="false" field="x_citin_s2p_spoke_solicitation_categories" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </conditions>
+        <conditions/>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
@@ -21,22 +19,22 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>City - Make subcategories readonly until a category is selected</short_description>
+        <short_description>City - Set all CI fields to read only</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>enea@cityinnovate.com</sys_created_by>
-        <sys_created_on>2023-07-17 22:43:56</sys_created_on>
+        <sys_created_on>2023-07-25 18:24:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5569431a87c0b5104bbb21f8dabb35b8</sys_id>
+        <sys_id>17ead3bc879cbd104bbb21f8dabb3541</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>City - Make subcategories readonly until a category is selected</sys_name>
+        <sys_name>City - Set all CI fields to read only</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
-        <sys_update_name>sys_ui_policy_5569431a87c0b5104bbb21f8dabb35b8</sys_update_name>
+        <sys_update_name>sys_ui_policy_17ead3bc879cbd104bbb21f8dabb3541</sys_update_name>
         <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-        <sys_updated_on>2023-07-17 22:43:56</sys_updated_on>
+        <sys_updated_on>2023-07-25 18:24:25</sys_updated_on>
         <table>sn_shop_sourcing_activity</table>
         <ui_type>0</ui_type>
         <view/>
