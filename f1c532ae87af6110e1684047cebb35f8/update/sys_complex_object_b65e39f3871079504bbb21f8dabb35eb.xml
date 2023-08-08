@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf25e39f3e6107950825805a6439057eb</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>f1c532ae87af6110e1684047cebb35f8</scope_name>
+        <serialized_content>{"FlowDesigner:FDf25e39f3e6107950825805a6439057eb":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDf25e39f3e6107950825805a6439057eb.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Guest Contributors\",\"mandatory\":\"false\",\"child_name\":\"guest_contributors_child0\",\"uiUniqueId\":\"48ef8b7b-e959-4247-9f94-7357221292e6\",\"uiTypeLabel\":\"String\",\"co_type_name\":\"FDf25e39f3e6107950825805a6439057eb\",\"child_label\":\"Guest Contributors_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"string\",\"child_type\":\"string\",\"order\":\"5\",\"max_length\":\"0\",\"child_uiUniqueId\":\"f4007336-4aae-4471-970f-248eb9f52925\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-03 19:21:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b65e39f3871079504bbb21f8dabb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDf25e39f3e6107950825805a6439057eb</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_complex_object_b65e39f3871079504bbb21f8dabb35eb</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-03 19:21:30</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
