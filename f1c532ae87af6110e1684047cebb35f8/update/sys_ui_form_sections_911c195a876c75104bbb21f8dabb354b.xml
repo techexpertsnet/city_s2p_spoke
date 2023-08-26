@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="911c195a876c75104bbb21f8dabb354b" sys_domain="global" table="x_citin_s2p_spoke_file_metadata" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-08-11 11:16:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e11c195a876c75104bbb21f8dabb354e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_citin_s2p_spoke_file_metadata" name="x_citin_s2p_spoke_file_metadata" sys_domain="global" view="Default view">911c195a876c75104bbb21f8dabb354b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_citin_s2p_spoke_file_metadata" sys_domain="global" view="Default view">76fa96ce87a075104bbb21f8dabb35be</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-08-11 11:16:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-08-11 11:16:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad1c195a876c75104bbb21f8dabb354e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_citin_s2p_spoke_file_metadata" name="x_citin_s2p_spoke_file_metadata" sys_domain="global" view="Default view">911c195a876c75104bbb21f8dabb354b</sys_ui_form>
+            <sys_ui_section caption="File Export" display_value="File Export" name="x_citin_s2p_spoke_file_metadata" sys_domain="global" view="Default view">151c195a876c75104bbb21f8dabb3549</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-08-11 11:16:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_citin_s2p_spoke_file_metadata</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-08-11 11:16:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>911c195a876c75104bbb21f8dabb354b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_citin_s2p_spoke_file_metadata</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_form_sections_911c195a876c75104bbb21f8dabb354b</sys_update_name>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-08-11 11:16:34</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

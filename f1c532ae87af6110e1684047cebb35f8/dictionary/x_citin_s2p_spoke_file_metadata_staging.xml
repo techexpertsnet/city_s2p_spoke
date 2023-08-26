@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="21841a0a87a075104bbb21f8dabb3569" extends="sys_import_set_row" label="File Metadata Data Source" max_length="40" name="x_citin_s2p_spoke_file_metadata_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=attributes" label="attributes" max_length="325" name="u_attributes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=type" label="type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

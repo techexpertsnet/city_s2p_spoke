@@ -6,10 +6,10 @@
         <condition/>
         <conditional>false</conditional>
         <connection_override/>
-        <data_source display_value="File Metadata Data Source">94f052c287a075104bbb21f8dabb35c2</data_source>
+        <data_source display_value="DB Constants - Purchase Classes">253a0d9887bf2910e1684047cebb352b</data_source>
         <entered_time/>
         <map/>
-        <name>File Metadata Import Schedule</name>
+        <name>Solicitation Purchase Classes Schedule</name>
         <offset/>
         <offset_type>0</offset_type>
         <order/>
@@ -44,16 +44,16 @@
         <synchronize_inserts>true</synchronize_inserts>
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-07-08 14:03:54</sys_created_on>
-        <sys_id>385cfa1b873761104bbb21f8dabb352f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>File Metadata Import Schedule</sys_name>
+        <sys_created_on>2023-08-17 21:20:55</sys_created_on>
+        <sys_id>60ff56d087b8bd10e1684047cebb3540</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Solicitation Purchase Classes Schedule</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
-        <sys_update_name>scheduled_import_set_385cfa1b873761104bbb21f8dabb352f</sys_update_name>
+        <sys_update_name>scheduled_import_set_60ff56d087b8bd10e1684047cebb3540</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-17 21:20:46</sys_updated_on>
+        <sys_updated_on>2023-08-23 18:30:19</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_child_connection>false</use_child_connection>

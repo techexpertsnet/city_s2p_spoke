@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e11cce4e876075104bbb21f8dabb3584" label="File Metadata" max_length="40" name="x_citin_s2p_spoke_file_metadata" type="collection">
+        <element label="Attachment" max_length="32" name="attachment" reference="sys_attachment" type="reference"/>
+        <element label="Checksum" max_length="256" name="checksum" read_only="true" type="string"/>
+        <element label="Draft" max_length="40" name="draft" read_only="true" type="boolean"/>
+        <element label="Export Date" max_length="40" name="export_date" read_only="true" type="glide_date_time"/>
+        <element label="Filename" max_length="255" name="filename" read_only="true" type="string"/>
+        <element label="ID" max_length="40" name="id" read_only="true" type="integer"/>
+        <element label="Notes" max_length="500" name="notes" read_only="true" type="string"/>
+        <element label="Purpose" max_length="512" name="purpose" read_only="true" type="string"/>
+        <element label="Request" max_length="32" name="request" read_only="true" reference="sn_shop_sourcing_activity" type="reference"/>
+        <element label="Size" max_length="40" name="size" read_only="true" type="integer"/>
+        <element label="Solicitation Project ID" max_length="40" name="solicitation_project_id" read_only="true" type="integer"/>
+        <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="100" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="200" value="complete"/>
+                <element inactive_on_update="false" label="Failed" sequence="300" value="failed"/>
+                <element inactive_on_update="false" label="Unknown" sequence="400" value="unknown"/>
+            </choice>
+        </element>
+        <element label="Sync Time" max_length="40" name="sync_time" type="glide_date_time"/>
+        <element label="Team ID" max_length="40" name="team_id" read_only="true" type="integer"/>
+        <element label="Type" max_length="255" name="type" read_only="true" type="string"/>
+        <index name="index">
+            <element name="attachment"/>
+        </index>
+        <index name="index2">
+            <element name="id"/>
+        </index>
+        <index name="index3">
+            <element name="request"/>
+        </index>
+    </element>
+</database>

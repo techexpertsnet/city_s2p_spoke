@@ -1,0 +1,3020 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation>Trigger Document Export</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Trigger Document Export</description>
+        <internal_name>trigger_document_export</internal_name>
+        <label_cache>[{"name":"9ad55c28-4508-4fdf-8584-bb7aa0daf44a.attachment_sysid","label":"11 - Attach Export to a Request➛Attachment ID","reference_display":"Attachment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f4074a25-7095-4e5c-aaa9-fbe7f61a2d4e"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.team_id","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Team ID","reference_display":"Team ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68f2390b-54f3-43b5-95f8-9f7b81c57185"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.file_size","label":"12 - Get Export Metadata by Solicitation ID and Filename➛File Size","reference_display":"File Size","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8465cb8c-d050-4a17-a0f2-d96d2b52d3a0"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.status","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2db0f939-7bd6-4359-8061-7cf9572982db"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.notes","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Notes","reference_display":"Notes","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5304fa04-4e80-422d-b7eb-fec133258494"}},{"name":"subflow.timeout","label":"Input➛Timeout","reference":"","reference_display":"","type":"glide_duration","base_type":"glide_duration","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"17c6fc91-0eab-4642-9b31-88369ab34dd2"}},{"name":"d6081c48-3e54-417a-97cc-ca1118492572.export_file_id","label":"2 - Trigger Document Export➛Export File ID","reference_display":"Export File ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8b735633-52a9-4c0d-99e3-74e0fad0b2f3"}},{"name":"c9b3aff7-b0c0-4dad-9176-3d79632afa66.documentids","label":"1 - List all Documents for a Solicitation➛documentIDs","reference_display":"documentIDs","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"documentIDs_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"integer","child_name":"documentids_child0","child_uiUniqueId":"1d972f3d-8a24-4807-9c36-27c526e5528a","uiUniqueId":"0356d646-0e3e-432d-8972-7658062ecce1"}},{"name":"subflow.solicitation_id","label":"Input➛Solicitation ID","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f4569f1b-c735-4d49-a2e3-0e45196d1e6b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requestor_id","label":"Input➛Requestor ID","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b5fcf20f-5fbf-4ecc-b35e-a110efd4b7f6"}},{"name":"da9d2a1a-b782-44e3-b1cd-69d911eec77c.export_file_url","label":"10 - Get Export File URL by ID➛Export File URL","reference_display":"Export File URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7c835b6d-a2ca-4224-a156-feadff940270"}},{"name":"b56aff5e-04c7-4473-9546-f350e17cb53b.filename","label":"6 - Get Export Filename by File ID➛Filename","reference_display":"Filename","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c43da9e5-2711-423f-976f-fd75fbe55049"}},{"name":"flow_variable.waititeration","label":"Flow Variables➛WaitIteration","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"341b6ad3-1fff-4ce8-8d3b-ec09611287b7"}},{"name":"flow_variable.filename","label":"Flow Variables➛Filename","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68c06608-1ff0-4ed5-9555-090527c87541"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.id","label":"12 - Get Export Metadata by Solicitation ID and Filename➛ID","reference_display":"ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"76e9d8c1-6f97-4ad2-93ef-2f14d07fb4f5"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.type","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Type","reference_display":"Type","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"73cc6bb1-1fe0-42f4-87d7-843a26b95a26"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.draft","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Draft","reference_display":"Draft","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8bdac1f6-0dba-470a-bcf5-394b94a0c026"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.purpose","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Purpose","reference_display":"Purpose","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"40590455-d13e-4920-86c7-315e27638be5"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.checksum","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Checksum","reference_display":"Checksum","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5e35db8a-2746-47b4-9808-853b013feda3"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.export_date","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Export Date","reference_display":"Export Date","type":"glide_date_time","base_type":"glide_date_time","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0a6c9ce5-97e9-4340-9d02-41368426ca7d"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.filename","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Filename","reference_display":"Filename","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6ee31a8e-2151-4241-b8fb-ae2e8851d1a6"}},{"name":"f2e1bb35-4cb7-40f8-b378-78c90d5321db.Record","label":"13 - Look Up Record➛Sourcing Request Record","reference":"sn_shop_sourcing_activity","reference_display":"Sourcing Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9202b91487f4bd10e1684047cebb35fa</master_snapshot>
+        <name>Trigger Document Export and Load</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-11 13:56:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>31900a5e87ec75104bbb21f8dabb3584</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Trigger Document Export and Load</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_31900a5e87ec75104bbb21f8dabb3584</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_variable_value action="delete_multiple" query="document_key=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT IN3d900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>31900a5e87ec75104bbb21f8dabb3584</id>
+        <name>Trigger Document Export</name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-11 13:56:05</sys_created_on>
+        <sys_id>3d900a5e87ec75104bbb21f8dabb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-11 13:56:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3d900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT IN721ed2278768f910e1684047cebb3502,f61e92278768f910e1684047cebb35f1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b5fcf20f-5fbf-4ecc-b35e-a110efd4b7f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestor_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Requestor ID</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</model>
+        <model_id>31900a5e87ec75104bbb21f8dabb3584</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>721ed2278768f910e1684047cebb3502</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:46:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=f4569f1b-c735-4d49-a2e3-0e45196d1e6b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>solicitation_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Solicitation ID</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</model>
+        <model_id>31900a5e87ec75104bbb21f8dabb3584</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>f61e92278768f910e1684047cebb35f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:46:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT IN6678d9948774bd10e1684047cebb358d,6d34a9d087b4bd10e1684047cebb359d,7995cd0487347d10e1684047cebb35db,8184751687b4b550e1684047cebb35fe,9192bd5287b4b550e1684047cebb3505,9592bd5287b4b550e1684047cebb350b,c31ed2278768f910e1684047cebb3516,dba3ed9087b4bd10e1684047cebb359a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export File URL by ID">cb9d999a876c75104bbb21f8dabb35c0</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>10</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:08:40</sys_created_on>
+        <sys_id>6678d9948774bd10e1684047cebb358d</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>da9d2a1a-b782-44e3-b1cd-69d911eec77c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6678d9948774bd10e1684047cebb358d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6678d9948774bd10e1684047cebb358d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:09:43</sys_created_on>
+        <sys_id>c6b851d48774bd10e1684047cebb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:09:43</sys_updated_on>
+        <value/>
+        <variable display_value="Export File ID">fa102d5e876c75104bbb21f8dabb35dd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6678d9948774bd10e1684047cebb358d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>e102b91487f4bd10e1684047cebb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <value/>
+        <variable display_value="Export File ID">03cdd1da876c75104bbb21f8dabb35bd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6678d9948774bd10e1684047cebb358d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_file_id</field>
+        <id>6678d9948774bd10e1684047cebb358d</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>6102b91487f4bd10e1684047cebb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cb9d999a876c75104bbb21f8dabb35c0</table>
+        <value>{{d6081c48-3e54-417a-97cc-ca1118492572.export_file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_file_id</field>
+        <id>6678d9948774bd10e1684047cebb358d</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:09:43</sys_created_on>
+        <sys_id>46b851d48774bd10e1684047cebb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:09:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fe102d5e876c75104bbb21f8dabb35cd</table>
+        <value>{{d6081c48-3e54-417a-97cc-ca1118492572.export_file_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6678d9948774bd10e1684047cebb358d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6678d9948774bd10e1684047cebb358d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export Filename by File ID">770c51988774bd10e1684047cebb352f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>6</order>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:59:56</sys_created_on>
+        <sys_id>6d34a9d087b4bd10e1684047cebb359d</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>b56aff5e-04c7-4473-9546-f350e17cb53b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6d34a9d087b4bd10e1684047cebb359d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6d34a9d087b4bd10e1684047cebb359d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:59:56</sys_created_on>
+        <sys_id>a934a9d087b4bd10e1684047cebb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:59:56</sys_updated_on>
+        <value/>
+        <variable display_value="Export File ID">2a932d9087b4bd10e1684047cebb35cf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6d34a9d087b4bd10e1684047cebb359d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:59:56</sys_created_on>
+        <sys_id>e534a9d087b4bd10e1684047cebb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:59:56</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">f3cd5d1c8774bd10e1684047cebb35aa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6d34a9d087b4bd10e1684047cebb359d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_file_id</field>
+        <id>6d34a9d087b4bd10e1684047cebb359d</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:59:56</sys_created_on>
+        <sys_id>6534a9d087b4bd10e1684047cebb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:59:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_770c51988774bd10e1684047cebb352f</table>
+        <value>{{d6081c48-3e54-417a-97cc-ca1118492572.export_file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>6d34a9d087b4bd10e1684047cebb359d</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:59:56</sys_created_on>
+        <sys_id>a134a9d087b4bd10e1684047cebb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:59:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_770c51988774bd10e1684047cebb352f</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6d34a9d087b4bd10e1684047cebb359d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6d34a9d087b4bd10e1684047cebb359d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="List all Documents for a Solicitation">fc1f12678768f910e1684047cebb35f7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-16 20:07:40</sys_created_on>
+        <sys_id>7995cd0487347d10e1684047cebb35db</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>c9b3aff7-b0c0-4dad-9176-3d79632afa66</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7995cd0487347d10e1684047cebb35db"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7995cd0487347d10e1684047cebb35db</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-16 20:07:40</sys_created_on>
+        <sys_id>7995cd0487347d10e1684047cebb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-16 20:07:40</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">8025850487347d10e1684047cebb352e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7995cd0487347d10e1684047cebb35db</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>d102791487f4bd10e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">d050e6a78768f910e1684047cebb3514</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7995cd0487347d10e1684047cebb35db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>7995cd0487347d10e1684047cebb35db</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-16 20:07:40</sys_created_on>
+        <sys_id>f595cd0487347d10e1684047cebb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-16 20:07:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3715850487347d10e1684047cebb352b</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>7995cd0487347d10e1684047cebb35db</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>5d02791487f4bd10e1684047cebb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fc1f12678768f910e1684047cebb35f7</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7995cd0487347d10e1684047cebb35db"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7995cd0487347d10e1684047cebb35db"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>13</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:19:00</sys_created_on>
+        <sys_id>8184751687b4b550e1684047cebb35fe</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>f2e1bb35-4cb7-40f8-b378-78c90d5321db</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8184751687b4b550e1684047cebb35fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8184751687b4b550e1684047cebb35fe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:19:00</sys_created_on>
+        <sys_id>c984b51687b4b550e1684047cebb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:19:00</sys_updated_on>
+        <value>sn_shop_sourcing_activity</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8184751687b4b550e1684047cebb35fe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>f4b0d5a28734f550e1684047cebb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <value>sn_shop_sourcing_activity</value>
+        <variable display_value="Table">79305e810b30030085c083eb37673a85</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8184751687b4b550e1684047cebb35fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>8184751687b4b550e1684047cebb35fe</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:19:00</sys_created_on>
+        <sys_id>8184b51687b4b550e1684047cebb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:19:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>x_citin_s2p_spoke_ci_project_id={{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>8184751687b4b550e1684047cebb35fe</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>b0b0d5a28734f550e1684047cebb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value>x_citin_s2p_spoke_ci_project_id={{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>8184751687b4b550e1684047cebb35fe</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:19:00</sys_created_on>
+        <sys_id>4984b51687b4b550e1684047cebb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:19:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>8184751687b4b550e1684047cebb35fe</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>74b0d5a28734f550e1684047cebb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8184751687b4b550e1684047cebb35fe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8184751687b4b550e1684047cebb35fe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export Metadata by Solicitation ID and Filename">6b9b65d68774b550e1684047cebb35f3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>12</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>9192bd5287b4b550e1684047cebb3505</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>c1cced37-8563-4ff2-924e-6d488d7fdb88</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9192bd5287b4b550e1684047cebb3505"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9192bd5287b4b550e1684047cebb3505</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>5d92bd5287b4b550e1684047cebb3506</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:10:34</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">b42f215e8774b550e1684047cebb3548</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9192bd5287b4b550e1684047cebb3505</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>b0b0d5a28734f550e1684047cebb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">27ede9da8774b550e1684047cebb3524</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9192bd5287b4b550e1684047cebb3505"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>9192bd5287b4b550e1684047cebb3505</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>30b0d5a28734f550e1684047cebb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b9b65d68774b550e1684047cebb35f3</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>9192bd5287b4b550e1684047cebb3505</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:14:07</sys_created_on>
+        <sys_id>15637d9287b4b550e1684047cebb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:14:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f02f215e8774b550e1684047cebb3545</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>9192bd5287b4b550e1684047cebb3505</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>78b0d5a28734f550e1684047cebb35c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b9b65d68774b550e1684047cebb35f3</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>9192bd5287b4b550e1684047cebb3505</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>d992bd5287b4b550e1684047cebb3506</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:10:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f02f215e8774b550e1684047cebb3545</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9192bd5287b4b550e1684047cebb3505"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9192bd5287b4b550e1684047cebb3505"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>14</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>9592bd5287b4b550e1684047cebb350b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>c1b3166e-8dfe-4978-b2c9-59fd4e312eca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9592bd5287b4b550e1684047cebb350b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9592bd5287b4b550e1684047cebb350b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>1192bd5287b4b550e1684047cebb350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:10:34</sys_updated_on>
+        <value>x_citin_s2p_spoke_file_metadata</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9592bd5287b4b550e1684047cebb350b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>bcb0d5a28734f550e1684047cebb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <value>x_citin_s2p_spoke_file_metadata</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9592bd5287b4b550e1684047cebb350b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>9592bd5287b4b550e1684047cebb350b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>d992bd5287b4b550e1684047cebb350c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:13:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.id}}^type={{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^draft={{c1cced37-8563-4ff2-924e-6d488d7fdb88.draft}}^purpose={{fd_transform:ee58fe1e-17a1-450b-9b88-7d80f03b0c79}}^checksum={{c1cced37-8563-4ff2-924e-6d488d7fdb88.checksum}}^export_date={{c1cced37-8563-4ff2-924e-6d488d7fdb88.export_date}}^filename={{c1cced37-8563-4ff2-924e-6d488d7fdb88.filename}}^notes={{c1cced37-8563-4ff2-924e-6d488d7fdb88.notes}}^request={{f2e1bb35-4cb7-40f8-b378-78c90d5321db.Record}}^size={{c1cced37-8563-4ff2-924e-6d488d7fdb88.file_size}}^solicitation_project_id={{subflow.solicitation_id}}^status={{c1cced37-8563-4ff2-924e-6d488d7fdb88.status}}^sync_time=fd-scripted^team_id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.team_id}}^attachment={{9ad55c28-4508-4fdf-8584-bb7aa0daf44a.attachment_sysid}}^coalesce_fields=id,solicitation_project_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>9592bd5287b4b550e1684047cebb350b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>78b0d5a28734f550e1684047cebb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>{{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.id}}^type={{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^draft={{c1cced37-8563-4ff2-924e-6d488d7fdb88.draft}}^purpose={{fd_transform:ee58fe1e-17a1-450b-9b88-7d80f03b0c79}}^checksum={{c1cced37-8563-4ff2-924e-6d488d7fdb88.checksum}}^export_date={{c1cced37-8563-4ff2-924e-6d488d7fdb88.export_date}}^filename={{c1cced37-8563-4ff2-924e-6d488d7fdb88.filename}}^notes={{c1cced37-8563-4ff2-924e-6d488d7fdb88.notes}}^request={{f2e1bb35-4cb7-40f8-b378-78c90d5321db.Record}}^size={{c1cced37-8563-4ff2-924e-6d488d7fdb88.file_size}}^solicitation_project_id={{subflow.solicitation_id}}^status={{c1cced37-8563-4ff2-924e-6d488d7fdb88.status}}^sync_time=fd-scripted^team_id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.team_id}}^attachment={{9ad55c28-4508-4fdf-8584-bb7aa0daf44a.attachment_sysid}}^coalesce_fields=id,solicitation_project_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9592bd5287b4b550e1684047cebb350b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-23 23:10:34</sys_created_on>
+        <sys_id>9d92bd5287b4b550e1684047cebb350c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-23 23:10:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9592bd5287b4b550e1684047cebb350b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:00</sys_created_on>
+        <sys_id>3cb0d5a28734f550e1684047cebb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9592bd5287b4b550e1684047cebb350b^sys_idNOT IN296b05ea87f0f550e1684047cebb3591"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>fields</input_name>
+        <instance>9592bd5287b4b550e1684047cebb350b</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"sync_time":{"scriptActive":true,"script":"return new GlideDateTime();","savedValue":""}}</script>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 14:57:51</sys_created_on>
+        <sys_id>296b05ea87f0f550e1684047cebb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 14:57:51</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9592bd5287b4b550e1684047cebb350b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Trigger Document Export">772716ab8728f910e1684047cebb3599</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>c31ed2278768f910e1684047cebb3516</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>d6081c48-3e54-417a-97cc-ca1118492572</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c31ed2278768f910e1684047cebb3516"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c31ed2278768f910e1684047cebb3516</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>1502791487f4bd10e1684047cebb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">5fbd5ae38768f910e1684047cebb35fd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c31ed2278768f910e1684047cebb3516</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>5102791487f4bd10e1684047cebb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <value/>
+        <variable display_value="Requestor ID">23bd9ae38768f910e1684047cebb3513</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c31ed2278768f910e1684047cebb3516</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>8b1ed2278768f910e1684047cebb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">92cd1ee38768f910e1684047cebb3537</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c31ed2278768f910e1684047cebb3516</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>c71ed2278768f910e1684047cebb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <value/>
+        <variable display_value="Requestor ID">9acd1ee38768f910e1684047cebb353b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c31ed2278768f910e1684047cebb3516"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>document_ids</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>1d02791487f4bd10e1684047cebb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_772716ab8728f910e1684047cebb3599</table>
+        <value>{{c9b3aff7-b0c0-4dad-9176-3d79632afa66.documentids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>document_ids</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-16 20:07:40</sys_created_on>
+        <sys_id>f595cd0487347d10e1684047cebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-16 20:07:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{c9b3aff7-b0c0-4dad-9176-3d79632afa66.documentids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestor_id</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>dd02791487f4bd10e1684047cebb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_772716ab8728f910e1684047cebb3599</table>
+        <value>{{subflow.requestor_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestor_id</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>471ed2278768f910e1684047cebb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{subflow.requestor_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>5902791487f4bd10e1684047cebb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_772716ab8728f910e1684047cebb3599</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>c31ed2278768f910e1684047cebb3516</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>831ed2278768f910e1684047cebb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c31ed2278768f910e1684047cebb3516"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c31ed2278768f910e1684047cebb3516"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Attach Export to a Request">64a161de876c75104bbb21f8dabb3566</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <order>11</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:57:36</sys_created_on>
+        <sys_id>dba3ed9087b4bd10e1684047cebb359a</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>9ad55c28-4508-4fdf-8584-bb7aa0daf44a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dba3ed9087b4bd10e1684047cebb359a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dba3ed9087b4bd10e1684047cebb359a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:57:36</sys_created_on>
+        <sys_id>5ba3ed9087b4bd10e1684047cebb35b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:57:36</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">9185ad9287ac75104bbb21f8dabb35e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dba3ed9087b4bd10e1684047cebb359a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>e502b91487f4bd10e1684047cebb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">21f169de876c75104bbb21f8dabb3590</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dba3ed9087b4bd10e1684047cebb359a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_url</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>a102b91487f4bd10e1684047cebb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64a161de876c75104bbb21f8dabb3566</table>
+        <value>{{da9d2a1a-b782-44e3-b1cd-69d911eec77c.export_file_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_url</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:57:36</sys_created_on>
+        <sys_id>5ba3ed9087b4bd10e1684047cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:57:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{da9d2a1a-b782-44e3-b1cd-69d911eec77c.export_file_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>6502b91487f4bd10e1684047cebb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64a161de876c75104bbb21f8dabb3566</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:03:56</sys_created_on>
+        <sys_id>5025ad1487b4bd10e1684047cebb3521</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:46:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:16</sys_created_on>
+        <sys_id>ed02b91487f4bd10e1684047cebb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64a161de876c75104bbb21f8dabb3566</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>dba3ed9087b4bd10e1684047cebb359a</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 16:57:36</sys_created_on>
+        <sys_id>97a3ed9087b4bd10e1684047cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 16:57:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dba3ed9087b4bd10e1684047cebb359a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dba3ed9087b4bd10e1684047cebb359a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT IN1c1ea59c87b4bd10e1684047cebb3597,2fbc215c87b4bd10e1684047cebb35f1,3fbc615c87b4bd10e1684047cebb3500,63bc215c87b4bd10e1684047cebb35f9,e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">581ea59c87b4bd10e1684047cebb3597</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:59</sys_created_on>
+        <sys_id>1c1ea59c87b4bd10e1684047cebb3597</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1c1ea59c87b4bd10e1684047cebb3597"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1c1ea59c87b4bd10e1684047cebb3597</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:59</sys_created_on>
+        <sys_id>941ea59c87b4bd10e1684047cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:59</sys_updated_on>
+        <value>If Filename is not empty</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584^id=1c1ea59c87b4bd10e1684047cebb3597"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c1ea59c87b4bd10e1684047cebb3597"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1c1ea59c87b4bd10e1684047cebb3597</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:59</sys_created_on>
+        <sys_id>141ea59c87b4bd10e1684047cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable.filename}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1c1ea59c87b4bd10e1684047cebb3597</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:59</sys_created_on>
+        <sys_id>501ea59c87b4bd10e1684047cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1c1ea59c87b4bd10e1684047cebb3597"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1c1ea59c87b4bd10e1684047cebb3597"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">67bc215c87b4bd10e1684047cebb35f1</block>
+        <comment>Set number of wait iterations to 5</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <flow_variable/>
+        <flow_variables_assigned>waititeration</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:12</sys_created_on>
+        <sys_id>2fbc215c87b4bd10e1684047cebb35f1</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>85dc0e17-6b8a-4f0e-b461-1ad285f91a4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2fbc215c87b4bd10e1684047cebb35f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2fbc215c87b4bd10e1684047cebb35f1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:12</sys_created_on>
+        <sys_id>27bc215c87b4bd10e1684047cebb35f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:20:48</sys_updated_on>
+        <value>5</value>
+        <variable display_value="WaitIteration">63bc215c87b4bd10e1684047cebb35ea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584^id=2fbc215c87b4bd10e1684047cebb35f1"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2fbc215c87b4bd10e1684047cebb35f1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2fbc215c87b4bd10e1684047cebb35f1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bbc615c87b4bd10e1684047cebb3500</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>waititeration,filename</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>3fbc615c87b4bd10e1684047cebb3500</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>9588be7e-9d3d-474d-9d5a-238303961be4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3fbc615c87b4bd10e1684047cebb3500"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3fbc615c87b4bd10e1684047cebb3500</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>fbbc615c87b4bd10e1684047cebb3503</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:37:13</sys_updated_on>
+        <value/>
+        <variable display_value="WaitIteration">63bc215c87b4bd10e1684047cebb35ea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3fbc615c87b4bd10e1684047cebb3500"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>3fbc615c87b4bd10e1684047cebb3500</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:59</sys_created_on>
+        <sys_id>941ea59c87b4bd10e1684047cebb3597</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584</table>
+        <value>{{b56aff5e-04c7-4473-9546-f350e17cb53b.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>waititeration</field>
+        <id>3fbc615c87b4bd10e1684047cebb3500</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>7bbc615c87b4bd10e1684047cebb3503</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:37:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3fbc615c87b4bd10e1684047cebb3500"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3fbc615c87b4bd10e1684047cebb3500^sys_idNOT INfbbc615c87b4bd10e1684047cebb3501"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>waititeration</input_name>
+        <instance>3fbc615c87b4bd10e1684047cebb3500</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"waititeration":{"scriptActive":true,"script":"var waititer \u003d fd_data.flow_var.waititeration-1;\nreturn waititer;"}}</script>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>fbbc615c87b4bd10e1684047cebb3501</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:54:56</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">afbc215c87b4bd10e1684047cebb35f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>63bc215c87b4bd10e1684047cebb35f9</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>2251c5b5-3ec7-45f9-8674-46e49601664c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=63bc215c87b4bd10e1684047cebb35f9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>63bc215c87b4bd10e1684047cebb35f9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>b3bc215c87b4bd10e1684047cebb35ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:37:13</sys_updated_on>
+        <value>1970-01-01 00:01:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>63bc215c87b4bd10e1684047cebb35f9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:13</sys_created_on>
+        <sys_id>ffbc215c87b4bd10e1684047cebb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:37:13</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584^id=63bc215c87b4bd10e1684047cebb35f9"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=63bc215c87b4bd10e1684047cebb35f9"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=63bc215c87b4bd10e1684047cebb35f9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63bc215c87b4bd10e1684047cebb35f9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23bc215c87b4bd10e1684047cebb35f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:12</sys_created_on>
+        <sys_id>e3bc215c87b4bd10e1684047cebb35f6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+        <ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e3bc215c87b4bd10e1684047cebb35f6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:58</sys_created_on>
+        <sys_id>401ea59c87b4bd10e1684047cebb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:58</sys_updated_on>
+        <value>Interation Left are 0 or Filename is not empty</value>
+        <variable display_value="Condition Label">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584^id=e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_element_mapping action="delete_multiple" query="id=e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e3bc215c87b4bd10e1684047cebb35f6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:58</sys_created_on>
+        <sys_id>cc1ea59c87b4bd10e1684047cebb3583</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:46:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.waititeration}}=0^NQ{{flow_variable.filename}}!= </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e3bc215c87b4bd10e1684047cebb35f6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:58</sys_created_on>
+        <sys_id>0c1ea59c87b4bd10e1684047cebb3583</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3bc215c87b4bd10e1684047cebb35f6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT INc00f41228734f550e1684047cebb35cc,c80f41228734f550e1684047cebb35cb"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31900a5e87ec75104bbb21f8dabb3584</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>ee58fe1e-17a1-450b-9b88-7d80f03b0c79</source_ui_id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:13:35</sys_created_on>
+        <sys_id>c00f41228734f550e1684047cebb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:13:35</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>60855c38-728b-458b-a0ca-deb41da63bfe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31900a5e87ec75104bbb21f8dabb3584</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{c1cced37-8563-4ff2-924e-6d488d7fdb88.purpose}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:13:35</sys_created_on>
+        <sys_id>c80f41228734f550e1684047cebb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:13:35</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ee58fe1e-17a1-450b-9b88-7d80f03b0c79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT IN081ea59c87b4bd10e1684047cebb3572,63bc215c87b4bd10e1684047cebb35ea"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=68c06608-1ff0-4ed5-9555-090527c87541</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>filename</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Filename</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</model>
+        <model_id>31900a5e87ec75104bbb21f8dabb3584</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:42:58</sys_created_on>
+        <sys_id>081ea59c87b4bd10e1684047cebb3572</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filename</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_081ea59c87b4bd10e1684047cebb3572</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=341b6ad3-1fff-4ce8-8d3b-ec09611287b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>waititeration</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>WaitIteration</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</model>
+        <model_id>31900a5e87ec75104bbb21f8dabb3584</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_31900a5e87ec75104bbb21f8dabb3584</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 17:37:12</sys_created_on>
+        <sys_id>63bc215c87b4bd10e1684047cebb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WaitIteration</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_63bc215c87b4bd10e1684047cebb35ea</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 17:37:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584^sys_idNOT INb61ed2278768f910e1684047cebb3504,fa1e92278768f910e1684047cebb35f4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestor_id</element>
+        <help/>
+        <hint/>
+        <label>Requestor ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>b61ed2278768f910e1684047cebb3504</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>solicitation_id</element>
+        <help/>
+        <hint/>
+        <label>Solicitation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-15 13:17:26</sys_created_on>
+        <sys_id>fa1e92278768f910e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-15 13:17:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=31900a5e87ec75104bbb21f8dabb3584"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT INbc12bd1487f4bd10e1684047cebb35f0"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1a4d27</plan>
+        <plan_id display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</plan_id>
+        <snapshot>9202b91487f4bd10e1684047cebb35fa</snapshot>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc12bd1487f4bd10e1684047cebb35f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:21</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation>Trigger Document Export</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Trigger Document Export</description>
+        <internal_name>trigger_document_export_and_load</internal_name>
+        <label_cache>[{"name":"9ad55c28-4508-4fdf-8584-bb7aa0daf44a.attachment_sysid","label":"11 - Attach Export to a Request➛Attachment ID","reference_display":"Attachment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f4074a25-7095-4e5c-aaa9-fbe7f61a2d4e"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.team_id","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Team ID","reference_display":"Team ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68f2390b-54f3-43b5-95f8-9f7b81c57185"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.file_size","label":"12 - Get Export Metadata by Solicitation ID and Filename➛File Size","reference_display":"File Size","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8465cb8c-d050-4a17-a0f2-d96d2b52d3a0"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.status","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2db0f939-7bd6-4359-8061-7cf9572982db"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.notes","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Notes","reference_display":"Notes","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5304fa04-4e80-422d-b7eb-fec133258494"}},{"name":"subflow.timeout","label":"Input➛Timeout","reference":"","reference_display":"","type":"glide_duration","base_type":"glide_duration","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"17c6fc91-0eab-4642-9b31-88369ab34dd2"}},{"name":"d6081c48-3e54-417a-97cc-ca1118492572.export_file_id","label":"2 - Trigger Document Export➛Export File ID","reference_display":"Export File ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8b735633-52a9-4c0d-99e3-74e0fad0b2f3"}},{"name":"c9b3aff7-b0c0-4dad-9176-3d79632afa66.documentids","label":"1 - List all Documents for a Solicitation➛documentIDs","reference_display":"documentIDs","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"documentIDs_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"integer","child_name":"documentids_child0","child_uiUniqueId":"1d972f3d-8a24-4807-9c36-27c526e5528a","uiUniqueId":"0356d646-0e3e-432d-8972-7658062ecce1"}},{"name":"subflow.solicitation_id","label":"Input➛Solicitation ID","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f4569f1b-c735-4d49-a2e3-0e45196d1e6b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requestor_id","label":"Input➛Requestor ID","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b5fcf20f-5fbf-4ecc-b35e-a110efd4b7f6"}},{"name":"da9d2a1a-b782-44e3-b1cd-69d911eec77c.export_file_url","label":"10 - Get Export File URL by ID➛Export File URL","reference_display":"Export File URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7c835b6d-a2ca-4224-a156-feadff940270"}},{"name":"b56aff5e-04c7-4473-9546-f350e17cb53b.filename","label":"6 - Get Export Filename by File ID➛Filename","reference_display":"Filename","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c43da9e5-2711-423f-976f-fd75fbe55049"}},{"name":"flow_variable.waititeration","label":"Flow Variables➛WaitIteration","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"341b6ad3-1fff-4ce8-8d3b-ec09611287b7"}},{"name":"flow_variable.filename","label":"Flow Variables➛Filename","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68c06608-1ff0-4ed5-9555-090527c87541"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.id","label":"12 - Get Export Metadata by Solicitation ID and Filename➛ID","reference_display":"ID","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"76e9d8c1-6f97-4ad2-93ef-2f14d07fb4f5"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.type","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Type","reference_display":"Type","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"73cc6bb1-1fe0-42f4-87d7-843a26b95a26"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.draft","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Draft","reference_display":"Draft","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8bdac1f6-0dba-470a-bcf5-394b94a0c026"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.purpose","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Purpose","reference_display":"Purpose","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"40590455-d13e-4920-86c7-315e27638be5"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.checksum","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Checksum","reference_display":"Checksum","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5e35db8a-2746-47b4-9808-853b013feda3"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.export_date","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Export Date","reference_display":"Export Date","type":"glide_date_time","base_type":"glide_date_time","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0a6c9ce5-97e9-4340-9d02-41368426ca7d"}},{"name":"c1cced37-8563-4ff2-924e-6d488d7fdb88.filename","label":"12 - Get Export Metadata by Solicitation ID and Filename➛Filename","reference_display":"Filename","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6ee31a8e-2151-4241-b8fb-ae2e8851d1a6"}},{"name":"f2e1bb35-4cb7-40f8-b378-78c90d5321db.Record","label":"13 - Look Up Record➛Sourcing Request Record","reference":"sn_shop_sourcing_activity","reference_display":"Sourcing Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Trigger Document Export and Load</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9202b91487f4bd10e1684047cebb35fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN1e02b91487f4bd10e1684047cebb35fa"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9202b91487f4bd10e1684047cebb35fa</id>
+        <name>Trigger Document Export and Load</name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>1e02b91487f4bd10e1684047cebb35fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1e02b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN5202b91487f4bd10e1684047cebb35fc,5202f91487f4bd10e1684047cebb3524"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=f4569f1b-c735-4d49-a2e3-0e45196d1e6b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>solicitation_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Solicitation ID</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</model>
+        <model_id>9202b91487f4bd10e1684047cebb35fa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>5202b91487f4bd10e1684047cebb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b5fcf20f-5fbf-4ecc-b35e-a110efd4b7f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestor_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Requestor ID</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</model>
+        <model_id>9202b91487f4bd10e1684047cebb35fa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>5202f91487f4bd10e1684047cebb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN0bb099a28734f550e1684047cebb35b4,0bb0d9a28734f550e1684047cebb351e,8f02f91487f4bd10e1684047cebb35f2,a602f91487f4bd10e1684047cebb358c,c3b0d9a28734f550e1684047cebb3511,cb023d1487f4bd10e1684047cebb351d,d3023d1487f4bd10e1684047cebb3539,fe02f91487f4bd10e1684047cebb35be"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export Metadata by Solicitation ID and Filename">f02f215e8774b550e1684047cebb3545</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>12</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>0bb099a28734f550e1684047cebb35b4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <ui_id>c1cced37-8563-4ff2-924e-6d488d7fdb88</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0bb099a28734f550e1684047cebb35b4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bb099a28734f550e1684047cebb35b4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>07b099a28734f550e1684047cebb35b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">b42f215e8774b550e1684047cebb3548</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0bb099a28734f550e1684047cebb35b4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>0bb099a28734f550e1684047cebb35b4</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>83b099a28734f550e1684047cebb35b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f02f215e8774b550e1684047cebb3545</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>0bb099a28734f550e1684047cebb35b4</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>cfb099a28734f550e1684047cebb35b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f02f215e8774b550e1684047cebb3545</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0bb099a28734f550e1684047cebb35b4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0bb099a28734f550e1684047cebb35b4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>14</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>0bb0d9a28734f550e1684047cebb351e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <ui_id>c1b3166e-8dfe-4978-b2c9-59fd4e312eca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0bb0d9a28734f550e1684047cebb351e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bb0d9a28734f550e1684047cebb351e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>c7b0d9a28734f550e1684047cebb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <value>x_citin_s2p_spoke_file_metadata</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0bb0d9a28734f550e1684047cebb351e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>0bb0d9a28734f550e1684047cebb351e</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>83b0d9a28734f550e1684047cebb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.id}}^type={{c1cced37-8563-4ff2-924e-6d488d7fdb88.type}}^draft={{c1cced37-8563-4ff2-924e-6d488d7fdb88.draft}}^purpose={{fd_transform:ee58fe1e-17a1-450b-9b88-7d80f03b0c79}}^checksum={{c1cced37-8563-4ff2-924e-6d488d7fdb88.checksum}}^export_date={{c1cced37-8563-4ff2-924e-6d488d7fdb88.export_date}}^filename={{c1cced37-8563-4ff2-924e-6d488d7fdb88.filename}}^notes={{c1cced37-8563-4ff2-924e-6d488d7fdb88.notes}}^request={{f2e1bb35-4cb7-40f8-b378-78c90d5321db.Record}}^size={{c1cced37-8563-4ff2-924e-6d488d7fdb88.file_size}}^solicitation_project_id={{subflow.solicitation_id}}^status={{c1cced37-8563-4ff2-924e-6d488d7fdb88.status}}^sync_time=fd-scripted^team_id={{c1cced37-8563-4ff2-924e-6d488d7fdb88.team_id}}^attachment={{9ad55c28-4508-4fdf-8584-bb7aa0daf44a.attachment_sysid}}^coalesce_fields=id,solicitation_project_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0bb0d9a28734f550e1684047cebb351e</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>47b0d9a28734f550e1684047cebb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0bb0d9a28734f550e1684047cebb351e^sys_idNOT IN87b0d9a28734f550e1684047cebb351f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>fields</input_name>
+        <instance>0bb0d9a28734f550e1684047cebb351e</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"sync_time":{"scriptActive":true,"script":"return new GlideDateTime();","savedValue":""}}</script>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>87b0d9a28734f550e1684047cebb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0bb0d9a28734f550e1684047cebb351e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export Filename by File ID">aea8e91887b4bd10e1684047cebb35e8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>6</order>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:22</sys_created_on>
+        <sys_id>8f02f91487f4bd10e1684047cebb35f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>b56aff5e-04c7-4473-9546-f350e17cb53b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f02f91487f4bd10e1684047cebb35f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f02f91487f4bd10e1684047cebb35f2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:22</sys_created_on>
+        <sys_id>0b02f91487f4bd10e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:22</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">2ea8e91887b4bd10e1684047cebb35eb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f02f91487f4bd10e1684047cebb35f2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:22</sys_created_on>
+        <sys_id>cb02f91487f4bd10e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:22</sys_updated_on>
+        <value/>
+        <variable display_value="Export File ID">2ea8e91887b4bd10e1684047cebb35ef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f02f91487f4bd10e1684047cebb35f2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_file_id</field>
+        <id>8f02f91487f4bd10e1684047cebb35f2</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:22</sys_created_on>
+        <sys_id>8702f91487f4bd10e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_aea8e91887b4bd10e1684047cebb35e8</table>
+        <value>{{d6081c48-3e54-417a-97cc-ca1118492572.export_file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>8f02f91487f4bd10e1684047cebb35f2</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:22</sys_created_on>
+        <sys_id>c302f91487f4bd10e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_aea8e91887b4bd10e1684047cebb35e8</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f02f91487f4bd10e1684047cebb35f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f02f91487f4bd10e1684047cebb35f2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="List all Documents for a Solicitation">3715850487347d10e1684047cebb352b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>a602f91487f4bd10e1684047cebb358c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>c9b3aff7-b0c0-4dad-9176-3d79632afa66</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a602f91487f4bd10e1684047cebb358c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a602f91487f4bd10e1684047cebb358c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>6e02f91487f4bd10e1684047cebb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">8025850487347d10e1684047cebb352e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a602f91487f4bd10e1684047cebb358c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>a602f91487f4bd10e1684047cebb358c</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>ea02f91487f4bd10e1684047cebb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3715850487347d10e1684047cebb352b</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a602f91487f4bd10e1684047cebb358c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a602f91487f4bd10e1684047cebb358c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>13</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>c3b0d9a28734f550e1684047cebb3511</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <ui_id>f2e1bb35-4cb7-40f8-b378-78c90d5321db</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c3b0d9a28734f550e1684047cebb3511"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c3b0d9a28734f550e1684047cebb3511</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>c3b0d9a28734f550e1684047cebb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <value>sn_shop_sourcing_activity</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c3b0d9a28734f550e1684047cebb3511"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>c3b0d9a28734f550e1684047cebb3511</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>8fb0d9a28734f550e1684047cebb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>x_citin_s2p_spoke_ci_project_id={{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>c3b0d9a28734f550e1684047cebb3511</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:10</sys_created_on>
+        <sys_id>43b0d9a28734f550e1684047cebb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3b0d9a28734f550e1684047cebb3511"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c3b0d9a28734f550e1684047cebb3511"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Export File URL by ID">fe102d5e876c75104bbb21f8dabb35cd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>10</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>cb023d1487f4bd10e1684047cebb351d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>da9d2a1a-b782-44e3-b1cd-69d911eec77c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cb023d1487f4bd10e1684047cebb351d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cb023d1487f4bd10e1684047cebb351d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>8f023d1487f4bd10e1684047cebb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <value/>
+        <variable display_value="Export File ID">fa102d5e876c75104bbb21f8dabb35dd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cb023d1487f4bd10e1684047cebb351d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_file_id</field>
+        <id>cb023d1487f4bd10e1684047cebb351d</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>0f023d1487f4bd10e1684047cebb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_fe102d5e876c75104bbb21f8dabb35cd</table>
+        <value>{{d6081c48-3e54-417a-97cc-ca1118492572.export_file_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cb023d1487f4bd10e1684047cebb351d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cb023d1487f4bd10e1684047cebb351d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Attach Export to a Request">9185ad9287ac75104bbb21f8dabb35cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>11</order>
+        <parent_ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>d3023d1487f4bd10e1684047cebb3539</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <ui_id>9ad55c28-4508-4fdf-8584-bb7aa0daf44a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d3023d1487f4bd10e1684047cebb3539"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3023d1487f4bd10e1684047cebb3539</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>13023d1487f4bd10e1684047cebb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">9185ad9287ac75104bbb21f8dabb35e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d3023d1487f4bd10e1684047cebb3539"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>export_url</field>
+        <id>d3023d1487f4bd10e1684047cebb3539</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>db023d1487f4bd10e1684047cebb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{da9d2a1a-b782-44e3-b1cd-69d911eec77c.export_file_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>d3023d1487f4bd10e1684047cebb3539</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>9f023d1487f4bd10e1684047cebb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{flow_variable.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>d3023d1487f4bd10e1684047cebb3539</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:23</sys_created_on>
+        <sys_id>1b023d1487f4bd10e1684047cebb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9185ad9287ac75104bbb21f8dabb35cb</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d3023d1487f4bd10e1684047cebb3539"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d3023d1487f4bd10e1684047cebb3539"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Trigger Document Export">9acd1ee38768f910e1684047cebb3533</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>fe02f91487f4bd10e1684047cebb35be</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>d6081c48-3e54-417a-97cc-ca1118492572</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe02f91487f4bd10e1684047cebb35be"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fe02f91487f4bd10e1684047cebb35be</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>3e02f91487f4bd10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <value/>
+        <variable display_value="Requestor ID">9acd1ee38768f910e1684047cebb353b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fe02f91487f4bd10e1684047cebb35be</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>fe02f91487f4bd10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <value/>
+        <variable display_value="Solicitation ID">92cd1ee38768f910e1684047cebb3537</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fe02f91487f4bd10e1684047cebb35be"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>document_ids</field>
+        <id>fe02f91487f4bd10e1684047cebb35be</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>f602f91487f4bd10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{c9b3aff7-b0c0-4dad-9176-3d79632afa66.documentids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requestor_id</field>
+        <id>fe02f91487f4bd10e1684047cebb35be</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>ba02f91487f4bd10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{subflow.requestor_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>solicitation_id</field>
+        <id>fe02f91487f4bd10e1684047cebb35be</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:21</sys_created_on>
+        <sys_id>3602f91487f4bd10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9acd1ee38768f910e1684047cebb3533</table>
+        <value>{{subflow.solicitation_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fe02f91487f4bd10e1684047cebb35be"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe02f91487f4bd10e1684047cebb35be"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN2602f91487f4bd10e1684047cebb3566,2a02f91487f4bd10e1684047cebb3552,6602f91487f4bd10e1684047cebb3562,e602f91487f4bd10e1684047cebb3556,ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">581ea59c87b4bd10e1684047cebb3597</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2602f91487f4bd10e1684047cebb3566</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>5143f1ef-4a0f-4264-bf02-8ac49d77d65f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2602f91487f4bd10e1684047cebb3566"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2602f91487f4bd10e1684047cebb3566</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>6202f91487f4bd10e1684047cebb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <value>If Filename is not empty</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa^id=2602f91487f4bd10e1684047cebb3566"/>
+    <sys_element_mapping action="delete_multiple" query="id=2602f91487f4bd10e1684047cebb3566"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2602f91487f4bd10e1684047cebb3566</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>ee02f91487f4bd10e1684047cebb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable.filename}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2602f91487f4bd10e1684047cebb3566</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2e02f91487f4bd10e1684047cebb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2602f91487f4bd10e1684047cebb3566"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2602f91487f4bd10e1684047cebb3566"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">67bc215c87b4bd10e1684047cebb35f1</block>
+        <comment>Set number of wait iterations to 5</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <flow_variable/>
+        <flow_variables_assigned>waititeration</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2a02f91487f4bd10e1684047cebb3552</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>85dc0e17-6b8a-4f0e-b461-1ad285f91a4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2a02f91487f4bd10e1684047cebb3552"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2a02f91487f4bd10e1684047cebb3552</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>6e02f91487f4bd10e1684047cebb3555</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:10</sys_updated_on>
+        <value>5</value>
+        <variable display_value="WaitIteration">5602f91487f4bd10e1684047cebb354e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa^id=2a02f91487f4bd10e1684047cebb3552"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2a02f91487f4bd10e1684047cebb3552"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2a02f91487f4bd10e1684047cebb3552"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bbc615c87b4bd10e1684047cebb3500</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>waititeration,filename</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>6602f91487f4bd10e1684047cebb3562</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>9588be7e-9d3d-474d-9d5a-238303961be4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6602f91487f4bd10e1684047cebb3562"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6602f91487f4bd10e1684047cebb3562</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2e02f91487f4bd10e1684047cebb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <value/>
+        <variable display_value="WaitIteration">5602f91487f4bd10e1684047cebb354e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6602f91487f4bd10e1684047cebb3562"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filename</field>
+        <id>6602f91487f4bd10e1684047cebb3562</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>aa02f91487f4bd10e1684047cebb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa</table>
+        <value>{{b56aff5e-04c7-4473-9546-f350e17cb53b.filename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>waititeration</field>
+        <id>6602f91487f4bd10e1684047cebb3562</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>e602f91487f4bd10e1684047cebb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6602f91487f4bd10e1684047cebb3562"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6602f91487f4bd10e1684047cebb3562^sys_idNOT IN6602f91487f4bd10e1684047cebb3563"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>waititeration</input_name>
+        <instance>6602f91487f4bd10e1684047cebb3562</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"waititeration":{"scriptActive":true,"script":"var waititer \u003d fd_data.flow_var.waititeration-1;\nreturn waititer;"}}</script>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>6602f91487f4bd10e1684047cebb3563</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23bc215c87b4bd10e1684047cebb35f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>e602f91487f4bd10e1684047cebb3556</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e602f91487f4bd10e1684047cebb3556"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e602f91487f4bd10e1684047cebb3556</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>6602f91487f4bd10e1684047cebb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <value>Interation Left are 0 or Filename is not empty</value>
+        <variable display_value="Condition Label">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa^id=e602f91487f4bd10e1684047cebb3556"/>
+    <sys_element_mapping action="delete_multiple" query="id=e602f91487f4bd10e1684047cebb3556"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e602f91487f4bd10e1684047cebb3556</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>e202f91487f4bd10e1684047cebb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.waititeration}}=0^NQ{{flow_variable.filename}}!= </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e602f91487f4bd10e1684047cebb3556</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2202f91487f4bd10e1684047cebb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e602f91487f4bd10e1684047cebb3556"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e602f91487f4bd10e1684047cebb3556"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">afbc215c87b4bd10e1684047cebb35f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fccdf365-3b5e-4644-9e24-72fbcf5baaff</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>ee02f91487f4bd10e1684047cebb355a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:11</sys_updated_on>
+        <ui_id>2251c5b5-3ec7-45f9-8674-46e49601664c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee02f91487f4bd10e1684047cebb355a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>2a02f91487f4bd10e1684047cebb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee02f91487f4bd10e1684047cebb355a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>ea02f91487f4bd10e1684047cebb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <value>1970-01-01 00:01:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa^id=ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee02f91487f4bd10e1684047cebb355a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN23b0d9a28734f550e1684047cebb3580,e7b0d9a28734f550e1684047cebb3580"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9202b91487f4bd10e1684047cebb35fa</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{c1cced37-8563-4ff2-924e-6d488d7fdb88.purpose}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:12</sys_created_on>
+        <sys_id>23b0d9a28734f550e1684047cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ee58fe1e-17a1-450b-9b88-7d80f03b0c79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9202b91487f4bd10e1684047cebb35fa</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>ee58fe1e-17a1-450b-9b88-7d80f03b0c79</source_ui_id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-24 15:21:12</sys_created_on>
+        <sys_id>e7b0d9a28734f550e1684047cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-24 15:21:12</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>60855c38-728b-458b-a0ca-deb41da63bfe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN5602f91487f4bd10e1684047cebb354e,5e02f91487f4bd10e1684047cebb354a"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=341b6ad3-1fff-4ce8-8d3b-ec09611287b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>waititeration</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>WaitIteration</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</model>
+        <model_id>9202b91487f4bd10e1684047cebb35fa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>5602f91487f4bd10e1684047cebb354e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WaitIteration</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_5602f91487f4bd10e1684047cebb354e</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=68c06608-1ff0-4ed5-9555-090527c87541</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>filename</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Filename</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Trigger Document Export and Load">9202b91487f4bd10e1684047cebb35fa</model>
+        <model_id>9202b91487f4bd10e1684047cebb35fa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9202b91487f4bd10e1684047cebb35fa</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>5e02f91487f4bd10e1684047cebb354a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filename</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_5e02f91487f4bd10e1684047cebb354a</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa^sys_idNOT IN1e02f91487f4bd10e1684047cebb3520,5202f91487f4bd10e1684047cebb3541"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>solicitation_id</element>
+        <help/>
+        <hint/>
+        <label>Solicitation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>1e02f91487f4bd10e1684047cebb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestor_id</element>
+        <help/>
+        <hint/>
+        <label>Requestor ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-17 18:00:20</sys_created_on>
+        <sys_id>5202f91487f4bd10e1684047cebb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 18:00:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9202b91487f4bd10e1684047cebb35fa"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>31900a5e87ec75104bbb21f8dabb3584</sys_id>
+        <latest_snapshot>9202b91487f4bd10e1684047cebb35fa</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2a-06-26-2023_07-05-2023_1648.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>
