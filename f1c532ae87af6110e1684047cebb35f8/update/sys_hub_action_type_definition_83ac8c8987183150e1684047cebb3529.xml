@@ -13,9 +13,9 @@
         <description/>
         <ih_action>true</ih_action>
         <internal_name>get_stage_details_by_id</internal_name>
-        <label_cache>[{"name":"{{action.stage_id}}","label":"action➛Stage ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9f7065ca-1ea1-40d9-905a-f1781e1ecd21].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-starts-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-starts-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-ends-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-ends-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.published-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛published-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.stage_id}}","label":"action➛Stage ID","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e1873a64-5c8c-4c5c-bb6e-302f17926f12"}},{"name":"{{step[9f7065ca-1ea1-40d9-905a-f1781e1ecd21].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-starts-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-starts-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-ends-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-ends-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.published-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛published-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>49f6892f8798b950e1684047cebb3559</master_snapshot>
-        <name>Get Stage Details by ID</name>
+        <name>Get Publish Stage Details by ID</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -27,15 +27,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>83ac8c8987183150e1684047cebb3529</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Get Stage Details by ID</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Get Publish Stage Details by ID</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_83ac8c8987183150e1684047cebb3529</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:41:00</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:41</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -49,10 +49,10 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:40:57</sys_created_on>
         <sys_id>3cf6892f8798b950e1684047cebb3508</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:40:57</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-09-04 17:50:38</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">70f6492f8798b950e1684047cebb35fb</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -132,7 +132,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=83ac8c8987183150e1684047cebb3529^sys_idNOT IN478d480d87183150e1684047cebb357f,878d480d87183150e1684047cebb35b2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</action>
+        <action display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</action>
         <cid>9f7065ca-1ea1-40d9-905a-f1781e1ecd21</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -148,12 +148,26 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-07-25 22:05:20</sys_created_on>
         <sys_id>478d480d87183150e1684047cebb357f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-07-25 22:05:21</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=478d480d87183150e1684047cebb357f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>478d480d87183150e1684047cebb357f</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:01</sys_created_on>
+        <sys_id>08cc128a8709b110e1684047cebb35f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>478d480d87183150e1684047cebb357f</document_key>
@@ -255,6 +269,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>478d480d87183150e1684047cebb357f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:01</sys_created_on>
+        <sys_id>cccc128a8709b110e1684047cebb35f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>478d480d87183150e1684047cebb357f</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
@@ -329,6 +357,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>478d480d87183150e1684047cebb357f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:01</sys_created_on>
+        <sys_id>8ccc128a8709b110e1684047cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>honor_duplicate_headers</field>
         <id>478d480d87183150e1684047cebb357f</id>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
@@ -349,6 +389,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
         <sys_updated_on>2023-07-25 22:05:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>478d480d87183150e1684047cebb357f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:01</sys_created_on>
+        <sys_id>84cc128a8709b110e1684047cebb35f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
@@ -487,7 +539,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</action>
+        <action display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</action>
         <cid>16a9ab72-1670-408b-b549-d255939a145a</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -744,12 +796,12 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=83ac8c8987183150e1684047cebb3529^sys_idNOT INbe8d480d87183150e1684047cebb3579"/>
+    <sys_hub_action_input action="delete_multiple" query="model=83ac8c8987183150e1684047cebb3529^sys_idNOT IN3fbc128a8709b110e1684047cebb3583"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e1873a64-5c8c-4c5c-bb6e-302f17926f12</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e1873a64-5c8c-4c5c-bb6e-302f17926f12</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -781,11 +833,11 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <label>Stage ID</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_83ac8c8987183150e1684047cebb3529</name>
@@ -806,8 +858,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-07-25 22:05:20</sys_created_on>
-        <sys_id>be8d480d87183150e1684047cebb3579</sys_id>
+        <sys_created_on>2023-09-04 17:52:00</sys_created_on>
+        <sys_id>3fbc128a8709b110e1684047cebb3583</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -815,7 +867,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-07-25 22:05:20</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -828,7 +880,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=be8d480d87183150e1684047cebb3579"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3fbc128a8709b110e1684047cebb3583"/>
     <sys_hub_action_output action="delete_multiple" query="model=83ac8c8987183150e1684047cebb3529^sys_idNOT IN70f6492f8798b950e1684047cebb35fb,838d480d87183150e1684047cebb35c1,8b8d480d87183150e1684047cebb35c5,9b8d480d87183150e1684047cebb35c9,b4f6492f8798b950e1684047cebb35ff"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -872,7 +924,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529</name>
@@ -959,7 +1011,7 @@
         <label>Solicitation Start Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529</name>
@@ -1046,7 +1098,7 @@
         <label>Solicitation End Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529</name>
@@ -1133,7 +1185,7 @@
         <label>Publish Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529</name>
@@ -1220,7 +1272,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
+        <model display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</model>
         <model_id>83ac8c8987183150e1684047cebb3529</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529</name>
@@ -1268,7 +1320,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=83ac8c8987183150e1684047cebb3529"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=83ac8c8987183150e1684047cebb3529^sys_idNOT IN578d480d87183150e1684047cebb35d1"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</action_type_id>
+        <action_type_id display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</action_type_id>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-07-25 22:05:21</sys_created_on>
         <sys_id>578d480d87183150e1684047cebb35d1</sys_id>
@@ -1277,7 +1329,7 @@
         <sys_updated_on>2023-07-25 22:05:21</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=578d480d87183150e1684047cebb35d1"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ac8c8987183150e1684047cebb3529^sys_idNOT INc78d480d87183150e1684047cebb357d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ac8c8987183150e1684047cebb3529^sys_idNOT INb7bc128a8709b110e1684047cebb3589"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>stage_id</element>
         <help/>
@@ -1288,8 +1340,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-07-25 22:05:20</sys_created_on>
-        <sys_id>c78d480d87183150e1684047cebb357d</sys_id>
+        <sys_created_on>2023-09-04 17:52:01</sys_created_on>
+        <sys_id>b7bc128a8709b110e1684047cebb3589</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -1297,7 +1349,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-07-25 22:05:20</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:01</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1421,19 +1473,19 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_83ac8c8987183150e1684047cebb3529"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=83ac8c8987183150e1684047cebb3529^sys_idNOT IN8af6c92f8798b950e1684047cebb35d8"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</action_id>
+        <action_id display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8af6c92f8798b950e1684047cebb35d8","name":"plan","plan_signature":null}}</plan>
-        <snapshot>2df6892f8798b950e1684047cebb35a6</snapshot>
+        <snapshot>39ecd68a8709b110e1684047cebb3574</snapshot>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:41:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8af6c92f8798b950e1684047cebb35d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:41:03</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:44</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1447,20 +1499,20 @@
         <copied_from_name/>
         <description/>
         <internal_name>get_stage_details_by_id</internal_name>
-        <label_cache>[{"name":"{{action.stage_id}}","label":"action➛Stage ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9f7065ca-1ea1-40d9-905a-f1781e1ecd21].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-starts-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-starts-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-ends-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-ends-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.published-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛published-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.stage_id}}","label":"action➛Stage ID","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e1873a64-5c8c-4c5c-bb6e-302f17926f12"}},{"name":"{{step[9f7065ca-1ea1-40d9-905a-f1781e1ecd21].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-starts-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-starts-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.solicitation-ends-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛solicitation-ends-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16a9ab72-1670-408b-b549-d255939a145a].root.data.attributes.published-at}}","label":"step➛JSON Parser step➛root➛data➛attributes➛published-at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Get Stage Details by ID</name>
+        <name>Get Publish Stage Details by ID</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Get Stage Details by ID">83ac8c8987183150e1684047cebb3529</parent_action>
+        <parent_action display_value="Get Publish Stage Details by ID">83ac8c8987183150e1684047cebb3529</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:40:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49f6892f8798b950e1684047cebb3559</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1468,7 +1520,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:41</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1496,10 +1548,10 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:41:00</sys_created_on>
         <sys_id>e9f6892f8798b950e1684047cebb35a3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:41:00</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">ddf6892f8798b950e1684047cebb3596</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=49f6892f8798b950e1684047cebb3559"/>
@@ -1565,7 +1617,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=49f6892f8798b950e1684047cebb3559^sys_idNOT IN55f6892f8798b950e1684047cebb357c,99f6892f8798b950e1684047cebb3562"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</action>
+        <action display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</action>
         <cid>16a9ab72-1670-408b-b549-d255939a145a</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1823,7 +1875,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</action>
+        <action display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</action>
         <cid>9f7065ca-1ea1-40d9-905a-f1781e1ecd21</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1839,10 +1891,10 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:40:59</sys_created_on>
         <sys_id>99f6892f8798b950e1684047cebb3562</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=99f6892f8798b950e1684047cebb3562"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1876,6 +1928,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>99f6892f8798b950e1684047cebb3562</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>26cc928a8709b110e1684047cebb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99f6892f8798b950e1684047cebb3562</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
@@ -1900,6 +1966,20 @@
         <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
         <value>78e750d087fb2910e1684047cebb35d9</value>
         <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99f6892f8798b950e1684047cebb3562</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>62cc928a8709b110e1684047cebb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -2020,6 +2100,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>99f6892f8798b950e1684047cebb3562</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>2ecc928a8709b110e1684047cebb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>honor_duplicate_headers</field>
         <id>99f6892f8798b950e1684047cebb3562</id>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
@@ -2040,6 +2132,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
         <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>99f6892f8798b950e1684047cebb3562</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>eecc928a8709b110e1684047cebb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
@@ -2177,12 +2281,12 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=49f6892f8798b950e1684047cebb3559^sys_idNOT IN1df6892f8798b950e1684047cebb355c"/>
+    <sys_hub_action_input action="delete_multiple" query="model=49f6892f8798b950e1684047cebb3559^sys_idNOT IN9acc928a8709b110e1684047cebb35a9"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e1873a64-5c8c-4c5c-bb6e-302f17926f12</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e1873a64-5c8c-4c5c-bb6e-302f17926f12</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2214,11 +2318,11 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <label>Stage ID</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_49f6892f8798b950e1684047cebb3559</name>
@@ -2239,8 +2343,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-08-02 20:40:59</sys_created_on>
-        <sys_id>1df6892f8798b950e1684047cebb355c</sys_id>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>9acc928a8709b110e1684047cebb35a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -2248,7 +2352,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2261,7 +2365,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1df6892f8798b950e1684047cebb355c"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9acc928a8709b110e1684047cebb35a9"/>
     <sys_hub_action_output action="delete_multiple" query="model=49f6892f8798b950e1684047cebb3559^sys_idNOT IN11f6892f8798b950e1684047cebb3593,51f6892f8798b950e1684047cebb358f,99f6892f8798b950e1684047cebb358a,ddf6892f8798b950e1684047cebb3596,ddf6892f8798b950e1684047cebb359a"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2305,7 +2409,7 @@
         <label>Publish Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_49f6892f8798b950e1684047cebb3559</name>
@@ -2392,7 +2496,7 @@
         <label>Solicitation End Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_49f6892f8798b950e1684047cebb3559</name>
@@ -2479,7 +2583,7 @@
         <label>Solicitation Start Date</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_49f6892f8798b950e1684047cebb3559</name>
@@ -2566,7 +2670,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_49f6892f8798b950e1684047cebb3559</name>
@@ -2653,7 +2757,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
+        <model display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</model>
         <model_id>49f6892f8798b950e1684047cebb3559</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_49f6892f8798b950e1684047cebb3559</name>
@@ -2701,7 +2805,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=49f6892f8798b950e1684047cebb3559"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=49f6892f8798b950e1684047cebb3559^sys_idNOT IN65f6892f8798b950e1684047cebb35a6"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Get Stage Details by ID">49f6892f8798b950e1684047cebb3559</action_type_id>
+        <action_type_id display_value="Get Publish Stage Details by ID">49f6892f8798b950e1684047cebb3559</action_type_id>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-02 20:41:00</sys_created_on>
         <sys_id>65f6892f8798b950e1684047cebb35a6</sys_id>
@@ -2710,7 +2814,7 @@
         <sys_updated_on>2023-08-02 20:41:00</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=65f6892f8798b950e1684047cebb35a6"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_49f6892f8798b950e1684047cebb3559^sys_idNOT IN1df6892f8798b950e1684047cebb3560"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_49f6892f8798b950e1684047cebb3559^sys_idNOT IN5ecc928a8709b110e1684047cebb35ac"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>stage_id</element>
         <help/>
@@ -2721,8 +2825,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-08-02 20:40:59</sys_created_on>
-        <sys_id>1df6892f8798b950e1684047cebb3560</sys_id>
+        <sys_created_on>2023-09-04 17:52:11</sys_created_on>
+        <sys_id>5ecc928a8709b110e1684047cebb35ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -2730,7 +2834,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-02 20:40:59</sys_updated_on>
+        <sys_updated_on>2023-09-04 17:52:11</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2855,6 +2959,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>83ac8c8987183150e1684047cebb3529</sys_id>
         <latest_snapshot>49f6892f8798b950e1684047cebb3559</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7b-04-20-2023_05-15-2023_1941.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2b-07-19-2023_08-01-2023_1829.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

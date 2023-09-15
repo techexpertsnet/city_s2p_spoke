@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.canWrite() &amp;&amp; current.x_citin_s2p_spoke_ci_project_id == '';</condition>
+        <condition>gs.hasRole('x_citin_s2p_spoke.user') &amp;&amp; current.canWrite() &amp;&amp; current.x_citin_s2p_spoke_ci_project_id == ''&amp;&amp;current.status!='pending_approval';</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,24 +28,29 @@
         <list_style/>
         <messages/>
         <name>Create CI Project</name>
-        <onclick>createCIProject()</onclick>
+        <onclick>checkAssignedUserAndProceed()</onclick>
         <order>100</order>
         <script><![CDATA[//Client-side 'onclick' function
 
 function createCIProject() {
-    var fields = ['number', 'assigned_to', 'short_description', 'x_citin_s2p_spoke_ci_initial_workflow'];
+        popupDispList();
+        return true;
+}
+// function clearMessages(){
+// 	setTimeout(function() {
+// 			g_form.clearMessages();
+// 		}, 5000); 
+// }
+function checkAssignedUserAndProceed() {
+	var fields = ['number', 'assigned_to', 'short_description', 'x_citin_s2p_spoke_ci_initial_workflow'];
     var fieldLabels = {
         'number': 'Number',
         'assigned_to': 'Assigned To',
         'short_description': 'Short Description',
         'x_citin_s2p_spoke_ci_initial_workflow': 'CI Initial Workflow'
     };
+	
     var missing_fields = [];
-
-    if (g_form.modified) {
-        g_form.addErrorMessage("Values on the form have changed.\nPlease save the form before continuing.");
-        return;
-    }
 
     for (var i = 0; i < fields.length; i++) {
         var fieldName = fields[i];
@@ -60,13 +65,33 @@ function createCIProject() {
     if (missing_fields.length > 0) {
         var errorMessage = "The following mandatory fields are missing: " + missing_fields.join(", ") + ". Please fill these fields out before moving forward.";
         g_form.addErrorMessage(errorMessage);
+// 		clearMessages();
         return;
-    } else {
-        popupDispList();
-        return true;
+	}
+	if (g_form.modified) {
+        g_form.addErrorMessage("Values on the form have changed.\nPlease save the form before continuing.");
+// 		clearMessages();
+        return;
     }
+	var sourcingRequestId = g_form.getUniqueValue();
+    var ga = new GlideAjax('citySourcingRequestFunctions');
+    ga.addParam('sysparm_name', 'hasValueInField');
+    ga.addParam('sysparm_table', 'sn_shop_sourcing_activity'); 
+    ga.addParam('sysparm_recordId', sourcingRequestId);
+    ga.addParam('sysparm_userField', 'assigned_to'); 
+    ga.addParam('sysparm_fieldToCheck', 'x_citin_s2p_spoke_ci_procurement_official_id');
+    ga.getXML(handleResponse);
 }
-
+function handleResponse(response) {
+	var result = response.responseXML.documentElement.getAttribute('answer');
+    if(result == "true"){
+		createCIProject();		
+	}else {
+		g_form.addErrorMessage("Select a user with a valid CI Project ID in the Assigned to field. Use the filter option to display users with the Project ID.");
+// 		clearMessages();
+		return;
+	}
+}
 
 function popupDispList() {
     //Initialize the GlideDialogWindow	
@@ -87,15 +112,15 @@ function popupDispList() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e331a738763e510e1684047cebb35a3</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>Create CI Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_ui_action_1e331a738763e510e1684047cebb35a3</sys_update_name>
-        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-        <sys_updated_on>2023-08-01 18:00:18</sys_updated_on>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-14 18:29:49</sys_updated_on>
         <table>sn_shop_sourcing_activity</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

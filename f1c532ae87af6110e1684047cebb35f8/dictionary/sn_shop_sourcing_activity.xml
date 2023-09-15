@@ -5,7 +5,7 @@
                 <element inactive_on_update="false" label="Solicitation" sequence="100" value="solicitation"/>
             </choice>
         </element>
-        <element label="CI Portal Link" max_length="1024" name="x_citin_s2p_spoke_ci_portal_link" type="url"/>
+        <element label="CI Project Link" max_length="1024" name="x_citin_s2p_spoke_ci_portal_link" type="url"/>
         <element label="CI Project ID" max_length="40" name="x_citin_s2p_spoke_ci_project_id" type="integer"/>
         <element label="Editors" max_length="4000" name="x_citin_s2p_spoke_editors" reference="sys_user" type="glide_list"/>
         <element label="Guest Contributors" max_length="4000" name="x_citin_s2p_spoke_guest_contributors" reference="sys_user" type="glide_list"/>

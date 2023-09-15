@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>false</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>false</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>City Innovate View Rule</name>
+        <order>100</order>
+        <roles>x_citin_s2p_spoke.user</roles>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-12 13:02:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0e66ee487593d10e1684047cebb35d9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>City Innovate View Rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sysrule_view_workspace_e0e66ee487593d10e1684047cebb35d9</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-12 13:20:15</sys_updated_on>
+        <table>sn_shop_sourcing_activity</table>
+        <tabs_order>[{"label":"Details","value":"Details"},{"label":"Purchase Line-&gt;Sourcing request","value":"sn_shop_purchase_line.sourcing_activity"},{"label":"Purchasing Tasks","value":"REL:843852b553920110812bddeeff7b123b"},{"label":"Purchasing SLAs","value":"REL:8e6679a67321101091da0d1e2ff6a71e"},{"label":"Negotiations","value":"REL:d1fd67d253e2101051a0ddeeff7b1225"},{"label":"Contracts","value":"REL:18c6a916c7311010a3bdb6f827c2603a"},{"label":"Cases","value":"REL:e3e75e7553920110812bddeeff7b129d"},{"label":"File Metadata-&gt;Request","value":"x_citin_s2p_spoke_file_metadata.request"}]</tabs_order>
+        <view display_value="Cityinnovate" name="cityinnovate">184b4997878c7910e1684047cebb35e6</view>
+        <workspace/>
+    </sysrule_view_workspace>
+</record_update>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function submitChanges() {    
+	var str = '{}';
+	var json = JSON.parse(str);
+	json.sourcing_activity_sysid = document.getElementById('sr_sys_id').value;
+	json.projectname =document.getElementById('name').value;
+	if(document.getElementById('owner').name!=""){		
+		json.official_id =document.getElementById('owner').name;
+	}
+	else {		
+		alert("Owner needs a Procurement Official ID");
+		return true;
+	}
+	
+	if(document.getElementById('purchaseclass').value!=""){		
+		json.purchaseclass =document.getElementById('purchaseclass').value;
+	}
+	else {		
+		alert("Purchase class is required");
+		return true;
+	}
+	
+	if(document.getElementById('solicitationtype').value!=""){		
+		json.solicitationtype =document.getElementById('solicitationtype').value;
+	}
+	else {		
+		alert("Solicitation Type is required");
+		return true;
+	}
+	
+	var categories = gel("solicitation_category");
+	var catArray = [];
+	for (var i=0; i<categories.selectedOptions.length; i++) {
+        var opt1 = categories.selectedOptions[i];		
+		catArray.push(opt1.value);                   
+    }
+	if(catArray.length > 0){		
+		json.categories = catArray;
+	}
+	else {		
+		alert("Please select categories");
+		return true;
+	}
+	//console.log(json.categories);
+	
+	var subcategories = gel("solicitation_subcategory");
+	var subcatArray = [];
+	for (var j=0; j<subcategories.selectedOptions.length; j++) {
+        var opt2 = subcategories.selectedOptions[j];		
+		subcatArray.push(opt2.value);                   
+    }
+	json.subcategories = subcatArray;
+	//console.log(json.subcategories);
+
+	//Evaluate the requirement of the LPA field based on the required attribute added through the checkLPAOptions() function in the html script
+	var lpaFieldElement = document.getElementById('leveragedprocurementagreement');
+	var lpaFieldValue = lpaFieldElement.value;
+	if(lpaFieldElement.required == true && lpaFieldValue == "" ){		
+		alert("Leveraged Procurement Agreement is required");
+		return false; 
+	}
+	else {
+		json.leveragedprocurementagreement = lpaFieldValue;
+	}
+	
+
+	
+	//Call createSOlicitation function
+	var submitForm = new GlideAjax('x_citin_s2p_spoke.SolicitationUtils');
+    submitForm.addParam('sysparm_name', 'createSolicitation');
+	submitForm.addParam('sysparm_jsonPayload', JSON.stringify(json));		
+    submitForm.getXML(ajaxResponse);	
+ 
+	function ajaxResponse(serverResponse) { 
+		// get result element and attributes	
+		var result = serverResponse.responseXML.getElementsByTagName("result");
+		var apiReturnJSON = result[0].getAttribute("apiReturnJSON");
+		
+		if(apiReturnJSON!="Error"){
+			GlideDialogWindow.get().destroy();
+			g_form.addInfoMessage("CI Details Created Successfully");
+			location.reload();		
+			return true;
+		}
+		else{
+			GlideDialogWindow.get().destroy();
+			g_form.addErrorMessage("Update error. API Return error");
+			return false;
+		}
+	}	
+	function disableFields(){
+		var submitButton = document.getElementById('submitButton');
+		submitButton.disabled = true;
+		submitButton.innerHTML = 'Submitting...';
+		var modalContainer = document.getElementById('modalContainer');
+		var inputFields = modalContainer.querySelectorAll('.form-control');
+		for (var i = 0; i < inputFields.length; i++) {
+			inputFields[i].setAttribute('disabled', 'disabled');
+			inputFields[i].classList.add('disabled-field');
+		}
+		//GlideDialogWindow.get().destroy();
+		window.location.href = window.location.href + '&sysparm_next_pg=true';
+	}
+	disableFields();
+	
+}
+
+function cancel() { 
+	window.location.href = window.location.href + '&sysparm_next_pg=true';
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_citin_s2p_spoke_create_ci_project_ws.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>  
+	  input:invalid {
+		  border: 1px dashed red;
+	  }
+	  input:invalid:required {
+		  border: 1px solid red;
+	  }
+	</style>
+	
+	<j:set var="jvar_sr_sys_id" value="${sysparm_srsysid}" />		
+	<g:evaluate>		
+		var sr = new GlideRecordSecure('sn_shop_sourcing_activity');
+		sr.get('${jvar_sr_sys_id}');		  
+	</g:evaluate>
+	<g:ui_form>
+		<input id="sr_sys_id" type="hidden" value="${jvar_sr_sys_id}" />
+		<div class="row" style="margin:1px">
+			<div id="modalContainer"  class="col-sm-12">
+				
+				<div id="sourcingrequest_readonly_group" class="form-group">
+					<div data-type="label" type="string" id="label.sr.readonly" nowrap="true">
+						<label class="control-label" for="sourcing_request">Sourcing Request</label>
+					</div>				
+					<div class="input-group-addon input-group-select" style="min-width:400px;">
+						<input class="form-control" type="text" id="sourcing_request" name="sourcing_request" value="${sr.number}" readonly="true"/>
+					</div>								
+				</div>
+				
+				<div id="name_group" class="form-group">
+					<div data-type="label" type="string" id="label.name" nowrap="true">
+						<label class="control-label" for="name">Name</label>
+					</div>				
+					<div class="input-group-addon input-group-select" style="min-width:400px;">
+						<input class="form-control" type="text" id="name" name="name" value="${sr.short_description}" readonly="true"/>					
+					</div>								
+				</div>
+				
+				<div id="initialworkflow_group" class="form-group">
+					<div data-type="label" type="string" id="label.initialworkflow" nowrap="true">
+						<label class="control-label" for="initialworkflow">Initial Workflow</label>
+					</div>				
+					<div class="input-group-addon input-group-select" style="min-width:400px;">
+						<input class="form-control" type="text" id="initialworkflow" name="initialworkflow" value="Solicitation" readonly="true"/>
+					</div>								
+				</div>
+				
+				<div id="owner_group" class="form-group">
+					<div data-type="label" type="string" id="label.owner" nowrap="true">
+						<label class="control-label" for="owner">Owner</label>
+					</div>				
+					<div class="input-group-addon input-group-select" style="min-width:400px;">
+						<input class="form-control" type="text" id="owner" name="${sr.assigned_to.x_citin_s2p_spoke_ci_procurement_official_id}" value="${sr.assigned_to.name}" readonly="true"/>					
+					</div>								
+				</div>
+				
+				<div id="purchaseclass_group" class="form-group">
+					<div data-type="label" type="string" id="label.purchaseclass" nowrap="true">
+						<label class="control-label" for="purchaseclass">Purchase Class*</label>
+					</div>
+					<div class="form-field input_controls">					
+						<g:evaluate jelly = "true">
+							 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+							 sta.addEncodedQuery('type=purchase class');
+							 sta.query();
+						</g:evaluate>
+						<select id="purchaseclass" name="purchaseclass" class="form-control" style="min-width:400px;">
+							<option value='' selected='selected'></option>
+							<j:while test="${sta.next()}">		
+							  <option value="${sta.value}">${sta.name}</option>
+							</j:while>						
+						</select>					
+					</div>											
+				</div>
+				
+				<div id="solicitationtype_group" class="form-group">
+					<div data-type="label" type="string" id="label.solicitationtype" nowrap="true">
+						<label class="control-label" for="solicitationtype">Solicitation Type*</label>
+					</div>				
+					<div class="form-field input_controls">					
+						<g:evaluate jelly = "true">
+							 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+							 sta.addEncodedQuery('type=solicitation type');
+							 sta.query();
+						</g:evaluate>
+						<select id="solicitationtype" name="solicitationtype" class="form-control" style="min-width:400px;">
+							<option value='' selected='selected'></option>
+							<j:while test="${sta.next()}">		
+							  <option value="${sta.value}">${sta.name}</option>
+							</j:while>						
+						</select>					
+					</div>								
+				</div>	
+				
+				<div id="solicitation_categories_group" class="form-group">
+					<div data-type="label" type="string" id="label.solicitation_category" nowrap="true">
+						<label class="control-label" for="solicitationcategory">Solicitation Category*</label>
+					</div>
+					<select id="solicitation_category"
+							multiple="multiple" class="form-control"
+							style="width:400px; padding: 10px; background-image: none"
+							required="required">
+						<g:evaluate jelly="true">
+						 var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+							sta.addEncodedQuery('type=category');
+							sta.query();
+							
+						</g:evaluate>
+						<j:while test="${sta.next()}">
+							<option id="${sta.sys_id}" value="${sta.sys_id}">${sta.name}</option>
+						</j:while>					
+					</select>
+				</div>
+				
+				<div id="solicitationtype_subcategories_group" class="form-group">
+					<div data-type="label" type="string" id="label.solicitation_subcategory" nowrap="true">
+						<label class="control-label" for="solicitation_subcategory">Solicitation Subcategory</label>
+					</div>
+					<select id="solicitation_subcategory"
+							multiple="multiple"
+							class="form-control"
+							style="width:400px; padding: 10px; background-image: none"
+							required="required">
+						
+					   <g:evaluate jelly = "true">
+							var mapArray = [];
+							var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+							sta.addEncodedQuery('type=subcategory');
+							sta.query();
+							 
+						  
+						   while(sta.next()){
+							   var map =  {};
+							   map.category = sta.getValue('parent');
+							   map.subcategory = sta.getValue('name');
+							   map.subcategory_id = sta.getUniqueValue();
+							   mapArray.push(map);
+						   }
+						</g:evaluate>					
+					</select>			
+				</div>
+			
+				<input id="hiddenMapArray" type="hidden" value="$[JSON.stringify(mapArray)]" />
+				
+				<div id="leveragedprocurementagreement_group" class="form-group">
+					<div data-type="label" type="string" id="label.leveragedprocurementagreement" nowrap="true">
+						<label class="control-label" for="leveragedprocurementagreement">Leveraged Procurement Agreement*</label>
+					</div>				
+					<div class="form-field input_controls">					
+						<g:evaluate jelly = "true">
+							var sta = new GlideRecordSecure('x_citin_s2p_spoke_document_builder_constants');
+							sta.addEncodedQuery('type=solicitations vehicles');
+							sta.query();
+						</g:evaluate>
+						<g:evaluate jelly="true">
+							var lpaOptions = [];
+							var lpaGR = new GlideRecord('x_citin_s2p_spoke_document_builder_constants');
+							lpaGR.addQuery('show_lpa_options', true);
+							lpaGR.query();
+							while (lpaGR.next()) {
+								lpaOptions.push(lpaGR.value.toString());
+							}
+						</g:evaluate>
+						<input id="hiddenLPAArray" type="hidden" value="$[JSON.stringify(lpaOptions)]" />
+						<select id="leveragedprocurementagreement" name="leveragedprocurementagreement" class="form-control" style="min-width:400px;">
+							<option value='' selected='selected'></option>
+							<j:while test="${sta.next()}">		
+							  <option value="${sta.value}">${sta.name}</option>
+							</j:while>						
+						</select>					
+					</div>								
+				</div>	
+				
+			</div>
+		</div>
+		
+		<div class="form-group pull-right" id="dialog-btns">
+			<button onClick = "return submitChanges()" type="button" id="submitButton" class="btn btn-primary btn-md" style="margin-right:5px">Submit</button>
+			<button onClick = "return cancel()" type="button" class="btn btn-default btn-md">Cancel</button>
+		</div>
+		
+	<!-- JavaScript Code to Update Sub Category Options -->
+		
+		<script>			
+			(function() {
+				<!--  Access the hidden input field -->
+				var hiddenMapArray = document.getElementById('hiddenMapArray');
+				<!-- Parse the JSON value from the input field to retrieve the array -->
+				var mapArray = JSON.parse(hiddenMapArray.value);
+				var category = document.getElementById('solicitation_category');
+				var subcategory = document.getElementById('solicitation_subcategory');
+				var solicitationType = document.getElementById('solicitationtype');
+			
+				<!-- Define the dependency mapping based on category selections -->
+				var dependencyMap = {};
+				mapArray.forEach((item) => {
+					var { category, subcategory } = item;
+					if (!(category in dependencyMap)) {
+						dependencyMap[category] = [];
+					}
+					dependencyMap[category].push(subcategory);
+				});
+
+
+				function updateSubcategoryOptions() {
+					var selectedOptions = Array.from(category.selectedOptions);
+					var availableOptions = [];
+					selectedOptions.forEach(function(option) {
+						var dependencyOptions = dependencyMap[option.value];
+						if (dependencyOptions) {
+							availableOptions = availableOptions.concat(dependencyOptions);
+						}
+					});
+					subcategory.innerHTML = '';
+					availableOptions.forEach(function(optionValue) {
+						var option = document.createElement('option');
+						option.value = mapArray.find(function(item) {
+							return item.subcategory === optionValue;
+						}).subcategory_id;
+						option.text = optionValue;
+						subcategory.add(option);
+					});
+				}
+				category.addEventListener('change', updateSubcategoryOptions);
+				updateSubcategoryOptions();
+			
+<!-- LPA FIELD CODE START -->
+
+				function checkLPAOptions(){
+					var LPAElement = document.getElementById('leveragedprocurementagreement_group');
+					var LPAfield = document.getElementById('leveragedprocurementagreement');
+					var selectedValue = solicitationType.value;
+					var allowedValues = document.getElementById('hiddenLPAArray');
+					var lpaArray = JSON.parse(allowedValues.value);
+
+					if (lpaArray.includes(selectedValue)) {
+					  LPAElement.style.display = 'block';
+					  LPAfield.required = true;
+					} else {
+					  LPAElement.style.display = 'none';
+					  LPAfield.required = false;
+					}
+				}
+				checkLPAOptions();
+			
+				solicitationType.addEventListener('change', function() {
+					checkLPAOptions();
+				  });
+				 
+<!-- LPA FIELD CODE END -->		
+			
+			
+			
+			
+			})();
+			
+		</script>
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>create_ci_project_ws</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-13 14:47:45</sys_created_on>
+        <sys_id>ace8c44d87dd7d10e1684047cebb35ff</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>create_ci_project_ws</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_page_ace8c44d87dd7d10e1684047cebb35ff</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-14 19:23:14</sys_updated_on>
+    </sys_ui_page>
+</record_update>

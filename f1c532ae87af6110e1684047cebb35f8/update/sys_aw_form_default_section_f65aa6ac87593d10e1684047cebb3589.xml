@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_form_default_section">
+    <sys_aw_form_default_section action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <form_section display_value="3">239c011b878c7910e1684047cebb3594</form_section>
+        <name>CityInnovate Form Section</name>
+        <order>100</order>
+        <sys_class_name>sys_aw_form_default_section</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-12 13:16:49</sys_created_on>
+        <sys_id>f65aa6ac87593d10e1684047cebb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CityInnovate Form Section</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_aw_form_default_section_f65aa6ac87593d10e1684047cebb3589</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-12 13:16:49</sys_updated_on>
+        <view_rule display_value="City Innovate View Rule">e0e66ee487593d10e1684047cebb35d9</view_rule>
+    </sys_aw_form_default_section>
+</record_update>

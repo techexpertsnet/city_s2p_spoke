@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Business Analysis Request  (SIMM 19A.3)">ec884fa28723a110e1684047cebb3539</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-10 21:33:01</sys_created_on>
+        <sys_id>bfd8024c87d5b910e1684047cebb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Business Analysis Request  (SIMM 19A.3)</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_bfd8024c87d5b910e1684047cebb351e</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-10 21:33:01</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sc_cat_item_catalog_bfd8024c87d5b910e1684047cebb351e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Business Analysis Request  (SIMM 19A.3)">ec884fa28723a110e1684047cebb3539</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-09-10 21:33:01</sys_created_on><sys_id>bfd8024c87d5b910e1684047cebb351e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Business Analysis Request  (SIMM 19A.3)</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sc_cat_item_catalog_bfd8024c87d5b910e1684047cebb351e</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-09-10 21:33:01</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1731474617</payload_hash>
+        <record_name>Service Catalog.Business Analysis Request  (SIMM 19A.3)</record_name>
+        <reverted_from/>
+        <source>d01a5e868709b110e1684047cebb35b5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-10 21:33:01</sys_created_on>
+        <sys_id>b7d8064c87d5b910e1684047cebb3586</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a810325f50000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-10 21:33:01</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>ffd8064ca1d5b910d1eb1bf51a735f85</update_guid>
+        <update_guid_history>ffd8064ca1d5b910d1eb1bf51a735f85:-1731474617</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Business Analysis Request  (SIMM 19A.3)">7e6a86cc87d5b910e1684047cebb3501</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-10 21:39:47</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>4cc1093990ad4d3a9ebb11266cf18284</sys_id>
+        <sys_metadata>bfd8024c87d5b910e1684047cebb351e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Business Analysis Request  (SIMM 19A.3)</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="Business Analysis Request  (SIMM 19A.3)">ec884fa28723a110e1684047cebb3539</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_bfd8024c87d5b910e1684047cebb351e</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_bfd8024c87d5b910e1684047cebb351e">b7d8064c87d5b910e1684047cebb3586</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-10 21:39:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

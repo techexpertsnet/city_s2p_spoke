@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="x_citin_s2p_spoke_ci_portal_link" label="CI Portal Link" language="en" table="sn_shop_sourcing_activity">
+    <sys_documentation element="x_citin_s2p_spoke_ci_portal_link" label="CI Project Link" language="en" table="sn_shop_sourcing_activity">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>x_citin_s2p_spoke_ci_portal_link</element>
             <help/>
             <hint/>
-            <label>CI Portal Link</label>
+            <label>CI Project Link</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
-            <plural>CI Portal Links</plural>
+            <plural>CI Project Links</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-26 21:34:44</sys_created_on>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>CI Portal Link</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>CI Project Link</sys_name>
             <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
             <sys_policy/>
             <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
             <sys_update_name>sys_documentation_sn_shop_sourcing_activity_x_citin_s2p_spoke_ci_portal_link_en</sys_update_name>
             <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-26 21:34:44</sys_updated_on>
+            <sys_updated_on>2023-08-08 16:19:34</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

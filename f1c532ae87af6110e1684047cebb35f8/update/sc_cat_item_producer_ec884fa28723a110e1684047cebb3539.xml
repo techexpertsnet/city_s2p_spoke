@@ -45,7 +45,7 @@
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
-        <owner display_value="Bogdan Moldoveanu">32368bff87b649104ea921f8dabb3592</owner>
+        <owner display_value="Bogdan Moldoveanu">a2925e8d878871104bbb21f8dabb35b9</owner>
         <picture/>
         <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=ec884fa28723a110e1684047cebb3539&amp;sysparm_preview=true", "summary");</preview>
@@ -54,14 +54,15 @@
         <recurring_frequency/>
         <redirect_url>generated_record</redirect_url>
         <request_method/>
-        <roles/>
+        <roles>snc_internal</roles>
         <save_options/>
         <save_script/>
         <sc_catalogs>7a7798fd5357101077b6ddeeff7b1294</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script/>
+        <script><![CDATA[current.status = 'pending_approval';
+current.assigned_to = current.opened_by;]]></script>
         <short_description>Prepare the SIMM 19A.3 for CDT</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -70,14 +71,14 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-06-23 20:49:03</sys_created_on>
         <sys_id>ec884fa28723a110e1684047cebb3539</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Business Analysis Request  (SIMM 19A.3)</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sc_cat_item_producer_ec884fa28723a110e1684047cebb3539</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-06-27 12:54:45</sys_updated_on>
+        <sys_updated_on>2023-09-14 16:56:18</sys_updated_on>
         <table_name>sn_shop_sourcing_activity</table_name>
         <taxonomy_topic display_value="Purchase Requests">c5ed62c4c3203010069aec4b7d40dd61</taxonomy_topic>
         <template/>
