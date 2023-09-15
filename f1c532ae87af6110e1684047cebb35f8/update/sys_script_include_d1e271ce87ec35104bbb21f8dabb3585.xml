@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_citin_s2p_spoke.citySourcingRequestFunctions</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script include contains helper functions used to check server side data and manupulate client side functionality primarily on the sourcing request table.</description>
+        <name>citySourcingRequestFunctions</name>
+        <script><![CDATA[var citySourcingRequestFunctions = Class.create();
+citySourcingRequestFunctions.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    hasValueInField: function() {
+        var table = this.getParameter('sysparm_table');
+        var recordId = this.getParameter('sysparm_recordId');
+        var userField = this.getParameter('sysparm_userField');
+        var fieldToCheck = this.getParameter('sysparm_fieldToCheck');
+
+        var gr = new GlideRecordSecure(table);
+        if (gr.get(recordId)) {
+            var user = new GlideRecordSecure('sys_user');
+            if (user.get(gr[userField])) {
+                var fieldValue = user.getValue(fieldToCheck);
+                return !gs.nil(fieldValue);
+            }
+        }
+        return false;
+
+    },
+
+
+    invokeSubflow: function(currentRecordID) {
+    try {
+        var currentRecord = new GlideRecordSecure('sn_shop_sourcing_activity');
+        if (currentRecord.get(currentRecordID)) {
+            var solicitationId = currentRecord.getValue('x_citin_s2p_spoke_ci_project_id');
+			var requestorId = gs.getUser().getID();
+            var requestor = new GlideRecordSecure('sys_user');
+            if (requestor.get(requestorId)) {
+                var procurementOfficialId = requestor.x_citin_s2p_spoke_ci_procurement_official_id;
+
+                var inputs = {};
+                inputs['solicitation_id'] = solicitationId;
+                inputs['requestor_id'] = procurementOfficialId;
+
+                sn_fd.FlowAPI.getRunner()
+                    .subflow('x_citin_s2p_spoke.trigger_document_export')
+                    .inBackground()
+                    .withInputs(inputs)
+                    .run();
+
+            } else {
+                gs.error('User not found: ' + requestorId);
+            }
+        } else {
+            gs.error('Record not found: ' + currentRecordID);
+        }
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error(message);
+    }
+},
+    type: 'citySourcingRequestFunctions'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-08-10 18:19:34</sys_created_on>
+        <sys_id>d1e271ce87ec35104bbb21f8dabb3585</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>citySourcingRequestFunctions</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_script_include_d1e271ce87ec35104bbb21f8dabb3585</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-08-17 20:00:45</sys_updated_on>
+    </sys_script_include>
+</record_update>
