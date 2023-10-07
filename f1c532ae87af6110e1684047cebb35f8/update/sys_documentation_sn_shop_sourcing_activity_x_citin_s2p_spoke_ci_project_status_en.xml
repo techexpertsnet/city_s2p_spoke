@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_citin_s2p_spoke_ci_project_status" label="CI Project Status" language="en" table="sn_shop_sourcing_activity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_citin_s2p_spoke_ci_project_status</element>
+            <help/>
+            <hint/>
+            <label>CI Project Status</label>
+            <language>en</language>
+            <name>sn_shop_sourcing_activity</name>
+            <plural>CI Project Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-06 18:08:37</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CI Project Status</sys_name>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_documentation_sn_shop_sourcing_activity_x_citin_s2p_spoke_ci_project_status_en</sys_update_name>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-06 18:08:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

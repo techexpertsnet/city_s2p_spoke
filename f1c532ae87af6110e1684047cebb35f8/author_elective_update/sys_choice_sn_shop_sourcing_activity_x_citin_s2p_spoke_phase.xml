@@ -20,57 +20,20 @@
             <element>x_citin_s2p_spoke_phase</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Builder: Processing</label>
+            <label>Builder: In Progress</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
             <sequence>100</sequence>
             <synonyms/>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
-            <sys_created_on>2023-06-28 04:54:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:54:45</sys_updated_on>
-            <value>processing</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>x_citin_s2p_spoke_phase</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Builder: In Progress</label>
-            <language>en</language>
-            <name>sn_shop_sourcing_activity</name>
-            <sequence>200</sequence>
-            <synonyms/>
-            <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 04:55:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:55:03</sys_updated_on>
+            <sys_id>89ddde8d87047110e1684047cebb35f5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-06 19:58:10</sys_updated_on>
             <value>in progress</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>x_citin_s2p_spoke_phase</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Under Review</label>
-            <language>en</language>
-            <name>sn_shop_sourcing_activity</name>
-            <sequence>300</sequence>
-            <synonyms/>
-            <sys_created_by>enea@cityinnovate.com</sys_created_by>
-            <sys_created_on>2023-06-28 04:55:25</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:55:25</sys_updated_on>
-            <value>under review</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -80,15 +43,16 @@
             <label>Published</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
-            <sequence>400</sequence>
+            <sequence>200</sequence>
             <synonyms/>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 04:55:39</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:55:39</sys_updated_on>
+            <sys_id>49dd12cd87047110e1684047cebb350d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-06 19:58:14</sys_updated_on>
             <value>published</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -99,15 +63,16 @@
             <label>Publication: Received Apps</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
-            <sequence>500</sequence>
+            <sequence>300</sequence>
             <synonyms/>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 04:56:00</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:56:00</sys_updated_on>
+            <sys_id>45dd12cd87047110e1684047cebb3513</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-06 19:58:19</sys_updated_on>
             <value>received apps</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -118,15 +83,16 @@
             <label>Evaluation</label>
             <language>en</language>
             <name>sn_shop_sourcing_activity</name>
-            <sequence>600</sequence>
+            <sequence>400</sequence>
             <synonyms/>
             <sys_created_by>enea@cityinnovate.com</sys_created_by>
             <sys_created_on>2023-06-28 04:56:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
-            <sys_updated_on>2023-06-28 04:56:14</sys_updated_on>
+            <sys_id>cddd12cd87047110e1684047cebb3531</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-06 19:58:26</sys_updated_on>
             <value>evaluation</value>
         </sys_choice>
     </sys_choice>
