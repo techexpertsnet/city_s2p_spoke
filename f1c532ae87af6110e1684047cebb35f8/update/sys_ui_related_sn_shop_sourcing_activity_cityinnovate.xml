@@ -2,101 +2,115 @@
     <sys_ui_related sys_domain="global" table="sn_shop_sourcing_activity" version="2" view="cityinnovate">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>0</position>
             <related_list>sn_shop_purchase_line.sourcing_activity</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>557b18e687413510e1684047cebb353f</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>65f1c4df87ddf1504bbb21f8dabb3546</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>1</position>
             <related_list>REL:843852b553920110812bddeeff7b123b</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>9d7b18e687413510e1684047cebb353f</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>adf1c4df87ddf1504bbb21f8dabb3546</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>2</position>
             <related_list>REL:8e6679a67321101091da0d1e2ff6a71e</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>917b18e687413510e1684047cebb3540</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>a1f1c4df87ddf1504bbb21f8dabb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>3</position>
             <related_list>REL:d1fd67d253e2101051a0ddeeff7b1225</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>957b18e687413510e1684047cebb3540</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>a5f1c4df87ddf1504bbb21f8dabb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>4</position>
             <related_list>REL:18c6a916c7311010a3bdb6f827c2603a</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>997b18e687413510e1684047cebb3540</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>a9f1c4df87ddf1504bbb21f8dabb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>5</position>
             <related_list>REL:e3e75e7553920110812bddeeff7b129d</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>9d7b18e687413510e1684047cebb3540</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>adf1c4df87ddf1504bbb21f8dabb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">517b18e687413510e1684047cebb353e</list_id>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
             <order_by/>
             <position>6</position>
             <related_list>x_citin_s2p_spoke_file_metadata.request</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
-            <sys_id>917b18e687413510e1684047cebb3541</sys_id>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>a1f1c4df87ddf1504bbb21f8dabb3548</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Sourcing Request - Cityinnovate" name="sn_shop_sourcing_activity" related_list="NULL" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">21f1c4df87ddf1504bbb21f8dabb3545</list_id>
+            <order_by/>
+            <position>7</position>
+            <related_list>x_citin_s2p_spoke_applicant_submission.sourcing_request</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
+            <sys_id>a5f1c4df87ddf1504bbb21f8dabb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Sourcing Request - Cityinnovate</calculated_name>
@@ -107,10 +121,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-            <sys_created_on>2023-09-05 21:44:06</sys_created_on>
+            <sys_created_on>2023-09-20 14:03:50</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>517b18e687413510e1684047cebb353e</sys_id>
+            <sys_id>21f1c4df87ddf1504bbb21f8dabb3545</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Sourcing Request - Cityinnovate</sys_name>
             <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -118,7 +132,7 @@
             <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
             <sys_update_name>sys_ui_related_sn_shop_sourcing_activity_cityinnovate</sys_update_name>
             <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-            <sys_updated_on>2023-09-05 21:44:06</sys_updated_on>
+            <sys_updated_on>2023-09-20 14:03:50</sys_updated_on>
             <sys_user/>
             <view display_value="Cityinnovate" name="cityinnovate">184b4997878c7910e1684047cebb35e6</view>
             <view_name/>

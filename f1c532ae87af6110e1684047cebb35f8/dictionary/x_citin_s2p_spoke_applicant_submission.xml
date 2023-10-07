@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="46e843e587d5bd104bbb21f8dabb35bd" label="Applicant Submission" max_length="40" name="x_citin_s2p_spoke_applicant_submission" type="collection">
+        <element label="Application ID" max_length="40" name="application_id" type="integer"/>
+        <element label="Completed At" max_length="40" name="completed_at" type="glide_date_time"/>
+        <element label="Created At" max_length="40" name="created_at" type="glide_date_time"/>
+        <element label="Primary Contact Email" max_length="100" name="primary_contact_email" type="string"/>
+        <element label="Primary Contact Name" max_length="100" name="primary_contact_name" type="string"/>
+        <element label="Sourcing Request" max_length="32" name="sourcing_request" reference="sn_shop_sourcing_activity" type="reference"/>
+        <element label="Team ID" max_length="40" name="team_id" type="integer"/>
+        <element label="Team Name" max_length="100" name="team_name" type="string"/>
+        <index name="index">
+            <element name="sourcing_request"/>
+        </index>
+    </element>
+</database>
