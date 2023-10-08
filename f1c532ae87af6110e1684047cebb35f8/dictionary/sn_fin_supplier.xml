@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8c16d20587407110e1684047cebb358b" extends="sn_fin_organization" label="Supplier" max_length="40" name="sn_fin_supplier" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Team ID" max_length="40" name="x_citin_s2p_spoke_team_id" type="string"/>
+    </element>
+</database>

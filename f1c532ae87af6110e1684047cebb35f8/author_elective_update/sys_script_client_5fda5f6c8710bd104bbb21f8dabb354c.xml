@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>City - Make CI Fields read only</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+  var ciFields = {
+    "CI Initial Workflow" : "x_citin_s2p_spoke_ci_initial_workflow",
+	"Solicitation Type" : "x_citin_s2p_spoke_solicitation_type",
+	"Show LPA Options" : "x_citin_s2p_spoke_show_lpa_options",
+	"Solicitation Categories" : "x_citin_s2p_spoke_solicitation_categories",
+	"Solicitation Sub-Categories" : "x_citin_s2p_spoke_solicitation_sub_categories",
+	"Leveraged Procurement Agreements" : "x_citin_s2p_spoke_leveraged_procurement_agreement",
+	"CI Portal Link" : "x_citin_s2p_spoke_ci_portal_link",
+	"Editors" : "x_citin_s2p_spoke_editors",
+	"Reviewers" : "x_citin_s2p_spoke_reviewers",
+	"Guest Contributors" : "x_citin_s2p_spoke_guest_contributors",
+	"Viewers" : "x_citin_s2p_spoke_viewers",
+	"Publish Date" : "x_citin_s2p_spoke_publish_date",
+	"Submission Start Date" : "x_citin_s2p_spoke_submission_start_date",
+	"Submission End Date" : "x_citin_s2p_spoke_submission_end_date",
+	"Percent Complete" : "x_citin_s2p_spoke_percent_complete",
+  };
+
+  setCiFieldToReadOnly(ciFields);
+}
+
+function setCiFieldToReadOnly(ciFieldsObj) {
+  for (var field in ciFieldsObj) {
+    var ciField = g_form.field.value;
+    if (ciField) {
+      ciField.readOnly = true;
+    }
+  }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 23:46:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5fda5f6c8710bd104bbb21f8dabb354c</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>City - Make CI Fields read only</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_script_client_5fda5f6c8710bd104bbb21f8dabb354c</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:16:39</sys_updated_on>
+        <table>sn_shop_sourcing_activity</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_script_client_5fda5f6c8710bd104bbb21f8dabb354c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;City - Make CI Fields read only&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+  var ciFields = {
+    "CI Initial Workflow" : "x_citin_s2p_spoke_ci_initial_workflow",
+	"Solicitation Type" : "x_citin_s2p_spoke_solicitation_type",
+	"Show LPA Options" : "x_citin_s2p_spoke_show_lpa_options",
+	"Solicitation Categories" : "x_citin_s2p_spoke_solicitation_categories",
+	"Solicitation Sub-Categories" : "x_citin_s2p_spoke_solicitation_sub_categories",
+	"Leveraged Procurement Agreements" : "x_citin_s2p_spoke_leveraged_procurement_agreement",
+	"CI Portal Link" : "x_citin_s2p_spoke_ci_portal_link",
+	"Editors" : "x_citin_s2p_spoke_editors",
+	"Reviewers" : "x_citin_s2p_spoke_reviewers",
+	"Guest Contributors" : "x_citin_s2p_spoke_guest_contributors",
+	"Viewers" : "x_citin_s2p_spoke_viewers",
+	"Publish Date" : "x_citin_s2p_spoke_publish_date",
+	"Submission Start Date" : "x_citin_s2p_spoke_submission_start_date",
+	"Submission End Date" : "x_citin_s2p_spoke_submission_end_date",
+	"Percent Complete" : "x_citin_s2p_spoke_percent_complete",
+  };
+
+  setCiFieldToReadOnly(ciFields);
+}
+
+function setCiFieldToReadOnly(ciFieldsObj) {
+  for (var field in ciFieldsObj) {
+    var ciField = g_form.field.value;
+    if (ciField) {
+      ciField.readOnly = true;
+    }
+  }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;enea@cityinnovate.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-24 23:46:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5fda5f6c8710bd104bbb21f8dabb354c&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;City - Make CI Fields read only&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="City Innovate S2P Spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5fda5f6c8710bd104bbb21f8dabb354c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;enea@cityinnovate.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-25 18:16:39&lt;/sys_updated_on&gt;&lt;table&gt;sn_shop_sourcing_activity&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>368039046</payload_hash>
+        <record_name>City - Make CI Fields read only</record_name>
+        <reverted_from/>
+        <source>567f26a0879c7d104bbb21f8dabb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-25 18:16:39</sys_created_on>
+        <sys_id>8939973c879cbd104bbb21f8dabb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1898e4477c40000001</sys_recorded_at>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:16:39</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>c139973c239cbd103b706116c5977f10</update_guid>
+        <update_guid_history>c139973c239cbd103b706116c5977f10:368039046,0209173c779cbd10948f85b6c825ed40:-1910353049,7004d7f0169cbd10314e35512c5835c6:-369524298,873f87f0429cbd103f3eff41912c430a:-1894314074,3b7ecf703d9cbd10a888bdab43ff9445:-235750129,c56dc370d19cbd101841368e4cb6f443:795951918,d2fc0f30a99cbd108350760eff3cc6c2:-1008139409,1dacc730da9cbd105e0d89ceffe32562:-2142067323,3b5c0730789cbd105e2bc989f26e1b05:-1622873999,b20c43fc415cbd1012f6c19ae960ad51:1991215790,651b0bbc645cbd10b42bf01fc54d9553:1401828229,d52acb7c375cbd1029d387643d7a9105:-1313969033,5499077c2f5cbd105b393af5dd1c166b:1765694578,eb298f3c315cbd10485f18fb12b1153f:696810887,cfa8cb3c3d5cbd102bcdf1f755471eee:164834103,b11887b8b45cbd101038027f63658ea7:-1031890969,5f874bf8395cbd10037b1cb24df22008:2073176481,00260378305cbd104377a4a83a93964d:1814531583,d265cf38365cbd1018935229c92ded20:-908917798,23b483f4bb5cbd10eb7fc3129ed4baf5:745664763,d6dfdf604350bd107d033e01ca2a404a:1379154143,abbf93a0ee50bd10581ed2b619373851:-506152242,c37f1b20c050bd10aab331e794f1e4c0:-850825730,b74f17acfe10bd1080e46b4f77bf9766:1268269037,6acd17ac4710bd10efc67aa1cdecca8b:-1554979324,c12b93ac3110bd10ebb7e04393c411f5:151867013,e51b1f2cd510bd100c21cf13518f19af:2109962536</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-25 18:18:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1c5a380e729f44649db6bfa7af8bec90</sys_id>
+        <sys_metadata>5fda5f6c8710bd104bbb21f8dabb354c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>City - Make CI Fields read only</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="Sn Shop Sourcing Activity">6546da4587407110e1684047cebb35f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_script_client_5fda5f6c8710bd104bbb21f8dabb354c</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5fda5f6c8710bd104bbb21f8dabb354c">8939973c879cbd104bbb21f8dabb3510</sys_update_version>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:18:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

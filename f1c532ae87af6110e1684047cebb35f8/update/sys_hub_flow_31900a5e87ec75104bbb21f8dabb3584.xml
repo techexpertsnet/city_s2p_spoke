@@ -1641,9 +1641,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=31900a5e87ec75104bbb21f8dabb3584"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=31900a5e87ec75104bbb21f8dabb3584^sys_idNOT INbc12bd1487f4bd10e1684047cebb35f0"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1a4d27</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"bc12bd1487f4bd10e1684047cebb35f0","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Trigger Document Export and Load">31900a5e87ec75104bbb21f8dabb3584</plan_id>
-        <snapshot>9202b91487f4bd10e1684047cebb35fa</snapshot>
+        <snapshot>d240ecfa87417510e1684047cebb35e3</snapshot>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-17 18:00:30</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -3015,6 +3015,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>31900a5e87ec75104bbb21f8dabb3584</sys_id>
         <latest_snapshot>9202b91487f4bd10e1684047cebb35fa</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2a-06-26-2023_07-05-2023_1648.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2b-07-19-2023_08-01-2023_1829.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

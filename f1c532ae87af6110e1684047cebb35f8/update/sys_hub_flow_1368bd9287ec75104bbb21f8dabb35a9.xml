@@ -69,7 +69,7 @@
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
-        <entered_time/>
+        <entered_time>1970-01-01 00:00:10</entered_time>
         <name>Trigger:fa3a79d687ec75104bbb21f8dabb3586</name>
         <offset/>
         <offset_type>0</offset_type>
@@ -79,22 +79,22 @@
         <run_dayofweek>1</run_dayofweek>
         <run_period>1970-01-01 00:30:00</run_period>
         <run_start/>
-        <run_time>1970-01-01 08:00:00</run_time>
-        <run_type>periodically</run_type>
+        <run_time>1970-01-01 00:00:10</run_time>
+        <run_type>daily</run_type>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('fa3a79d687ec75104bbb21f8dabb3586');]]></script>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-11 13:28:18</sys_created_on>
         <sys_id>723a79d687ec75104bbb21f8dabb3587</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-23 18:47:32</sys_updated_on>
-        <time_zone/>
+        <sys_updated_on>2023-10-08 16:29:57</sys_updated_on>
+        <time_zone>floating</time_zone>
         <trigger display_value="">fa3a79d687ec75104bbb21f8dabb3586</trigger>
         <upgrade_safe>true</upgrade_safe>
     </sys_flow_trigger_auto_script>
@@ -450,7 +450,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f63a79d687ec75104bbb21f8dabb3589","name":"plan","plan_signature":null}}</plan>
         <plan_id>1368bd9287ec75104bbb21f8dabb35a9</plan_id>
-        <snapshot>814df85e87b0b5104bbb21f8dabb350e</snapshot>
+        <snapshot>d40651f487313110e1684047cebb35ef</snapshot>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-11 13:28:18</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -826,6 +826,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>1368bd9287ec75104bbb21f8dabb35a9</sys_id>
         <latest_snapshot>163a79d687ec75104bbb21f8dabb350d</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2a-06-26-2023_07-05-2023_1648.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1-08-16-2023_08-21-2023_1705.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

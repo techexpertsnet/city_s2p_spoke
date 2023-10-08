@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="bea26dc88773e5104bbb21f8dabb3579" sys_domain="global" table="sn_shop_sourcing_activity" version="3">
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_shop_sourcing_activity</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-06-28 05:11:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bea26dc88773e5104bbb21f8dabb3579</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_shop_sourcing_activity</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bea26dc88773e5104bbb21f8dabb3579</sys_update_name>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-06-28 05:11:55</sys_updated_on>
+            <sys_user/>
+            <view display_value="">25e02d488773e5104bbb21f8dabb35a3</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

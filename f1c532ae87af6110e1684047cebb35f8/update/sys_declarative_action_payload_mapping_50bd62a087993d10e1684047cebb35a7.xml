@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition/>
+        <label>CREATE_CI_PROJECT Form</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <payload_map>field@sysId={{sysId}}^route=create-ci-project^field@table={{table}}^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-09-12 13:30:51</sys_created_on>
+        <sys_id>50bd62a087993d10e1684047cebb35a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CREATE_CI_PROJECT Form</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_50bd62a087993d10e1684047cebb35a7</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-09-12 13:30:51</sys_updated_on>
+    </sys_declarative_action_payload_mapping>
+</record_update>

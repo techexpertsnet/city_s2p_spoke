@@ -65,7 +65,7 @@
         <update_guid_history>419cb3f3152be5102f1e98dcfa8f478f:2008685380</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Document Builder Constants">abefbbf7872be510e1684047cebb35e9</sys_audit_delete>
+        <sys_audit_delete display_value="">abefbbf7872be510e1684047cebb35e9</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-06-27 22:00:31</sys_created_on>

@@ -42,7 +42,7 @@
         <update_guid_history>f4dd385c977f2910485e843a993b0098:-835059188,08ea7c588c7f2910c35c6849d55f70c0:1186200589</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_citin_s2p_spoke_db_constants_staging.x_citin_s2p_spoke.user">efa9c5d887bf2910e1684047cebb35fe</sys_audit_delete>
+        <sys_audit_delete display_value="">efa9c5d887bf2910e1684047cebb35fe</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-06-28 22:01:14</sys_created_on>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true" audit="true" db_object_id="6856528587407110e1684047cebb35ef" extends="task" label="Negotiation" max_length="40" name="sn_shop_negotiation" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Cumulative Pass/Fail" max_length="40" name="x_citin_s2p_spoke_cumulative_pass_fail" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pass" sequence="0" value="Pass"/>
+                <element inactive_on_update="false" label="Fail" sequence="1" value="Fail"/>
+            </choice>
+        </element>
+        <element label="Cumulative Score" max_length="40" name="x_citin_s2p_spoke_cumulative_score" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Stage Tag" max_length="40" name="x_citin_s2p_spoke_stage_tag" type="string"/>
+    </element>
+</database>

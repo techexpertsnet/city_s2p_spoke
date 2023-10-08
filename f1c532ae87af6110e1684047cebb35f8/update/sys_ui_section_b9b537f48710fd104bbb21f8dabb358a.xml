@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="City Innovate" section_id="b9b537f48710fd104bbb21f8dabb358a" sys_domain="global" table="sn_fin_supplier" version="3" view="cityinnovate">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_citin_s2p_spoke_team_id</element>
+            <position>0</position>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-07-25 20:23:58</sys_created_on>
+            <sys_id>0a563ff48710fd104bbb21f8dabb35f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="City Innovate" display_value="City Innovate" name="sn_fin_supplier" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">b9b537f48710fd104bbb21f8dabb358a</sys_ui_section>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-07-25 20:23:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>City Innovate</caption>
+            <header>false</header>
+            <name>sn_fin_supplier</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>enea@cityinnovate.com</sys_created_by>
+            <sys_created_on>2023-07-25 20:21:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9b537f48710fd104bbb21f8dabb358a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_fin_supplier</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_section_b9b537f48710fd104bbb21f8dabb358a</sys_update_name>
+            <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+            <sys_updated_on>2023-07-25 20:21:13</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Cityinnovate" name="cityinnovate">184b4997878c7910e1684047cebb35e6</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

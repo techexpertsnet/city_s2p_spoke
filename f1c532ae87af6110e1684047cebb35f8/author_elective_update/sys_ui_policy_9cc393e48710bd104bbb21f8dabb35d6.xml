@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions/>
+        <description/>
+        <global>false</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>test</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 23:14:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9cc393e48710bd104bbb21f8dabb35d6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_policy_9cc393e48710bd104bbb21f8dabb35d6</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 23:17:23</sys_updated_on>
+        <table>sn_shop_sourcing_activity</table>
+        <ui_type>0</ui_type>
+        <view display_value="Cityinnovate" name="cityinnovate">cityinnovate</view>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_ui_policy_9cc393e48710bd104bbb21f8dabb35d6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;test&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;enea@cityinnovate.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-24 23:14:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9cc393e48710bd104bbb21f8dabb35d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="City Innovate S2P Spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_9cc393e48710bd104bbb21f8dabb35d6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;enea@cityinnovate.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-24 23:17:23&lt;/sys_updated_on&gt;&lt;table&gt;sn_shop_sourcing_activity&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view display_value="Cityinnovate" name="cityinnovate"&gt;cityinnovate&lt;/view&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1897874029</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>567f26a0879c7d104bbb21f8dabb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 23:17:23</sys_created_on>
+        <sys_id>607493e48710bd104bbb21f8dabb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1898a31706f0000001</sys_recorded_at>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 23:17:23</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>a87493e4ef10bd105cd5f0ed73482815</update_guid>
+        <update_guid_history>a87493e4ef10bd105cd5f0ed73482815:-1897874029,5e645fe4dd10bd10bd8c7bbc3fa5ec6a:-566632584,d2449be46010bd104711258a1561d1c2:-1897874029,4fc39b647b10bd10d308bc33896d9fd8:-1963092566</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 23:34:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>1dbb4a8e6cdb4e9985255e0f46d2b711</sys_id>
+        <sys_metadata>9cc393e48710bd104bbb21f8dabb35d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent display_value="Sn Shop Sourcing Activity">6546da4587407110e1684047cebb35f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_9cc393e48710bd104bbb21f8dabb35d6</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_9cc393e48710bd104bbb21f8dabb35d6">607493e48710bd104bbb21f8dabb3516</sys_update_version>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 23:34:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

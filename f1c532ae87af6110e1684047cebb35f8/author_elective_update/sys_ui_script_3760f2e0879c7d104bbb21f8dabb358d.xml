@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_citin_s2p_spoke.hidelock</name>
+        <script><![CDATA[var x_citin_s2p_spoke = x_citin_s2p_spoke || {};
+
+x_citin_s2p_spoke.hidelock = (function() {
+	"use strict";
+
+ function hideLockIcon() {
+    var lockIcons = document.querySelectorAll('.select2-selection__choice__remove');
+    for (var i = 0; i < lockIcons.length; i++) {
+      lockIcons[i].style.display = 'none';
+    }
+  }
+  hideLockIcon();
+
+	return {
+
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+		type:  "hidelock"
+	};
+})();
+]]></script>
+        <script_name>hidelock</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 20:55:39</sys_created_on>
+        <sys_id>3760f2e0879c7d104bbb21f8dabb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke.hidelock</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_script_3760f2e0879c7d104bbb21f8dabb358d</sys_update_name>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 20:55:39</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_ui_script_3760f2e0879c7d104bbb21f8dabb358d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;ignore_in_now_experience&gt;false&lt;/ignore_in_now_experience&gt;&lt;name&gt;x_citin_s2p_spoke.hidelock&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var x_citin_s2p_spoke = x_citin_s2p_spoke || {};
+
+x_citin_s2p_spoke.hidelock = (function() {
+	"use strict";
+
+ function hideLockIcon() {
+    var lockIcons = document.querySelectorAll('.select2-selection__choice__remove');
+    for (var i = 0; i &lt; lockIcons.length; i++) {
+      lockIcons[i].style.display = 'none';
+    }
+  }
+  hideLockIcon();
+
+	return {
+
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+		type:  "hidelock"
+	};
+})();
+]]&gt;&lt;/script&gt;&lt;script_name&gt;hidelock&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;enea@cityinnovate.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-24 20:55:39&lt;/sys_created_on&gt;&lt;sys_id&gt;3760f2e0879c7d104bbb21f8dabb358d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_citin_s2p_spoke.hidelock&lt;/sys_name&gt;&lt;sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="City Innovate S2P Spoke"&gt;f1c532ae87af6110e1684047cebb35f8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3760f2e0879c7d104bbb21f8dabb358d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;enea@cityinnovate.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-24 20:55:39&lt;/sys_updated_on&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;use_scoped_format&gt;true&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2077494695</payload_hash>
+        <record_name>x_citin_s2p_spoke.hidelock</record_name>
+        <reverted_from/>
+        <source>567f26a0879c7d104bbb21f8dabb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 20:55:39</sys_created_on>
+        <sys_id>140436a4879c7d104bbb21f8dabb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18989afae050000001</sys_recorded_at>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 20:55:39</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>5c0436a4a69c7d10e6fe2770021c5d9b</update_guid>
+        <update_guid_history>5c0436a4a69c7d10e6fe2770021c5d9b:2077494695</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>enea@cityinnovate.com</sys_created_by>
+        <sys_created_on>2023-07-24 21:00:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>17820938302d48488e963b1a24627564</sys_id>
+        <sys_metadata>3760f2e0879c7d104bbb21f8dabb358d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke.hidelock</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_ui_script_3760f2e0879c7d104bbb21f8dabb358d</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_3760f2e0879c7d104bbb21f8dabb358d">140436a4879c7d104bbb21f8dabb359c</sys_update_version>
+        <sys_updated_by>enea@cityinnovate.com</sys_updated_by>
+        <sys_updated_on>2023-07-24 21:00:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

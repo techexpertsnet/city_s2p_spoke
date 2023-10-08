@@ -36,13 +36,13 @@
         <source>a0794503873321104bbb21f8dabb353f</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-07-07 11:03:30</sys_created_on>
         <sys_id>b7b89a4f87b36110e1684047cebb358e</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>18930056fd00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-13 22:20:05</sys_updated_on>
         <type>Table Subscription Configuration</type>
         <update_guid>77b89a4f59b361107073fa46ed46478e</update_guid>
         <update_guid_history>77b89a4f59b361107073fa46ed46478e:1110327713</update_guid_history>
