@@ -5,36 +5,36 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>Guided Setup</hint>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Applicant Submissions</mobile_title>
+        <mobile_title>Guided Setup</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_citin_s2p_spoke_applicant_submission</name>
-        <order>100</order>
+        <name/>
+        <order>50</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>/$guided_setup.do#/content/198f0c3487f1bd104bbb21f8dabb354a</query>
         <report/>
-        <roles>x_citin_s2p_spoke.user</roles>
+        <roles>x_citin_s2p_spoke.administrator</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-09-15 18:04:19</sys_created_on>
+        <sys_created_on>2023-10-07 16:16:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6b0907e587d5bd104bbb21f8dabb351b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Applicant Submissions</sys_name>
+        <sys_id>609244fc87b93d50e1684047cebb35f4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Guided Setup</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
-        <sys_update_name>sys_app_module_6b0907e587d5bd104bbb21f8dabb351b</sys_update_name>
+        <sys_update_name>sys_app_module_609244fc87b93d50e1684047cebb35f4</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-07 16:14:37</sys_updated_on>
+        <sys_updated_on>2023-10-07 17:25:54</sys_updated_on>
         <timeline_page/>
-        <title>Applicant Submissions</title>
+        <title>Guided Setup</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

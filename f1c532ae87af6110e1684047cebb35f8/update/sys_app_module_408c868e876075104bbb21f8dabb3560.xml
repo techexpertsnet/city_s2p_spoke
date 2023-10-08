@@ -13,7 +13,7 @@
         <mobile_title>File Metadatas</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_citin_s2p_spoke_file_metadata</name>
-        <order/>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>408c868e876075104bbb21f8dabb3560</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>File Metadatas</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_app_module_408c868e876075104bbb21f8dabb3560</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-08-10 20:09:37</sys_updated_on>
+        <sys_updated_on>2023-10-07 16:15:00</sys_updated_on>
         <timeline_page/>
         <title>File Metadatas</title>
         <uncancelable>false</uncancelable>
