@@ -69,7 +69,7 @@
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
-        <entered_time>1970-01-01 00:00:10</entered_time>
+        <entered_time>1970-01-01 02:00:10</entered_time>
         <name>Trigger:fa3a79d687ec75104bbb21f8dabb3586</name>
         <offset/>
         <offset_type>0</offset_type>
@@ -79,21 +79,21 @@
         <run_dayofweek>1</run_dayofweek>
         <run_period>1970-01-01 00:30:00</run_period>
         <run_start/>
-        <run_time>1970-01-01 00:00:10</run_time>
+        <run_time>1970-01-01 02:00:10</run_time>
         <run_type>daily</run_type>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('fa3a79d687ec75104bbb21f8dabb3586');]]></script>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-11 13:28:18</sys_created_on>
         <sys_id>723a79d687ec75104bbb21f8dabb3587</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-08 16:29:57</sys_updated_on>
+        <sys_updated_on>2023-10-08 17:28:50</sys_updated_on>
         <time_zone>floating</time_zone>
         <trigger display_value="">fa3a79d687ec75104bbb21f8dabb3586</trigger>
         <upgrade_safe>true</upgrade_safe>
