@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>city_innovate_sourcing_request</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-07-13 22:20:04</sys_created_on>
+        <sys_id>39dd52cd87047110e1684047cebb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>City Innovate Sourcing Request</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_ui_view_39dd52cd87047110e1684047cebb35db</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-07-13 22:20:04</sys_updated_on>
+        <title>City Innovate Sourcing Request</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_ui_view_39dd52cd87047110e1684047cebb35db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>city_innovate_sourcing_request</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-07-13 22:20:04</sys_created_on><sys_id>39dd52cd87047110e1684047cebb35db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>City Innovate Sourcing Request</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sys_ui_view_39dd52cd87047110e1684047cebb35db</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-07-13 22:20:04</sys_updated_on><title>City Innovate Sourcing Request</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>523114027</payload_hash>
+        <record_name>City Innovate Sourcing Request</record_name>
+        <reverted_from/>
+        <source>187e0930873131104bbb21f8dabb350f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-10-07 21:44:34</sys_created_on>
+        <sys_id>1f55d39987b5f1104bbb21f8dabb35a0</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18b0c1969d00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UI View</type>
+        <update_guid>db55d399b6b5f1100cef28753c66dca0</update_guid>
+        <update_guid_history>db55d399b6b5f1100cef28753c66dca0:523114027</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-09 20:51:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>2dd42f7af8e24537889a232e052bea61</sys_id>
+        <sys_metadata>39dd52cd87047110e1684047cebb35db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>City Innovate Sourcing Request</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_ui_view_39dd52cd87047110e1684047cebb35db</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_39dd52cd87047110e1684047cebb35db">1f55d39987b5f1104bbb21f8dabb35a0</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-09 20:51:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
