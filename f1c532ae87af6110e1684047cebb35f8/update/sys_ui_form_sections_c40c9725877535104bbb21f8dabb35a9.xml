@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c40c9725877535104bbb21f8dabb35a9" sys_domain="global" table="sn_shop_sourcing_activity" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-10 15:58:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c0c9725877535104bbb21f8dabb35ac</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_shop_sourcing_activity" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">c40c9725877535104bbb21f8dabb35a9</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">040c9725877535104bbb21f8dabb3551</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-10 15:58:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-10 16:02:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7dc5765877535104bbb21f8dabb3523</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_shop_sourcing_activity" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">c40c9725877535104bbb21f8dabb35a9</sys_ui_form>
+            <sys_ui_section caption="Summary Details" display_value="Summary Details" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">dbdc1765877535104bbb21f8dabb35c9</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-10 16:02:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-10 16:05:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d59d13a5877535104bbb21f8dabb358b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_shop_sourcing_activity" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">c40c9725877535104bbb21f8dabb35a9</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">199d13a5877535104bbb21f8dabb3588</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-10 16:05:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-10 16:14:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c9f1329877535104bbb21f8dabb3571</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_shop_sourcing_activity" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">c40c9725877535104bbb21f8dabb35a9</sys_ui_form>
+            <sys_ui_section caption="City Innovate" display_value="City Innovate" name="sn_shop_sourcing_activity" sys_domain="global" view="184b4997878c7910e1684047cebb35e6">dc9f1329877535104bbb21f8dabb3534</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-10 16:14:05</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_shop_sourcing_activity</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-10-10 15:58:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c40c9725877535104bbb21f8dabb35a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_shop_sourcing_activity</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c40c9725877535104bbb21f8dabb35a9</sys_update_name>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-10-10 15:58:29</sys_updated_on>
+            <sys_user/>
+            <view display_value="Cityinnovate" name="cityinnovate">184b4997878c7910e1684047cebb35e6</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
