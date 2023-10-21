@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_status_of_content">
+    <gsw_status_of_content action="INSERT_OR_UPDATE">
+        <best_practice_allowed_ever>0</best_practice_allowed_ever>
+        <checksum/>
+        <content display_value="Get DB Constants">09e5ad84878a3d104bbb21f8dabb35e4</content>
+        <effective_weight>1</effective_weight>
+        <more_info_visited>false</more_info_visited>
+        <previous_status>0</previous_status>
+        <progress>0</progress>
+        <related_log_entry display_value="2023-10-20 17:13:15">58f38c498702b510e1684047cebb3521</related_log_entry>
+        <status>1</status>
+        <sys_class_name>gsw_status_of_content</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:53:05</sys_created_on>
+        <sys_id>1637e9c4878a3d104bbb21f8dabb35a4</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>gsw_status_of_content_1637e9c4878a3d104bbb21f8dabb35a4</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-20 21:13:15</sys_updated_on>
+    </gsw_status_of_content>
+</record_update>
