@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e11cce4e876075104bbb21f8dabb3584" label="File Metadata" max_length="40" name="x_citin_s2p_spoke_file_metadata" type="collection">
-        <element label="Attachment" max_length="32" name="attachment" reference="sys_attachment" type="reference"/>
+        <element display="true" label="Attachment" max_length="32" name="attachment" read_only="true" reference="sys_attachment" type="reference"/>
         <element label="Checksum" max_length="256" name="checksum" read_only="true" type="string"/>
         <element label="Draft" max_length="40" name="draft" read_only="true" type="boolean"/>
         <element label="Export Date" max_length="40" name="export_date" read_only="true" type="glide_date_time"/>

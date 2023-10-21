@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
     <gsw_content_information action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <article><![CDATA[<p>This job syncs up Document Builder Solicitation Subcategories Choices (Constants) into ServiceNow&#39;s &#34;Document Builder Constants&#34; table. Set this job to the frequency you need.</p>
-<p><strong>Recommended: Monthly</strong></p>]]></article>
+        <active>true</active>
+        <article><![CDATA[<p>As System Administrator (admin) please add the following roles to your Procurement groups:</p>
+<ul style="list-style-position: inside;"><li>x_citin_s2p_spoke.user (to regular Procurement users such as Procurement Specialists )</li><li>x_citin_s2p_spoke.administrator (to Procurement Administrators)</li></ul>]]></article>
         <best_practice_acceptable>false</best_practice_acceptable>
         <dependent_on_contents/>
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
         <description/>
         <embedded_help_qualifier/>
-        <end_point>scheduled_import_set.do?sys_id=f38cbe1b873761104bbb21f8dabb35a2</end_point>
+        <end_point>now/nav/ui/classic/params/target/sys_user_group_list.do</end_point>
         <end_point_open_mode>3</end_point_open_mode>
         <end_point_type>1</end_point_type>
         <field/>
@@ -20,9 +20,9 @@
         <is_dynamic>false</is_dynamic>
         <more_info_available>false</more_info_available>
         <more_info_html/>
-        <order>40</order>
-        <parent display_value="Integration Schedules">9e1150b487f1bd104bbb21f8dabb35a5</parent>
-        <parents>9e1150b487f1bd104bbb21f8dabb35a5,198f0c3487f1bd104bbb21f8dabb354a</parents>
+        <order>6</order>
+        <parent display_value="Document Builder Settings">c750587487f1bd104bbb21f8dabb35cc</parent>
+        <parents>c750587487f1bd104bbb21f8dabb35cc,198f0c3487f1bd104bbb21f8dabb354a</parents>
         <plugin_id/>
         <property_name/>
         <property_value/>
@@ -32,19 +32,19 @@
         <supports_child_content>false</supports_child_content>
         <sys_class_name>gsw_content_information</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-10-07 19:59:58</sys_created_on>
-        <sys_id>008678b88775bd104bbb21f8dabb3512</sys_id>
+        <sys_created_on>2023-10-19 18:55:48</sys_created_on>
+        <sys_id>ddea56e0874abd104bbb21f8dabb35e3</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>DB Constants - Solicitation Subcategories</sys_name>
+        <sys_name>Assign Spoke User Role to your Procurement Group</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
-        <sys_update_name>gsw_content_information_008678b88775bd104bbb21f8dabb3512</sys_update_name>
+        <sys_update_name>gsw_content_information_ddea56e0874abd104bbb21f8dabb35e3</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-18 01:52:18</sys_updated_on>
+        <sys_updated_on>2023-10-19 21:48:26</sys_updated_on>
         <table/>
-        <title>DB Constants - Solicitation Subcategories</title>
+        <title>Assign Spoke User Role to your Procurement Group</title>
         <weight>1</weight>
     </gsw_content_information>
-    <sys_translated_text action="delete_multiple" query="documentkey=008678b88775bd104bbb21f8dabb3512"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=ddea56e0874abd104bbb21f8dabb35e3"/>
 </record_update>

@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_citin_s2p_spoke.user</roles>
+        <roles>x_citin_s2p_spoke.administrator</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-09-15 18:04:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6b0907e587d5bd104bbb21f8dabb351b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Applicant Submissions</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_app_module_6b0907e587d5bd104bbb21f8dabb351b</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-07 16:14:37</sys_updated_on>
+        <sys_updated_on>2023-10-20 20:34:15</sys_updated_on>
         <timeline_page/>
         <title>Applicant Submissions</title>
         <uncancelable>false</uncancelable>

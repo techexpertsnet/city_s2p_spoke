@@ -4,39 +4,41 @@
         <application display_value="City Innovate S2P Spoke">2b6ebb77872be510e1684047cebb3574</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="sys_user">x_citin_s2p_spoke_ci_procurement_official_idISNOTEMPTY^EQ<item endquery="false" field="x_citin_s2p_spoke_ci_procurement_official_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>File Metadatas</mobile_title>
+        <mobile_title>Applicant Submissions</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_citin_s2p_spoke_file_metadata</name>
-        <order>200</order>
+        <name>sys_user</name>
+        <order>20</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles>x_citin_s2p_spoke.administrator</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
-        <sys_created_on>2023-08-10 20:09:37</sys_created_on>
+        <sys_created_on>2023-10-19 22:23:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>408c868e876075104bbb21f8dabb3560</sys_id>
+        <sys_id>416acf2c87cabd104bbb21f8dabb35d5</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name>File Metadatas</sys_name>
+        <sys_name>Procurement Officials</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
-        <sys_update_name>sys_app_module_408c868e876075104bbb21f8dabb3560</sys_update_name>
+        <sys_update_name>sys_app_module_416acf2c87cabd104bbb21f8dabb35d5</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-20 20:33:23</sys_updated_on>
+        <sys_updated_on>2023-10-19 22:26:44</sys_updated_on>
         <timeline_page/>
-        <title>File Metadatas</title>
+        <title>Procurement Officials</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>Cityinnovate</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>

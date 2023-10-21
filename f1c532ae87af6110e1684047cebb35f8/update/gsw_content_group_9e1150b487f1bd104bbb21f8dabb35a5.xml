@@ -7,8 +7,8 @@
         <dependent_on_contents/>
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
-        <description><![CDATA[<p>The following job schedules are used to pull data from Document Builder into ServiceNow. Please configure them in this order :</p>
-<ul style="list-style-position: inside;"><li>User Data Source Schedule</li><li>DB Constants - Solicitation Types</li><li>DB Constants - Solicitation Categories</li><li>DB Constants - Solicitation Subcategories</li><li>DB Constants - Purchase Classes</li><li>DB Constants - Solicitation Vehicles</li><li>Update All Sourcing Requests</li><li>File Metadata Import Schedule</li><li>Download File Exports for All Sourcing Requests</li><li>Get Applicant Submissions</li></ul>]]></description>
+        <description><![CDATA[<p>As System Administrator (admin) set up the following job schedules that are used to pull data from Document Builder into ServiceNow. Please configure them in this order :</p>
+<ol style="list-style-position: inside;"><li>User Data Source Schedule</li><li>Get DB Constants</li><li>Update All Sourcing Requests</li><li>File Metadata Import Schedule</li><li>Download File Exports for All Sourcing Requests</li><li>Get Applicant Submissions</li></ol>]]></description>
         <display_child_max_num/>
         <done_status_text/>
         <hide_getting_started>false</hide_getting_started>
@@ -29,14 +29,14 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-10-07 17:16:34</sys_created_on>
         <sys_id>9e1150b487f1bd104bbb21f8dabb35a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Integration Schedules</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>gsw_content_group_9e1150b487f1bd104bbb21f8dabb35a5</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-07 21:52:01</sys_updated_on>
+        <sys_updated_on>2023-10-19 22:05:38</sys_updated_on>
         <title>Integration Schedules</title>
         <weight>1</weight>
     </gsw_content_group>

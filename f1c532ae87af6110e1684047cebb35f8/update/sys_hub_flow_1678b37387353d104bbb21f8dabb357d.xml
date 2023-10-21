@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow will populate the x_citin_s2p_spoke_document_builder_constants table</description>
+        <internal_name>get_db_constants</internal_name>
+        <label_cache>[{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_vehicles","label":"1 - Get Constants from My Team➛Solicitation Vehicles","reference_display":"Solicitation Vehicles","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-vehicles_object","uiUniqueId":"4a42c576-84e0-4396-ab97-db657a0f56a2","uiTypeLabel":"Array.Object","co_type_name":"FD33e77f37ef353d103e260cd7b124c913","child_label":"solicitations-vehicles_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0a3bdf5e-6f68-4793-9917-33fcaa74d25e","uiType":"array.object","child_type":"object","child_uiUniqueId":"f97cd177-f068-47d6-a351-002f8642441a"}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.purchase_classes","label":"1 - Get Constants from My Team➛Purchase Classes","reference_display":"Purchase Classes","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-purchase-classes_object","uiUniqueId":"7f09eaf6-8f8e-48fa-a5d7-af84735f516e","uiTypeLabel":"Array.Object","co_type_name":"FD3fe77f375b353d108750d049f704310d","child_label":"solicitations-purchase-classes_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"496d16bc-9466-4efc-bd3d-4c568a77310e","uiType":"array.object","child_type":"object","child_uiUniqueId":"f230f171-7574-43b3-9398-3bac79c39b68"}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.name","label":"2➛solicitations-purchase-classes_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.id","label":"2➛solicitations-purchase-classes_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.team-id","label":"2➛solicitations-purchase-classes_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_types","label":"1 - Get Constants from My Team➛Solicitation Types","reference_display":"Solicitation Types","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-types_object","uiUniqueId":"ad31d488-4b1e-4e27-9e82-d78e585ecba9","uiTypeLabel":"Array.Object","co_type_name":"FD3be77f37a4353d10acb63c29c342910f","child_label":"solicitations-types_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"50c161ad-5d9f-41ab-855c-fe946b903258","uiType":"array.object","child_type":"object","child_uiUniqueId":"ddb833b6-d37c-4992-8b66-8acb0db506f4"}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_categories","label":"1 - Get Constants from My Team➛Solicitation Categories","reference_display":"Solicitation Categories","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-categories_object","uiUniqueId":"cb9beef2-2a98-45d4-8731-59b47ecd6d26","uiTypeLabel":"Array.Object","co_type_name":"FD37e77f37de353d10ea4eeced65a98411","child_label":"solicitations-categories_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"2e143100-c841-4b39-bcdb-c5a9acdb9c50","uiType":"array.object","child_type":"object","child_uiUniqueId":"3ad2c2f4-86c2-4b5a-b3ea-5bb295374aaf"}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.id","label":"4➛solicitations-types_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.team-id","label":"4➛solicitations-types_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.name","label":"4➛solicitations-types_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.show-lpa-options","label":"4➛solicitations-types_object➛show-lpa-options","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation","label":"4➛solicitations-types_object➛abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.team_id","label":"8➛solicitations-vehicles_object➛team_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name","label":"8➛solicitations-vehicles_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.abbreviation","label":"8➛solicitations-vehicles_object➛abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.id","label":"8➛solicitations-vehicles_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.id","label":"6➛solicitations-categories_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.name","label":"6➛solicitations-categories_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id","label":"6 - For Each➛solicitations-categories_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.subcategories","label":"6 - For Each➛solicitations-categories_object➛subcategories","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.id","label":"8 - For Each➛subcategories_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.name","label":"8 - For Each➛subcategories_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"642ddc19-effa-44ca-ad14-0998f653273c.record","label":"7 - Create or Update Record➛Document Builder Constants Record","reference":"x_citin_s2p_spoke_document_builder_constants","reference_display":"Document Builder Constants","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>de446544878a3d104bbb21f8dabb3576</master_snapshot>
+        <name>Get DB Constants</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ef44e544878a3d104bbb21f8dabb3545</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:49:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1678b37387353d104bbb21f8dabb357d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Get DB Constants</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_hub_flow_1678b37387353d104bbb21f8dabb357d</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:21</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2023-10-18 01:40:20</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ef44e544878a3d104bbb21f8dabb3545</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <time>1970-01-01 15:00:00</time>
+        <timer_type>4</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:ef44e544878a3d104bbb21f8dabb3545^sys_idNOT IN6744e544878a3d104bbb21f8dabb3546"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:ef44e544878a3d104bbb21f8dabb3545</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Bogdan Moldoveanu">a2925e8d878871104bbb21f8dabb35b9</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2023-10-18 01:40:20</run_start>
+        <run_time>1970-01-01 15:00:00</run_time>
+        <run_type>monthly</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('ef44e544878a3d104bbb21f8dabb3545');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:20</sys_created_on>
+        <sys_id>6744e544878a3d104bbb21f8dabb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">ef44e544878a3d104bbb21f8dabb3545</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN6734e144878a3d104bbb21f8dabb357d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <name>Monthly</name>
+        <remote_sys_id/>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:04</sys_created_on>
+        <sys_id>6734e144878a3d104bbb21f8dabb357d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <trigger_definition display_value="Monthly">2ca52504c32222002841b63b12d3ae4a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>monthly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6734e144878a3d104bbb21f8dabb357d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6734e144878a3d104bbb21f8dabb357d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:04</sys_created_on>
+        <sys_id>2f34e144878a3d104bbb21f8dabb357e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:04</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Day of Month">ab36a504c32222002841b63b12d3ae8a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6734e144878a3d104bbb21f8dabb357d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:04</sys_created_on>
+        <sys_id>6b34e144878a3d104bbb21f8dabb357e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:04</sys_updated_on>
+        <value>1970-01-01 10:00:00</value>
+        <variable display_value="Time">b5d52504c32222002841b63b12d3aeaa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_2ca52504c32222002841b63b12d3ae4a^id=6734e144878a3d104bbb21f8dabb357d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN1e78b37387353d104bbb21f8dabb357d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1678b37387353d104bbb21f8dabb357d</id>
+        <name>Get DB Constants</name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:49:13</sys_created_on>
+        <sys_id>1e78b37387353d104bbb21f8dabb357d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 17:49:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1e78b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN0a816580878a3d104bbb21f8dabb353f,1573a104878a3d104bbb21f8dabb35ea,2ed9bfb787353d104bbb21f8dabb355b,39816580878a3d104bbb21f8dabb3533,3b51048c87063d104bbb21f8dabb3558,eed9bfb787353d104bbb21f8dabb3551"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>11</order>
+        <parent_ui_id>4b7fdd33-859e-4669-a7b5-941c54fa4fe7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>0a816580878a3d104bbb21f8dabb353f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>737a18ee-ffc2-4e6a-95ee-00dc39262569</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0a816580878a3d104bbb21f8dabb353f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a816580878a3d104bbb21f8dabb353f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>0e816580878a3d104bbb21f8dabb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:28:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a816580878a3d104bbb21f8dabb353f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>7d442544878a3d104bbb21f8dabb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0a816580878a3d104bbb21f8dabb353f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>0a816580878a3d104bbb21f8dabb353f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>c6816580878a3d104bbb21f8dabb3540</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:29:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^type=solicitations vehicles^value={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.id}}^team_id={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.team_id}}^name={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^abbreviation={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.abbreviation}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>0a816580878a3d104bbb21f8dabb353f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>39442544878a3d104bbb21f8dabb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>{{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^type=solicitations vehicles^value={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.id}}^team_id={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.team_id}}^name={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^abbreviation={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.abbreviation}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0a816580878a3d104bbb21f8dabb353f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>8a816580878a3d104bbb21f8dabb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:28:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0a816580878a3d104bbb21f8dabb353f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>f9442544878a3d104bbb21f8dabb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0a816580878a3d104bbb21f8dabb353f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0a816580878a3d104bbb21f8dabb353f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>9</order>
+        <parent_ui_id>8f13547d-1cd0-4a15-aed2-e58923e1cc30</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>1573a104878a3d104bbb21f8dabb35ea</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>e80ddb5f-92a9-4194-86dc-4be043cef092</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1573a104878a3d104bbb21f8dabb35ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1573a104878a3d104bbb21f8dabb35ea</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>1173a104878a3d104bbb21f8dabb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:36:38</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1573a104878a3d104bbb21f8dabb35ea</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>75442544878a3d104bbb21f8dabb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1573a104878a3d104bbb21f8dabb35ea"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>1573a104878a3d104bbb21f8dabb35ea</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>d973a104878a3d104bbb21f8dabb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:36:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>value={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.id}}^type=subcategory^parent={{642ddc19-effa-44ca-ad14-0998f653273c.record}}^name={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.name}}^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^coalesce_fields=value,parent,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>1573a104878a3d104bbb21f8dabb35ea</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>31442544878a3d104bbb21f8dabb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>value={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.id}}^type=subcategory^parent={{642ddc19-effa-44ca-ad14-0998f653273c.record}}^name={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.name}}^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^coalesce_fields=value,parent,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>1573a104878a3d104bbb21f8dabb35ea</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>9d73a104878a3d104bbb21f8dabb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:36:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>1573a104878a3d104bbb21f8dabb35ea</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>f1442544878a3d104bbb21f8dabb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1573a104878a3d104bbb21f8dabb35ea"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1573a104878a3d104bbb21f8dabb35ea"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>3</order>
+        <parent_ui_id>ef014eed-c218-42bc-9a21-aa14836a6238</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>2ed9bfb787353d104bbb21f8dabb355b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>e5f00281-181c-45fb-b3ba-5bb01dd2fa3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2ed9bfb787353d104bbb21f8dabb355b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ed9bfb787353d104bbb21f8dabb355b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>a6d9bfb787353d104bbb21f8dabb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 17:55:14</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ed9bfb787353d104bbb21f8dabb355b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:12</sys_created_on>
+        <sys_id>e9442544878a3d104bbb21f8dabb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:12</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2ed9bfb787353d104bbb21f8dabb355b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>2ed9bfb787353d104bbb21f8dabb355b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>62d9bfb787353d104bbb21f8dabb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 17:55:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>type=purchase class^name={{ef014eed-c218-42bc-9a21-aa14836a6238.item.name}}^value={{ef014eed-c218-42bc-9a21-aa14836a6238.item.id}}^team_id={{ef014eed-c218-42bc-9a21-aa14836a6238.item.team-id}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>2ed9bfb787353d104bbb21f8dabb355b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:12</sys_created_on>
+        <sys_id>a5442544878a3d104bbb21f8dabb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>type=purchase class^name={{ef014eed-c218-42bc-9a21-aa14836a6238.item.name}}^value={{ef014eed-c218-42bc-9a21-aa14836a6238.item.id}}^team_id={{ef014eed-c218-42bc-9a21-aa14836a6238.item.team-id}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2ed9bfb787353d104bbb21f8dabb355b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>26d9bfb787353d104bbb21f8dabb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 17:55:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2ed9bfb787353d104bbb21f8dabb355b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:12</sys_created_on>
+        <sys_id>69442544878a3d104bbb21f8dabb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ed9bfb787353d104bbb21f8dabb355b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ed9bfb787353d104bbb21f8dabb355b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>7</order>
+        <parent_ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>39816580878a3d104bbb21f8dabb3533</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>642ddc19-effa-44ca-ad14-0998f653273c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39816580878a3d104bbb21f8dabb3533"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>39816580878a3d104bbb21f8dabb3533</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>0a816580878a3d104bbb21f8dabb3535</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:28:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>39816580878a3d104bbb21f8dabb3533</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>7d442544878a3d104bbb21f8dabb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=39816580878a3d104bbb21f8dabb3533"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>39816580878a3d104bbb21f8dabb3533</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>ce816580878a3d104bbb21f8dabb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:28:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>type=category^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^value={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.id}}^name={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.name}}^coalesce_fields=type,team_id,value</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>39816580878a3d104bbb21f8dabb3533</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>39442544878a3d104bbb21f8dabb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>type=category^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^value={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.id}}^name={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.name}}^coalesce_fields=type,team_id,value</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>39816580878a3d104bbb21f8dabb3533</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:28:13</sys_created_on>
+        <sys_id>86816580878a3d104bbb21f8dabb3535</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:28:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>39816580878a3d104bbb21f8dabb3533</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>f9442544878a3d104bbb21f8dabb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=39816580878a3d104bbb21f8dabb3533"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=39816580878a3d104bbb21f8dabb3533"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>5</order>
+        <parent_ui_id>d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>3b51048c87063d104bbb21f8dabb3558</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>9a54e99c-c2ee-4fa4-a23b-12f180d1ca08</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3b51048c87063d104bbb21f8dabb3558"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3b51048c87063d104bbb21f8dabb3558</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>3751048c87063d104bbb21f8dabb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:28:05</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3b51048c87063d104bbb21f8dabb3558</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>65442544878a3d104bbb21f8dabb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">ec571ae253b3230034c6ddeeff7b127d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3b51048c87063d104bbb21f8dabb3558"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>3b51048c87063d104bbb21f8dabb3558</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>ff51048c87063d104bbb21f8dabb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:28:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^type=solicitation type^name={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.name}}^team_id={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.team-id}}^value={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.id}}^show_lpa_options={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.show-lpa-options}}^abbreviation={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^coalesce_fields=team_id,value,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>3b51048c87063d104bbb21f8dabb3558</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>21442544878a3d104bbb21f8dabb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value>{{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^type=solicitation type^name={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.name}}^team_id={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.team-id}}^value={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.id}}^show_lpa_options={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.show-lpa-options}}^abbreviation={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^coalesce_fields=team_id,value,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3b51048c87063d104bbb21f8dabb3558</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>b351048c87063d104bbb21f8dabb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:28:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3b51048c87063d104bbb21f8dabb3558</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:13</sys_created_on>
+        <sys_id>e1442544878a3d104bbb21f8dabb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3b51048c87063d104bbb21f8dabb3558"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b51048c87063d104bbb21f8dabb3558"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Constants from My Team">bd4a6fb787f13d104bbb21f8dabb350d</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>eed9bfb787353d104bbb21f8dabb3551</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>1c53087b-f342-4576-b517-c6ac684dc0d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eed9bfb787353d104bbb21f8dabb3551"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eed9bfb787353d104bbb21f8dabb3551"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eed9bfb787353d104bbb21f8dabb3551"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN2ed9bfb787353d104bbb21f8dabb3553,3751048c87063d104bbb21f8dabb3538,9d73a104878a3d104bbb21f8dabb35e2,b751048c87063d104bbb21f8dabb355b,e7d14c8c87063d104bbb21f8dabb35ce"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">62d9bfb787353d104bbb21f8dabb3553</block>
+        <comment>Process Purchase Classes</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>2ed9bfb787353d104bbb21f8dabb3553</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>ef014eed-c218-42bc-9a21-aa14836a6238</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2ed9bfb787353d104bbb21f8dabb3553"/>
+    <sys_element_mapping action="delete_multiple" query="id=2ed9bfb787353d104bbb21f8dabb3553"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>2ed9bfb787353d104bbb21f8dabb3553</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 17:55:14</sys_created_on>
+        <sys_id>aed9bfb787353d104bbb21f8dabb3556</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 17:55:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.purchase_classes}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2ed9bfb787353d104bbb21f8dabb3553"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ed9bfb787353d104bbb21f8dabb3553"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7b51048c87063d104bbb21f8dabb3537</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>3751048c87063d104bbb21f8dabb3538</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3751048c87063d104bbb21f8dabb3538"/>
+    <sys_element_mapping action="delete_multiple" query="id=3751048c87063d104bbb21f8dabb3538"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3751048c87063d104bbb21f8dabb3538</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>bf51048c87063d104bbb21f8dabb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:28:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_types}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3751048c87063d104bbb21f8dabb3538"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3751048c87063d104bbb21f8dabb3538"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d173a104878a3d104bbb21f8dabb35e2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>9d73a104878a3d104bbb21f8dabb35e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>8f13547d-1cd0-4a15-aed2-e58923e1cc30</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9d73a104878a3d104bbb21f8dabb35e2"/>
+    <sys_element_mapping action="delete_multiple" query="id=9d73a104878a3d104bbb21f8dabb35e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>9d73a104878a3d104bbb21f8dabb35e2</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:36:38</sys_created_on>
+        <sys_id>1973a104878a3d104bbb21f8dabb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:36:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.subcategories}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9d73a104878a3d104bbb21f8dabb35e2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9d73a104878a3d104bbb21f8dabb35e2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ff51048c87063d104bbb21f8dabb355a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>b751048c87063d104bbb21f8dabb355b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b751048c87063d104bbb21f8dabb355b"/>
+    <sys_element_mapping action="delete_multiple" query="id=b751048c87063d104bbb21f8dabb355b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>b751048c87063d104bbb21f8dabb355b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:28:05</sys_created_on>
+        <sys_id>3f51048c87063d104bbb21f8dabb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:28:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_categories}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b751048c87063d104bbb21f8dabb355b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b751048c87063d104bbb21f8dabb355b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23d14c8c87063d104bbb21f8dabb35ce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:30:16</sys_created_on>
+        <sys_id>e7d14c8c87063d104bbb21f8dabb35ce</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <ui_id>4b7fdd33-859e-4669-a7b5-941c54fa4fe7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e7d14c8c87063d104bbb21f8dabb35ce"/>
+    <sys_element_mapping action="delete_multiple" query="id=e7d14c8c87063d104bbb21f8dabb35ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>e7d14c8c87063d104bbb21f8dabb35ce</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-17 18:30:16</sys_created_on>
+        <sys_id>6fd14c8c87063d104bbb21f8dabb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:30:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_vehicles}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e7d14c8c87063d104bbb21f8dabb35ce"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e7d14c8c87063d104bbb21f8dabb35ce"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1678b37387353d104bbb21f8dabb357d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1678b37387353d104bbb21f8dabb357d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1678b37387353d104bbb21f8dabb357d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1678b37387353d104bbb21f8dabb357d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN2b44e544878a3d104bbb21f8dabb3548"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>1678b37387353d104bbb21f8dabb357d</plan_id>
+        <snapshot>de446544878a3d104bbb21f8dabb3576</snapshot>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b44e544878a3d104bbb21f8dabb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <trigger display_value="">ef44e544878a3d104bbb21f8dabb3545</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1678b37387353d104bbb21f8dabb357d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow will populate the x_citin_s2p_spoke_document_builder_constants table</description>
+        <internal_name>get_db_constants</internal_name>
+        <label_cache>[{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_vehicles","label":"1 - Get Constants from My Team➛Solicitation Vehicles","reference_display":"Solicitation Vehicles","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-vehicles_object","uiUniqueId":"4a42c576-84e0-4396-ab97-db657a0f56a2","uiTypeLabel":"Array.Object","co_type_name":"FD33e77f37ef353d103e260cd7b124c913","child_label":"solicitations-vehicles_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0a3bdf5e-6f68-4793-9917-33fcaa74d25e","uiType":"array.object","child_type":"object","child_uiUniqueId":"f97cd177-f068-47d6-a351-002f8642441a"}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.purchase_classes","label":"1 - Get Constants from My Team➛Purchase Classes","reference_display":"Purchase Classes","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-purchase-classes_object","uiUniqueId":"7f09eaf6-8f8e-48fa-a5d7-af84735f516e","uiTypeLabel":"Array.Object","co_type_name":"FD3fe77f375b353d108750d049f704310d","child_label":"solicitations-purchase-classes_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"496d16bc-9466-4efc-bd3d-4c568a77310e","uiType":"array.object","child_type":"object","child_uiUniqueId":"f230f171-7574-43b3-9398-3bac79c39b68"}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.name","label":"2➛solicitations-purchase-classes_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.id","label":"2➛solicitations-purchase-classes_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"ef014eed-c218-42bc-9a21-aa14836a6238.item.team-id","label":"2➛solicitations-purchase-classes_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_types","label":"1 - Get Constants from My Team➛Solicitation Types","reference_display":"Solicitation Types","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-types_object","uiUniqueId":"ad31d488-4b1e-4e27-9e82-d78e585ecba9","uiTypeLabel":"Array.Object","co_type_name":"FD3be77f37a4353d10acb63c29c342910f","child_label":"solicitations-types_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"50c161ad-5d9f-41ab-855c-fe946b903258","uiType":"array.object","child_type":"object","child_uiUniqueId":"ddb833b6-d37c-4992-8b66-8acb0db506f4"}},{"name":"1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_categories","label":"1 - Get Constants from My Team➛Solicitation Categories","reference_display":"Solicitation Categories","type":"array.object","base_type":"array.object","attributes":{"sourceId":"135c8312-12c4-4162-bfd2-0c935a674b32","child_name":"solicitations-categories_object","uiUniqueId":"cb9beef2-2a98-45d4-8731-59b47ecd6d26","uiTypeLabel":"Array.Object","co_type_name":"FD37e77f37de353d10ea4eeced65a98411","child_label":"solicitations-categories_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"2e143100-c841-4b39-bcdb-c5a9acdb9c50","uiType":"array.object","child_type":"object","child_uiUniqueId":"3ad2c2f4-86c2-4b5a-b3ea-5bb295374aaf"}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.id","label":"4➛solicitations-types_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.team-id","label":"4➛solicitations-types_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.name","label":"4➛solicitations-types_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.show-lpa-options","label":"4➛solicitations-types_object➛show-lpa-options","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation","label":"4➛solicitations-types_object➛abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.team_id","label":"8➛solicitations-vehicles_object➛team_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name","label":"8➛solicitations-vehicles_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.abbreviation","label":"8➛solicitations-vehicles_object➛abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.id","label":"8➛solicitations-vehicles_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.id","label":"6➛solicitations-categories_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.name","label":"6➛solicitations-categories_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id","label":"6 - For Each➛solicitations-categories_object➛team-id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.subcategories","label":"6 - For Each➛solicitations-categories_object➛subcategories","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.id","label":"8 - For Each➛subcategories_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.name","label":"8 - For Each➛subcategories_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"642ddc19-effa-44ca-ad14-0998f653273c.record","label":"7 - Create or Update Record➛Document Builder Constants Record","reference":"x_citin_s2p_spoke_document_builder_constants","reference_display":"Document Builder Constants","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Get DB Constants</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Get DB Constants">1678b37387353d104bbb21f8dabb357d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de446544878a3d104bbb21f8dabb3576</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_variable_value action="delete_multiple" query="document_key=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=de446544878a3d104bbb21f8dabb3576^sys_idNOT INee446544878a3d104bbb21f8dabb35e7"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <name>Monthly</name>
+        <remote_sys_id/>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>ee446544878a3d104bbb21f8dabb35e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
+        <trigger_definition display_value="Monthly">2ca52504c32222002841b63b12d3ae4a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>monthly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee446544878a3d104bbb21f8dabb35e7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ee446544878a3d104bbb21f8dabb35e7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>22446544878a3d104bbb21f8dabb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Day of Month">ab36a504c32222002841b63b12d3ae8a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ee446544878a3d104bbb21f8dabb35e7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>6e446544878a3d104bbb21f8dabb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>1970-01-01 10:00:00</value>
+        <variable display_value="Time">b5d52504c32222002841b63b12d3aeaa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_2ca52504c32222002841b63b12d3ae4a^id=ee446544878a3d104bbb21f8dabb35e7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=de446544878a3d104bbb21f8dabb3576^sys_idNOT INde446544878a3d104bbb21f8dabb3577"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>de446544878a3d104bbb21f8dabb3576</id>
+        <name>Get DB Constants</name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>de446544878a3d104bbb21f8dabb3577</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=de446544878a3d104bbb21f8dabb3577"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=de446544878a3d104bbb21f8dabb3576^sys_idNOT IN2e446544878a3d104bbb21f8dabb35db,62446544878a3d104bbb21f8dabb35d1,66446544878a3d104bbb21f8dabb35bb,a6446544878a3d104bbb21f8dabb35c6,de446544878a3d104bbb21f8dabb35b0,e6446544878a3d104bbb21f8dabb35e6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>9</order>
+        <parent_ui_id>8f13547d-1cd0-4a15-aed2-e58923e1cc30</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>2e446544878a3d104bbb21f8dabb35db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>e80ddb5f-92a9-4194-86dc-4be043cef092</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e446544878a3d104bbb21f8dabb35db"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e446544878a3d104bbb21f8dabb35db</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>22446544878a3d104bbb21f8dabb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e446544878a3d104bbb21f8dabb35db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>2e446544878a3d104bbb21f8dabb35db</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>ea446544878a3d104bbb21f8dabb35dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>value={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.id}}^type=subcategory^parent={{642ddc19-effa-44ca-ad14-0998f653273c.record}}^name={{8f13547d-1cd0-4a15-aed2-e58923e1cc30.item.name}}^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^coalesce_fields=value,parent,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2e446544878a3d104bbb21f8dabb35db</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>ae446544878a3d104bbb21f8dabb35dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2e446544878a3d104bbb21f8dabb35db"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2e446544878a3d104bbb21f8dabb35db"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>7</order>
+        <parent_ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>62446544878a3d104bbb21f8dabb35d1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>642ddc19-effa-44ca-ad14-0998f653273c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=62446544878a3d104bbb21f8dabb35d1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>62446544878a3d104bbb21f8dabb35d1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>66446544878a3d104bbb21f8dabb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=62446544878a3d104bbb21f8dabb35d1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>62446544878a3d104bbb21f8dabb35d1</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>22446544878a3d104bbb21f8dabb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>type=category^team_id={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.team-id}}^value={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.id}}^name={{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.name}}^coalesce_fields=type,team_id,value</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>62446544878a3d104bbb21f8dabb35d1</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>e2446544878a3d104bbb21f8dabb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=62446544878a3d104bbb21f8dabb35d1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=62446544878a3d104bbb21f8dabb35d1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>3</order>
+        <parent_ui_id>ef014eed-c218-42bc-9a21-aa14836a6238</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>66446544878a3d104bbb21f8dabb35bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>e5f00281-181c-45fb-b3ba-5bb01dd2fa3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=66446544878a3d104bbb21f8dabb35bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>66446544878a3d104bbb21f8dabb35bb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>6e446544878a3d104bbb21f8dabb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=66446544878a3d104bbb21f8dabb35bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>66446544878a3d104bbb21f8dabb35bb</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>2a446544878a3d104bbb21f8dabb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>type=purchase class^name={{ef014eed-c218-42bc-9a21-aa14836a6238.item.name}}^value={{ef014eed-c218-42bc-9a21-aa14836a6238.item.id}}^team_id={{ef014eed-c218-42bc-9a21-aa14836a6238.item.team-id}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>66446544878a3d104bbb21f8dabb35bb</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>ea446544878a3d104bbb21f8dabb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=66446544878a3d104bbb21f8dabb35bb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=66446544878a3d104bbb21f8dabb35bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>5</order>
+        <parent_ui_id>d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>a6446544878a3d104bbb21f8dabb35c6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>9a54e99c-c2ee-4fa4-a23b-12f180d1ca08</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6446544878a3d104bbb21f8dabb35c6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6446544878a3d104bbb21f8dabb35c6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>aa446544878a3d104bbb21f8dabb35c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6446544878a3d104bbb21f8dabb35c6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>a6446544878a3d104bbb21f8dabb35c6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>66446544878a3d104bbb21f8dabb35c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^type=solicitation type^name={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.name}}^team_id={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.team-id}}^value={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.id}}^show_lpa_options={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.show-lpa-options}}^abbreviation={{d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38.item.abbreviation}}^coalesce_fields=team_id,value,type</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a6446544878a3d104bbb21f8dabb35c6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>2a446544878a3d104bbb21f8dabb35c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6446544878a3d104bbb21f8dabb35c6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6446544878a3d104bbb21f8dabb35c6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Constants from My Team">914ab7f787353d104bbb21f8dabb35a0</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>de446544878a3d104bbb21f8dabb35b0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>1c53087b-f342-4576-b517-c6ac684dc0d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=de446544878a3d104bbb21f8dabb35b0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=de446544878a3d104bbb21f8dabb35b0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de446544878a3d104bbb21f8dabb35b0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <order>11</order>
+        <parent_ui_id>4b7fdd33-859e-4669-a7b5-941c54fa4fe7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>e6446544878a3d104bbb21f8dabb35e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <ui_id>737a18ee-ffc2-4e6a-95ee-00dc39262569</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e6446544878a3d104bbb21f8dabb35e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e6446544878a3d104bbb21f8dabb35e6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>ea446544878a3d104bbb21f8dabb35e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <value>x_citin_s2p_spoke_document_builder_constants</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e6446544878a3d104bbb21f8dabb35e6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>e6446544878a3d104bbb21f8dabb35e6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>a6446544878a3d104bbb21f8dabb35e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>{{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^type=solicitations vehicles^value={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.id}}^team_id={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.team_id}}^name={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.name}}^abbreviation={{4b7fdd33-859e-4669-a7b5-941c54fa4fe7.item.abbreviation}}^coalesce_fields=type,value,team_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e6446544878a3d104bbb21f8dabb35e6</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:16</sys_created_on>
+        <sys_id>6a446544878a3d104bbb21f8dabb35e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e6446544878a3d104bbb21f8dabb35e6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6446544878a3d104bbb21f8dabb35e6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=de446544878a3d104bbb21f8dabb3576^sys_idNOT IN12446544878a3d104bbb21f8dabb357f,1a446544878a3d104bbb21f8dabb357b,52446544878a3d104bbb21f8dabb3582,92446544878a3d104bbb21f8dabb3585,d2446544878a3d104bbb21f8dabb3588"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7b51048c87063d104bbb21f8dabb3537</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>12446544878a3d104bbb21f8dabb357f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <ui_id>d39e8eaf-5b3c-46a0-b0a2-3bac5232bc38</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=12446544878a3d104bbb21f8dabb357f"/>
+    <sys_element_mapping action="delete_multiple" query="id=12446544878a3d104bbb21f8dabb357f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>12446544878a3d104bbb21f8dabb357f</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>96446544878a3d104bbb21f8dabb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_types}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=12446544878a3d104bbb21f8dabb357f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=12446544878a3d104bbb21f8dabb357f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">62d9bfb787353d104bbb21f8dabb3553</block>
+        <comment>Process Purchase Classes</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>1a446544878a3d104bbb21f8dabb357b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <ui_id>ef014eed-c218-42bc-9a21-aa14836a6238</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1a446544878a3d104bbb21f8dabb357b"/>
+    <sys_element_mapping action="delete_multiple" query="id=1a446544878a3d104bbb21f8dabb357b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1a446544878a3d104bbb21f8dabb357b</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>d2446544878a3d104bbb21f8dabb357e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.purchase_classes}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1a446544878a3d104bbb21f8dabb357b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1a446544878a3d104bbb21f8dabb357b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ff51048c87063d104bbb21f8dabb355a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>52446544878a3d104bbb21f8dabb3582</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=52446544878a3d104bbb21f8dabb3582"/>
+    <sys_element_mapping action="delete_multiple" query="id=52446544878a3d104bbb21f8dabb3582"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>52446544878a3d104bbb21f8dabb3582</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>d6446544878a3d104bbb21f8dabb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_categories}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=52446544878a3d104bbb21f8dabb3582"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=52446544878a3d104bbb21f8dabb3582"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d173a104878a3d104bbb21f8dabb35e2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>98e2a67e-087a-4ef5-815f-3ff5e43ef27f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>92446544878a3d104bbb21f8dabb3585</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <ui_id>8f13547d-1cd0-4a15-aed2-e58923e1cc30</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=92446544878a3d104bbb21f8dabb3585"/>
+    <sys_element_mapping action="delete_multiple" query="id=92446544878a3d104bbb21f8dabb3585"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>92446544878a3d104bbb21f8dabb3585</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>1a446544878a3d104bbb21f8dabb3587</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{98e2a67e-087a-4ef5-815f-3ff5e43ef27f.item.subcategories}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=92446544878a3d104bbb21f8dabb3585"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=92446544878a3d104bbb21f8dabb3585"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23d14c8c87063d104bbb21f8dabb35ce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get DB Constants">de446544878a3d104bbb21f8dabb3576</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>d2446544878a3d104bbb21f8dabb3588</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <ui_id>4b7fdd33-859e-4669-a7b5-941c54fa4fe7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d2446544878a3d104bbb21f8dabb3588"/>
+    <sys_element_mapping action="delete_multiple" query="id=d2446544878a3d104bbb21f8dabb3588"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>d2446544878a3d104bbb21f8dabb3588</id>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-10-18 01:40:15</sys_created_on>
+        <sys_id>5a446544878a3d104bbb21f8dabb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-10-18 01:40:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{1c53087b-f342-4576-b517-c6ac684dc0d3.solicitation_vehicles}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d2446544878a3d104bbb21f8dabb3588"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d2446544878a3d104bbb21f8dabb3588"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=de446544878a3d104bbb21f8dabb3576"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_de446544878a3d104bbb21f8dabb3576"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_de446544878a3d104bbb21f8dabb3576"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_de446544878a3d104bbb21f8dabb3576"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_de446544878a3d104bbb21f8dabb3576"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>1678b37387353d104bbb21f8dabb357d</sys_id>
+        <latest_snapshot>de446544878a3d104bbb21f8dabb3576</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>
