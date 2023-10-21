@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="email_client=true" audit="true" db_object_id="6546da4587407110e1684047cebb35f7" extends="task" label="Sourcing Request" max_length="40" name="sn_shop_sourcing_activity" type="collection">
-        <element choice="1" default="solicitation" label="CI Initial Workflow" max_length="40" name="x_citin_s2p_spoke_ci_initial_workflow" type="choice">
+        <element choice="1" default="solicitation" label="CI Initial Workflow" max_length="40" name="x_citin_s2p_spoke_ci_initial_workflow" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Solicitation" sequence="100" value="solicitation"/>
             </choice>
