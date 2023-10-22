@@ -9,6 +9,7 @@
         <data_source display_value="DB Constants - Solicitation Vehicles">8a1512388777e910e1684047cebb355c</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Solicitation Vehicles Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

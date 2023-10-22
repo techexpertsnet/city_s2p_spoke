@@ -9,6 +9,7 @@
         <data_source display_value="DB Constants - Solicitation Types">5b87491887bf2910e1684047cebb35c7</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Solicitation Types Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

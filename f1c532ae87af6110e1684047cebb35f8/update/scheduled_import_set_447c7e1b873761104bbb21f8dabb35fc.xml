@@ -9,6 +9,7 @@
         <data_source display_value="DB Constants - Solicitation Categories">363ccd9c87bf2910e1684047cebb3546</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Solicitation Categories Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

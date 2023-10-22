@@ -9,6 +9,7 @@
         <data_source display_value="DB Constants - Purchase Classes">253a0d9887bf2910e1684047cebb352b</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Solicitation Purchase Classes Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

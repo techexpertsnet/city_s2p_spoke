@@ -5,9 +5,11 @@
         <advanced>false</advanced>
         <condition/>
         <description>System Generated Rule</description>
+        <local_or_existing>Local</local_or_existing>
         <name>sn_shop_sourcing_activity.x_citin_s2p_spoke_ci_project_id</name>
         <operation display_value="execute">execute</operation>
         <script/>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-07-18 18:07:52</sys_created_on>

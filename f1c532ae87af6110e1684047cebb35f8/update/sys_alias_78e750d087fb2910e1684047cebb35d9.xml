@@ -3,6 +3,7 @@
         <configuration_template display_value="DB Builder">fe685cd087fb2910e1684047cebb35b1</configuration_template>
         <connection_type>http_connection</connection_type>
         <id>x_citin_s2p_spoke.DocumentBuilder</id>
+        <is_internal>false</is_internal>
         <multiple_connections>false</multiple_connections>
         <name>DocumentBuilder</name>
         <parent/>

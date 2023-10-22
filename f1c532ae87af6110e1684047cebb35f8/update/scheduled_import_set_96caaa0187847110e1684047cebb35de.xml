@@ -9,6 +9,7 @@
         <data_source display_value="CI-2-Users Data Source">f6a6368c874c7110e1684047cebb35c9</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>CI-2-Users Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

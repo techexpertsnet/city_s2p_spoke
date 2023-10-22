@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Applicant Registration">3104cd9387f879104bbb21f8dabb3597</sc_cat_item>
-        <sc_catalog display_value="Supplier Catalog">a0e5f9be1b807010d5026572604bcb08</sc_catalog>
+        <sc_catalog display_value="Supplier Catalog (Deprecated)">a0e5f9be1b807010d5026572604bcb08</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-08-26 22:24:08</sys_created_on>

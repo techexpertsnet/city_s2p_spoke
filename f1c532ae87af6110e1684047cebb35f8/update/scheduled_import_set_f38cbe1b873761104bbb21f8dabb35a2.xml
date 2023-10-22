@@ -9,6 +9,7 @@
         <data_source display_value="DB Constants - Solicitation Subcat">51ddc1dc87bf2910e1684047cebb3598</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Solicitation Subcategories Schedule</name>
         <offset/>
         <offset_type>0</offset_type>

@@ -2172,7 +2172,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Users from My Team (Data Source)">85f7facc874c7110e1684047cebb3565</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"08d83240878c7110e1684047cebb3511","name":"plan","plan_signature":null}}</plan>
-        <snapshot>479d47bc877171104bbb21f8dabb35f6</snapshot>
+        <snapshot>27d3139d8702b1104bbb21f8dabb3561</snapshot>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-07-10 21:44:00</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -4353,6 +4353,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>85f7facc874c7110e1684047cebb3565</sys_id>
         <latest_snapshot>36c8be00878c7110e1684047cebb3535</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1-08-16-2023_08-21-2023_1705.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

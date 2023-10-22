@@ -16,7 +16,7 @@
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
         <sys_updated_on>2023-06-27 14:29:27</sys_updated_on>
         <target_name>sn_shop_sourcing_activity</target_name>
-        <target_scope display_value="Procurement Common Architecture">45f917bd533323007388ddeeff7b12b6</target_scope>
+        <target_scope display_value="Source-to-Pay Common Architecture">45f917bd533323007388ddeeff7b12b6</target_scope>
         <target_type>sys_db_object</target_type>
     </sys_scope_privilege>
 </record_update>

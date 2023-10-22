@@ -9,6 +9,7 @@
         <data_source display_value="File Metadata Data Source">94f052c287a075104bbb21f8dabb35c2</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>File Metadata Import Schedule</name>
         <offset/>
         <offset_type>0</offset_type>
