@@ -59,13 +59,13 @@
 	var lpaFieldValue = lpaFieldElement.value;
 	if(lpaFieldElement.required == true && lpaFieldValue == "" ){		
 		alert("Leveraged Procurement Agreement is required");
-		return false; 
+		return true; 
 	}
 	else {
 		json.leveragedprocurementagreement = lpaFieldValue;
 	}
-	
 
+	//$j('button').prop('disabled', true);
 	
 	//Call createSOlicitation function
 	var submitForm = new GlideAjax('x_citin_s2p_spoke.SolicitationUtils');
@@ -79,15 +79,10 @@
 		var apiReturnJSON = result[0].getAttribute("apiReturnJSON");
 		
 		if(apiReturnJSON!="Error"){
-			GlideDialogWindow.get().destroy();
-			g_form.addInfoMessage("CI Details Created Successfully");
-			location.reload();		
-			return true;
+			iframeMsgHelper.confirm("CI Details Created Successfully");
 		}
 		else{
-			GlideDialogWindow.get().destroy();
-			g_form.addErrorMessage("Update error. API Return error");
-			return false;
+			iframeMsgHelper.confirm("Update error. API Return error");
 		}
 	}	
 	function disableFields(){
@@ -100,10 +95,8 @@
 			inputFields[i].setAttribute('disabled', 'disabled');
 			inputFields[i].classList.add('disabled-field');
 		}
-		//GlideDialogWindow.get().destroy();
-		window.location.href = window.location.href + '&sysparm_next_pg=true';
 	}
-	disableFields();
+	disableFields();	
 	
 }
 
@@ -292,7 +285,7 @@ function cancel() {
 		
 		<div class="form-group pull-right" id="dialog-btns">
 			<button onClick = "return submitChanges()" type="button" id="submitButton" class="btn btn-primary btn-md" style="margin-right:5px">Submit</button>
-			<button onClick = "return cancel()" type="button" class="btn btn-default btn-md">Cancel</button>
+			<!--<button onClick = "return cancel()" type="button" class="btn btn-default btn-md">Cancel</button>-->
 		</div>
 		
 	<!-- JavaScript Code to Update Sub Category Options -->
@@ -371,6 +364,52 @@ function cancel() {
 			})();
 			
 		</script>
+		<script>
+				var iframeMsgHelper = (function () {
+				function createPayload(action, modalId, data) {
+					return {
+						messageType: 'IFRAME_MODAL_MESSAGE_TYPE',
+						modalAction: action,
+						modalId: modalId,
+						data: (data ? data : {})
+					};
+				}
+
+				function pm(window, payload) {
+					if (window.parent === window) {
+						console.warn('Parent is missing. Is this called inside an iFrame?');
+						return;
+					}
+					window.parent.postMessage(payload, location.origin);
+				}
+
+				function IFrameMessagingHelper(window) {
+					this.window = window;
+					this.src = location.href;
+					this.messageHandler = this.messageHandler.bind(this);
+					this.window.addEventListener('message', this.messageHandler);
+				}
+
+				IFrameMessagingHelper.prototype.messageHandler = function (e) {
+					if (e.data.messageType !== 'IFRAME_MODAL_MESSAGE_TYPE' || e.data.modalAction !== 'IFRAME_MODAL_ACTION_INIT') {
+						return;
+					}
+					this.modalId = e.data.modalId;
+				};
+
+				IFrameMessagingHelper.prototype.confirm = function (data) {
+					var payload = createPayload('IFRAME_MODAL_ACTION_CONFIRMED', this.modalId, data);
+					pm(this.window, payload);
+				};
+
+				IFrameMessagingHelper.prototype.cancel = function (data) {
+					var payload = createPayload('IFRAME_MODAL_ACTION_CANCELED', this.modalId, data);
+					pm(this.window, payload);
+				};
+
+				return new IFrameMessagingHelper(window);
+			}());
+			</script>
 	</g:ui_form>
 </j:jelly>]]></html>
         <name>create_ci_project_ws</name>
@@ -379,13 +418,13 @@ function cancel() {
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-09-13 14:47:45</sys_created_on>
         <sys_id>ace8c44d87dd7d10e1684047cebb35ff</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>create_ci_project_ws</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_ui_page_ace8c44d87dd7d10e1684047cebb35ff</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-09-14 19:23:14</sys_updated_on>
+        <sys_updated_on>2023-10-24 18:14:18</sys_updated_on>
     </sys_ui_page>
 </record_update>

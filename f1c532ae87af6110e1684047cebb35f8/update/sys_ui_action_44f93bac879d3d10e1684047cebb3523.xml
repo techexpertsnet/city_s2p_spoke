@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>create_ci_project</action_name>
         <active>true</active>
         <client>true</client>
-        <client_script_v2><![CDATA[function createCIProject() {
+        <client_script_v2><![CDATA[function displayReturn(data) {
+	if(JSON.stringify(data).indexOf("rror")>=0)
+		g_form.addErrorMessage(JSON.stringify(data));
+	else {
+		g_form.addInfoMessage(JSON.stringify(data));
+		g_form.reload();	
+	}
+}
+function createCIProject() {
 	var url = "/x_citin_s2p_spoke_create_ci_project_ws.do?sysparm_srsysid="+g_form.getUniqueValue()+"&sysparm_stack=no&sysparm_workspace=" + true;
 	g_modal.showFrame({
 		url: url,
 		title: 'Create CI Project',
 		size: 'md',
 		height: 800,
-		autoCloseOn: 'URL_CHANGED'
+		autoCloseOn: 'URL_CHANGED',
+		callback: function (ret,data) {
+			if (ret) {
+				displayReturn(data);
+			}
+		}
 	});   
 	return true;
 }
@@ -114,7 +127,7 @@ function onClick(g_form) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>44f93bac879d3d10e1684047cebb3523</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name>Create CI Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
@@ -122,7 +135,7 @@ function onClick(g_form) {
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>sys_ui_action_44f93bac879d3d10e1684047cebb3523</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-22 20:11:41</sys_updated_on>
+        <sys_updated_on>2023-10-24 18:13:51</sys_updated_on>
         <table>sn_shop_sourcing_activity</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
