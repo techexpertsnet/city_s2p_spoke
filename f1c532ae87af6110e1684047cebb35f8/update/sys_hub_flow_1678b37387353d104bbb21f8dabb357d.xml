@@ -64,39 +64,39 @@
         <time>1970-01-01 15:00:00</time>
         <timer_type>4</timer_type>
     </sys_flow_timer_trigger>
-    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:ef44e544878a3d104bbb21f8dabb3545^sys_idNOT IN6744e544878a3d104bbb21f8dabb3546"/>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Get DB Constants^sys_idNOT IN6744e544878a3d104bbb21f8dabb3546"/>
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
-        <entered_time/>
+        <entered_time>1970-01-01 10:00:00</entered_time>
         <max_drift/>
-        <name>Trigger:ef44e544878a3d104bbb21f8dabb3545</name>
+        <name>Get DB Constants</name>
         <offset/>
         <offset_type>0</offset_type>
         <run_as display_value="Bogdan Moldoveanu">a2925e8d878871104bbb21f8dabb35b9</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
-        <run_dayofweek/>
+        <run_dayofweek>1</run_dayofweek>
         <run_period/>
         <run_start>2023-10-18 01:40:20</run_start>
-        <run_time>1970-01-01 15:00:00</run_time>
+        <run_time>1970-01-01 10:00:00</run_time>
         <run_type>monthly</run_type>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('ef44e544878a3d104bbb21f8dabb3545');]]></script>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-10-18 01:40:20</sys_created_on>
         <sys_id>6744e544878a3d104bbb21f8dabb3546</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name/>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-18 01:40:20</sys_updated_on>
-        <time_zone/>
+        <sys_updated_on>2023-10-27 17:54:03</sys_updated_on>
+        <time_zone>floating</time_zone>
         <trigger display_value="">ef44e544878a3d104bbb21f8dabb3545</trigger>
         <upgrade_safe>true</upgrade_safe>
     </sys_flow_trigger_auto_script>
@@ -1632,14 +1632,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>1678b37387353d104bbb21f8dabb357d</sys_id>
         <latest_snapshot>de446544878a3d104bbb21f8dabb3576</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1678b37387353d104bbb21f8dabb357d^sys_idNOT IN2b44e544878a3d104bbb21f8dabb3548"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan/>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"2b44e544878a3d104bbb21f8dabb3548","name":"plan","plan_signature":null}}</plan>
         <plan_id>1678b37387353d104bbb21f8dabb357d</plan_id>
-        <snapshot>de446544878a3d104bbb21f8dabb3576</snapshot>
+        <snapshot>a91db0348752f910e1684047cebb356c</snapshot>
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-10-18 01:40:20</sys_created_on>
         <sys_domain>global</sys_domain>

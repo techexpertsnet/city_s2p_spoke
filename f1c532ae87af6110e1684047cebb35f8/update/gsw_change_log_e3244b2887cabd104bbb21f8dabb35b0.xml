@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2023-10-19 21:56:11</change_date>
         <changed_by display_value="Bogdan Moldoveanu">a2925e8d878871104bbb21f8dabb35b9</changed_by>
-        <content display_value="Create New Connection and Credentials">8df078748775bd104bbb21f8dabb35be</content>
+        <content display_value="Create New Connection and Credential">8df078748775bd104bbb21f8dabb35be</content>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

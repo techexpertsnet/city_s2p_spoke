@@ -10,7 +10,7 @@
         <description/>
         <embedded_help_qualifier/>
         <end_point>sys_flow_trigger_auto_script.do?sys_id=6744e544878a3d104bbb21f8dabb3546</end_point>
-        <end_point_open_mode>3</end_point_open_mode>
+        <end_point_open_mode>2</end_point_open_mode>
         <end_point_type>1</end_point_type>
         <field/>
         <filter/>
@@ -34,14 +34,14 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-10-18 01:47:16</sys_created_on>
         <sys_id>09e5ad84878a3d104bbb21f8dabb35e4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Get DB Constants</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>gsw_content_information_09e5ad84878a3d104bbb21f8dabb35e4</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-18 01:49:08</sys_updated_on>
+        <sys_updated_on>2023-10-27 17:15:53</sys_updated_on>
         <table/>
         <title>Get DB Constants</title>
         <weight>1</weight>

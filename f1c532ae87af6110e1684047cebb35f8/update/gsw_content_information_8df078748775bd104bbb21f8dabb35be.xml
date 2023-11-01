@@ -12,7 +12,7 @@
         <description/>
         <embedded_help_qualifier/>
         <end_point>sys_alias.do?sys_id=78e750d087fb2910e1684047cebb35d9</end_point>
-        <end_point_open_mode>3</end_point_open_mode>
+        <end_point_open_mode>2</end_point_open_mode>
         <end_point_type>1</end_point_type>
         <field/>
         <filter/>
@@ -36,16 +36,16 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-10-07 19:39:06</sys_created_on>
         <sys_id>8df078748775bd104bbb21f8dabb35be</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Create New Connection and Credentials</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create New Connection and Credential</sys_name>
         <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
         <sys_update_name>gsw_content_information_8df078748775bd104bbb21f8dabb35be</sys_update_name>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-10-07 19:47:35</sys_updated_on>
+        <sys_updated_on>2023-10-30 22:31:49</sys_updated_on>
         <table/>
-        <title>Create New Connection and Credentials</title>
+        <title>Create New Connection and Credential</title>
         <weight>1</weight>
     </gsw_content_information>
     <sys_translated_text action="delete_multiple" query="documentkey=8df078748775bd104bbb21f8dabb35be"/>
