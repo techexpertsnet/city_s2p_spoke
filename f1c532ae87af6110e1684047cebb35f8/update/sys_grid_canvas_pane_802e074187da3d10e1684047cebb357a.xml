@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA CI Projects Overview - New Tab">8ebd0b0187da3d10e1684047cebb35bb</grid_canvas>
+        <height>18</height>
+        <portal_widget display_value="Created 2023-11-02 18:12:19">c42e074187da3d10e1684047cebb3578</portal_widget>
+        <posx>6</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-02 22:12:19</sys_created_on>
+        <sys_id>802e074187da3d10e1684047cebb357a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>8ebd0b0187da3d10e1684047cebb35bb</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-02 22:12:36</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+</record_update>

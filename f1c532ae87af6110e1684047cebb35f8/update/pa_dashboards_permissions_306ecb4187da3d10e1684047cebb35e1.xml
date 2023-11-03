@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="CI Projects Overview">9f9dcf0187da3d10e1684047cebb35d3</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>x_citin_s2p_spoke.administrator</identity>
+        <read>true</read>
+        <role display_value="x_citin_s2p_spoke.administrator" name="x_citin_s2p_spoke.administrator">c936f2ee87af6110e1684047cebb3551</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-02 22:13:27</sys_created_on>
+        <sys_id>306ecb4187da3d10e1684047cebb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_citin_s2p_spoke.administrator</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_306ecb4187da3d10e1684047cebb35e1</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-02 22:13:27</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>
