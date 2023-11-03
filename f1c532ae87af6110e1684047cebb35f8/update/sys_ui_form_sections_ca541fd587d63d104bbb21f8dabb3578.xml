@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="ca541fd587d63d104bbb21f8dabb3578" sys_domain="global" table="sys_hub_flow_variable" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86541fd587d63d104bbb21f8dabb359d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">0e541fd587d63d104bbb21f8dabb3594</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2541fd587d63d104bbb21f8dabb35a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">4e541fd587d63d104bbb21f8dabb359d</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46541fd587d63d104bbb21f8dabb357f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c2541fd587d63d104bbb21f8dabb357b</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e541fd587d63d104bbb21f8dabb3583</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="Dependent Field" display_value="Dependent Field" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">0e541fd587d63d104bbb21f8dabb357f</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46541fd587d63d104bbb21f8dabb3594</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="Calculated Value" display_value="Calculated Value" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c2541fd587d63d104bbb21f8dabb3584</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a541fd587d63d104bbb21f8dabb35a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_variable" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ca541fd587d63d104bbb21f8dabb3578</sys_ui_form>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_hub_flow_variable" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">8a541fd587d63d104bbb21f8dabb35a5</sys_ui_section>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_hub_flow_variable</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+            <sys_created_on>2023-11-03 17:17:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca541fd587d63d104bbb21f8dabb3578</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_flow_variable</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ca541fd587d63d104bbb21f8dabb3578</sys_update_name>
+            <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+            <sys_updated_on>2023-11-03 17:17:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

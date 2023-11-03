@@ -23,7 +23,7 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Integrates ServiceNow S2P with City Innovate's Document Builder</short_description>
         <source>x_citin_s2p_spoke</source>
-        <store_correlation_id>REPOAPP0001074160</store_correlation_id>
+        <store_correlation_id>REPOAPP0001074402</store_correlation_id>
         <store_url/>
         <subscription_entitlement/>
         <sys_class_name>sys_app</sys_class_name>
@@ -31,16 +31,16 @@
         <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
         <sys_created_on>2023-06-23 19:24:09</sys_created_on>
         <sys_id>f1c532ae87af6110e1684047cebb35f8</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
-        <sys_updated_on>2023-11-03 16:20:53</sys_updated_on>
+        <sys_updated_on>2023-11-03 19:44:23</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.12</version>
+        <version>1.0.13</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=f1c532ae87af6110e1684047cebb35f8"/>
 </record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision">
+    <sys_decision action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <description/>
+        <label/>
+        <name>Active Stage Policy</name>
+        <reference_qualifier/>
+        <sys_class_name>sys_decision</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-02 13:51:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e39a31f8714b950e1684047cebb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active Stage Policy</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_decision_4e39a31f8714b950e1684047cebb35da</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-02 13:51:26</sys_updated_on>
+    </sys_decision>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_decision_4e39a31f8714b950e1684047cebb35da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision"><sys_decision action="INSERT_OR_UPDATE"><access>public</access><active>true</active><answer_table>sys_decision_multi_result</answer_table><answer_type>reference</answer_type><description/><label/><name>Active Stage Policy</name><reference_qualifier/><sys_class_name>sys_decision</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-08-02 13:51:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4e39a31f8714b950e1684047cebb35da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Active Stage Policy</sys_name><sys_overrides/><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sys_decision_4e39a31f8714b950e1684047cebb35da</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-08-02 13:51:26</sys_updated_on></sys_decision></record_update>]]></payload>
+        <payload_hash>-1262778476</payload_hash>
+        <record_name>Active Stage Policy</record_name>
+        <reverted_from/>
+        <source>e523362487d0fd10e1684047cebb3587</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-02 13:51:26</sys_created_on>
+        <sys_id>0639a31f8714b950e1684047cebb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189b68489fd0000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-02 13:51:26</sys_updated_on>
+        <type>Decision Table</type>
+        <update_guid>4e39a31f4714b950903a617897ec60dc</update_guid>
+        <update_guid_history>4e39a31f4714b950903a617897ec60dc:-1262778476</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-03 19:42:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision">sys_decision</sys_db_object>
+        <sys_id>0ba07c42d2ee4f1fadfba5fa13f971f9</sys_id>
+        <sys_metadata>4e39a31f8714b950e1684047cebb35da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active Stage Policy</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_decision_4e39a31f8714b950e1684047cebb35da</sys_update_name>
+        <sys_update_version display_value="sys_decision_4e39a31f8714b950e1684047cebb35da">0639a31f8714b950e1684047cebb35dd</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-03 19:42:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

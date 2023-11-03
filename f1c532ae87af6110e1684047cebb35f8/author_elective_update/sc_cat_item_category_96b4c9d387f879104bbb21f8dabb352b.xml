@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="CityInnovate Applicant Registration">3104cd9387f879104bbb21f8dabb3597</sc_cat_item>
+        <sc_category display_value="Procurement">5a9b71721b847010d5026572604bcb68</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-26 22:24:08</sys_created_on>
+        <sys_id>96b4c9d387f879104bbb21f8dabb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Procurement.CityInnovate Applicant Registration</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sc_cat_item_category_96b4c9d387f879104bbb21f8dabb352b</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-26 22:24:08</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sc_cat_item_category_96b4c9d387f879104bbb21f8dabb352b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="CityInnovate Applicant Registration">3104cd9387f879104bbb21f8dabb3597</sc_cat_item><sc_category display_value="Procurement">5a9b71721b847010d5026572604bcb68</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-08-26 22:24:08</sys_created_on><sys_id>96b4c9d387f879104bbb21f8dabb352b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Procurement.CityInnovate Applicant Registration</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sc_cat_item_category_96b4c9d387f879104bbb21f8dabb352b</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-08-26 22:24:08</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-178505942</payload_hash>
+        <record_name>Procurement.CityInnovate Applicant Registration</record_name>
+        <reverted_from/>
+        <source>83e44dd387f879104bbb21f8dabb35c8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-08-26 22:24:08</sys_created_on>
+        <sys_id>5ab4c9d387f879104bbb21f8dabb3547</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>18a33f28e2e0000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-08-26 22:27:08</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>92b4c9d3daf87910b47d8577407bd947</update_guid>
+        <update_guid_history>92b4c9d3daf87910b47d8577407bd947:-178505942</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Procurement.CityInnovate Applicant Registration">ee337b55875a3d104bbb21f8dabb3559</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-03 19:32:53</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>8c7a147725fc4f6490d99f1bc0efc864</sys_id>
+        <sys_metadata>96b4c9d387f879104bbb21f8dabb352b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Procurement.CityInnovate Applicant Registration</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_96b4c9d387f879104bbb21f8dabb352b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_96b4c9d387f879104bbb21f8dabb352b">5ab4c9d387f879104bbb21f8dabb3547</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-03 19:32:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
