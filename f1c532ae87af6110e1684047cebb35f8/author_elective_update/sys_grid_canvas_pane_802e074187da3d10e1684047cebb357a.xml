@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA CI Projects Overview - New Tab">8ebd0b0187da3d10e1684047cebb35bb</grid_canvas>
+        <height>18</height>
+        <portal_widget display_value="Created 2023-11-02 18:12:19">c42e074187da3d10e1684047cebb3578</portal_widget>
+        <posx>6</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-02 22:12:19</sys_created_on>
+        <sys_id>802e074187da3d10e1684047cebb357a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>8ebd0b0187da3d10e1684047cebb35bb</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a</sys_update_name>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-02 22:12:36</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</application>
+        <file_path/>
+        <instance_id>1c46e10cdb3e81104d2bac44d4961983</instance_id>
+        <instance_name>cityinnovatedev</instance_name>
+        <name>sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA CI Projects Overview - New Tab">8ebd0b0187da3d10e1684047cebb35bb</grid_canvas><height>18</height><portal_widget display_value="Created 2023-11-02 18:12:19">c42e074187da3d10e1684047cebb3578</portal_widget><posx>6</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by><sys_created_on>2023-11-02 22:12:19</sys_created_on><sys_id>802e074187da3d10e1684047cebb357a</sys_id><sys_mod_count>2</sys_mod_count><sys_name>8ebd0b0187da3d10e1684047cebb35bb</sys_name><sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package><sys_policy/><sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope><sys_update_name>sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a</sys_update_name><sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by><sys_updated_on>2023-11-02 22:12:36</sys_updated_on><width>6</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>849864704</payload_hash>
+        <record_name>8ebd0b0187da3d10e1684047cebb35bb</record_name>
+        <reverted_from/>
+        <source>c64100bc87b93d50e1684047cebb351d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-02 22:12:36</sys_created_on>
+        <sys_id>643e474187da3d10e1684047cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b92186f980000001</sys_recorded_at>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-02 22:12:36</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>a83e4741b3da3d1021302f6006c269bf</update_guid>
+        <update_guid_history>a83e4741b3da3d1021302f6006c269bf:849864704,312e8741f5da3d1048b56ce2121880a0:1207165762,842e0741a7da3d1090677b5f9cdd067b:-348098261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bmoldoveanu@techexpertsnet.com</sys_created_by>
+        <sys_created_on>2023-11-04 16:11:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>222ab97534b9429c87845c27de04f9f9</sys_id>
+        <sys_metadata>802e074187da3d10e1684047cebb357a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8ebd0b0187da3d10e1684047cebb35bb</sys_name>
+        <sys_package display_value="City Innovate S2P Spoke" source="x_citin_s2p_spoke">f1c532ae87af6110e1684047cebb35f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="City Innovate S2P Spoke">f1c532ae87af6110e1684047cebb35f8</sys_scope>
+        <sys_scope_delete display_value="">932b1ead6d374378942b403f24709a40</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_802e074187da3d10e1684047cebb357a">643e474187da3d10e1684047cebb35c0</sys_update_version>
+        <sys_updated_by>bmoldoveanu@techexpertsnet.com</sys_updated_by>
+        <sys_updated_on>2023-11-04 16:11:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
